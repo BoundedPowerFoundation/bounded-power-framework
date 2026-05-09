@@ -1,0 +1,51 @@
+BOUNDED POWER FRAMEWORK — HASH REGISTRY
+================================================
+
+This file is part of a thought experiment.
+See HOW-TO-READ-THIS.md. Nothing described here is operating.
+
+================================================
+
+PURPOSE
+-------
+This file records the cryptographic fingerprint of the Structural
+Constitution. Any modification to the constitutional rules produces
+a different hash, making silent alteration detectable.
+
+The hash secures the file's integrity within this repository. It is
+not an enforcement primitive.
+
+To verify: download SCBP-04-Structural-Constitution-v1.3.md,
+ensure UTF-8 encoding with LF line endings and no BOM, then run:
+
+  sha256sum SCBP-04-Structural-Constitution-v1.3.md
+
+Compare the output to the hash recorded below.
+
+================================================
+
+SCBP-04  01-framework/SCBP-04-Structural-Constitution-v1.3.md
+SHA256:  8cbcf5751706dc98576d633976a3009e193874c7682d0f823805d8666472a7d0
+Frozen:  2026-05-05
+Rules:   R01-R81 (81 rules)
+Status:  ACTIVE — CANONICAL
+
+Note: The canonical file is markdown (.md) with formatting.
+The binding text is the clause text of each rule only.
+Human Understanding sections and headings are non-binding.
+
+================================================
+
+VERIFICATION INSTRUCTIONS
+--------------------------
+1. File encoding must be UTF-8, no BOM
+2. Line endings must be LF (Unix-style, not Windows CRLF)
+3. No trailing spaces on any line
+4. File must end with exactly one newline character
+5. Run: sha256sum 01-framework/SCBP-04-Structural-Constitution-v1.3.md
+6. Compare output to hash above — must match exactly
+
+If the hash does not match, the file in this repository has
+been altered from the version originally hashed.
+
+================================================
