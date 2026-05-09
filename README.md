@@ -30,8 +30,8 @@ The experiment asks: *what would it look like if any system exercising authority
 | `02-forms/` | The registration form and stop-trigger form a hypothetical filer would use |
 | `03-examples/` | Roughly twenty example registrations, plus a bad-faith counter-example with editorial annotations |
 | `04-registry/` | The registry's own README, the registry-as-operator's self-registration (SCBP-REG-0001), and the unregistered-authority stub template |
-| `05-reading/` | Background reasoning that grounds the construction, and the cryptographic hash registry for the constitution |
-| Root files | This README, the framing document, the Registry Charter |
+| `05-reading/` | Background reasoning that grounds the construction |
+| Root files | This README, the framing document, the Registry Charter, and the cryptographic hash registry for the constitution |
 
 ---
 
