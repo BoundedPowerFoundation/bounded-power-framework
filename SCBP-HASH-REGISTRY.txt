@@ -25,6 +25,14 @@ silent alteration of any of these would change what the framework
 substantively requires of registrants without changing the
 Constitution.
 
+BPF-Reasoning.md is hashed because it records the reasoning behind
+the SCBP rules — the justifications, design choices, and trade-offs
+that produced the clause text of the Constitution and the
+operational documents. It carries no binding authority, but silent
+alteration of the stated reasoning would misrepresent why the rules
+take the form they do, so its integrity is fixed alongside the
+artifacts whose design it explains.
+
 To verify any file: ensure UTF-8 encoding with LF line endings and no
 BOM, then run sha256sum on the file from the repository root and
 compare against the hash recorded below.
@@ -135,6 +143,14 @@ Path:    04-registry/SCBP-REG-0001.md
 SHA256:  f8fa17fcea5e73b254b13c623aefcebc01ef90aa26f62be7c6d92e4a1a9879fe
 Frozen:  2026-05-09
 Layer:   Mechanism Record
+
+------------------------------------------------
+
+BPF Reasoning
+Path:    05-reading/BPF-Reasoning.md
+SHA256:  eba47da97ac3e03a5a936121ce7c918c3c85e6326054bb6927dc0633ebaf3e66
+Frozen:  2026-05-10
+Layer:   Explanatory
 
 ------------------------------------------------
 
