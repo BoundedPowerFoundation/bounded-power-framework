@@ -416,3 +416,7 @@ Authority systems must remain capable of independent evaluation. All information
 ---
 
 *End of Document — R01 through R81*
+
+---
+
+> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*

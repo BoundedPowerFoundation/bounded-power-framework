@@ -141,3 +141,7 @@ These classifications are passed to the Enforcement System.
 
 *SCBP-05 — Testing Protocol — Diagnostic Layer*
 *All authority governed solely by the Structural Constitution (SCBP-04)*
+
+---
+
+> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*

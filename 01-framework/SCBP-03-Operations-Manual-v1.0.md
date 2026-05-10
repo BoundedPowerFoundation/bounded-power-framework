@@ -482,6 +482,8 @@ Stopping is not failure. It is the system working as designed.
 
 **Termination** — permanent cessation following a "Do Not Renew" determination or a finding that the mechanism cannot be brought into compliance.
 
+> *Note on the relationship between R28 and R57:* R28 says authority "expires automatically unless affirmatively renewed." R57 says expired authority "must enter provisional suspension until renewal evaluation is complete" and "may not continue operating solely because review is pending." Read together, these rules describe the same operational state from two angles. R28 establishes the default — authority ends on the expiration date — and R57 specifies what that ending operationally looks like when renewal review has not yet completed: operations cease, suspension is the state, and review-pending status does not authorize continuation. The two rules are not in conflict. R28 emphasizes that expiration is the default; R57 emphasizes that the default is not waived by procedural delay. An Expiration Stop, in the table above, is the operational form both rules require.
+
 ---
 
 ### Step 6.2 — Executing a Provisional Stop
@@ -579,3 +581,7 @@ Where this manual references specific stages or steps, the Structural Constituti
 *This manual introduces no new authority and modifies no constitutional constraints. All mechanisms remain subject to the Structural Constitution.*
 
 *SCBP-03 — Operations Manual — Operational Guidance Layer*
+
+---
+
+> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*

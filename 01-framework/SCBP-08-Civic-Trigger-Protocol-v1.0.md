@@ -300,3 +300,7 @@ If conflict exists between this document and the Structural Constitution, the Co
 
 *SCBP-08 — Civic Trigger Protocol — Operational Layer*
 *All authority governed solely by the Structural Constitution (SCBP-04)*
+
+---
+
+> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*
