@@ -6,13 +6,13 @@ This document provides a simple method for independently testing the Bounded Pow
 
 The goal is to allow a reader to:
 
-- understand how the system applies in practice  
-- evaluate its strengths and weaknesses  
-- identify gaps or failure points  
+* understand how the system applies in practice
+* evaluate its strengths and weaknesses
+* identify gaps or failure points
 
 No prior expertise is required.
 
----
+\---
 
 ## Independent testing use
 
@@ -20,154 +20,164 @@ This process is designed for **simulation and analysis**, not official submissio
 
 When testing:
 
-- Do **not** claim to represent the authority  
-- Do **not** use real personal names  
-- Use publicly available information where possible  
-- Use reasonable assumptions where needed  
-- Clearly label all outputs as:
+* Do **not** claim to represent the authority
+* Do **not** use real personal names
+* Use publicly available information where possible
+* Use reasonable assumptions where needed
+* Clearly label all outputs as:
 
 > TEST / NOT AN OFFICIAL REGISTRATION
 
-If using AI:
+\---
 
-- Do not prompt it to impersonate real individuals  
-- Frame it as a **neutral analyst completing a simulation**
+## Recommended method (AI-assisted)
 
----
+This is the fastest way to test the system.
 
-## Overview
-
-Testing is done by selecting a real-world authority system and mapping it into the framework.
-
-This can be done manually or with assistance from an AI system.
-
----
-
-## Step 1 — Select a system
+### Step 1 — Select a system
 
 Choose a power-bearing authority.
 
 Examples:
 
-- a government agency  
-- a police department  
-- a regulatory body  
-- a court system  
-- a corporation or platform  
-- a school district or university  
-- a homeowners association  
+* Local Fire Department
+* Police Department
+* Regulatory Agency
+* Court System
+* School District
+* Corporation or Platform
+* Homeowners Association
 
-The system should:
+\---
 
-- exercise authority over people or resources  
-- make decisions that affect others  
+### Step 2 — Prepare the prompt
 
----
+Edit the prompt below:
 
-## Step 2 — Define the system
+* Replace `\[SYSTEM NAME]` with your chosen authority  
+Example: *Local Fire Department*
 
-Describe the system in simple terms:
+\---
 
-- What authority does it have?  
-- What actions can it take?  
-- Who does it affect?  
-- What resources does it control?  
+### Step 3 — Use an AI system
 
-Do not aim for perfection. Approximate descriptions are sufficient.
+1. Open an AI tool (e.g., ChatGPT.com, Claude.ai, or the AI of your choice)
+2. Paste your edited prompt into the input field
+3. Click **Send / Submit**
 
----
+\---
 
-## Step 3 — Generate a registration record
+### Prompt to use
 
-Use the provided form:
+```
+Review the rules at:
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-System/blob/main/01-framework/SCBP-04-Structural-Constitution-v1.3.md
 
-- `02-forms/registration.md`
+Use the form:
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-System/blob/main/02-forms/registration.md
 
-You may:
-
-- fill it out manually  
-- or ask an AI to generate it  
-
-Suggested prompt:
-
-"""
-Act as a neutral analyst. Using publicly available information and reasonable assumptions, generate a completed version of this registration form for [SYSTEM NAME].
+Act as a neutral analyst. Using publicly available information and reasonable assumptions, generate a completed version of this registration form for \[SYSTEM NAME]. Annotate the form where the source is suspect or if the information may be false.
 
 Do not use real personal names. Do not claim official authority. Label the output as TEST / NOT AN OFFICIAL REGISTRATION.
-"""
 
----
 
-## Step 4 — Examine the result
+```
 
-Review the generated registration.
+\---
+
+### Step 4 — Review the result
+
+After the AI generates the registration:
 
 Ask:
 
-- Is the authority clearly defined?  
-- Are the limits explicit or vague?  
-- Are there areas where power could expand?  
-- Are dependencies visible?  
+* Is the authority clearly defined?
+* Are the limits explicit or vague?
+* Are there paths for expansion?
+* Are dependencies visible?
 
----
+\---
 
-## Step 5 — Apply framework constraints
+### Step 5 — Apply framework constraints
 
-Compare the system against BPF principles:
+Compare the result to the framework:
 
-- Does authority expire?  
-- Can actions be interrupted?  
-- Are decisions reversible?  
-- Are actions auditable?  
+* Does authority expire?
+* Can actions be interrupted?
+* Are decisions reversible?
+* Are actions auditable?
 
----
+\---
 
-## Step 6 — Identify failure modes
+### Step 6 — Identify failure modes
 
 Look for:
 
-- uncontrolled expansion paths  
-- lack of interruption mechanisms  
-- irreversible outcomes  
-- hidden or untracked actions  
+* uncontrolled expansion paths
+* lack of interruption mechanisms
+* irreversible outcomes
+* hidden or untracked actions
 
----
+\---
 
-## Step 7 — Attempt adaptation
+### Step 7 — Evaluate
 
-Modify the system conceptually:
+Ask:
 
-- add expiration conditions  
-- introduce interruption triggers  
-- require action logging  
-- define explicit limits  
+* Does the framework meaningfully constrain this system?
+* Where does it fail?
+* What assumptions break?
 
----
+\---
 
-## Step 8 — Evaluate the framework
+## Manual method (optional)
 
-After testing, ask:
+This method requires more effort but deeper understanding.
 
-- Does the framework meaningfully constrain the system?  
-- Where does it fail?  
-- What assumptions break down?  
-- What is missing?  
+### Step 1 — Select a system
 
-The purpose is not validation.
+Choose a power-bearing authority (same as above).
 
-The purpose is stress-testing.
+\---
 
----
+### Step 2 — Define the system
+
+Describe:
+
+* authority
+* actions
+* affected population
+* resources
+
+\---
+
+### Step 3 — Complete the form
+
+Use:
+
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-System/blob/main/02-forms/registration.md
+
+Fill it out manually.
+
+\---
+
+### Step 4 — Analyze
+
+Apply the same review, constraint, and failure steps described above.
+
+\---
 
 ## Summary
 
 To test the system:
 
-1. Select a real authority  
-2. Describe its structure  
-3. Generate a registration record  
-4. Compare it to framework constraints  
-5. Identify gaps and failure modes  
-6. Attempt structural corrections  
+1. Select a real authority
+2. Generate a registration (AI or manual)
+3. Compare it to framework constraints
+4. Identify gaps and failure modes
+5. Evaluate the framework
 
-This process allows independent evaluation without requiring implementation.
+The purpose is not validation.
+
+The purpose is stress-testing.
+
