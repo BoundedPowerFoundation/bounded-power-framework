@@ -71,10 +71,10 @@ Edit the prompt below:
 
 ```text
 Review the rules at:
-https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-System/blob/main/01-framework/SCBP-04-Structural-Constitution-v1.3.md
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework/blob/main/01-framework/SCBP-04-Structural-Constitution-v1.3.md
 
 Use the form:
-https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-System/blob/main/02-forms/registration.md
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework/blob/main/02-forms/registration.md
 
 Act as a neutral analyst.
 
@@ -177,7 +177,7 @@ Describe:
 
 Use:
 
-https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-System/blob/main/02-forms/registration.md
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework/blob/main/02-forms/registration.md
 
 Fill it out manually.
 
