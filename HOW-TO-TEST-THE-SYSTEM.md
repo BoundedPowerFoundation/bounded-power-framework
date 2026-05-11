@@ -70,6 +70,82 @@ Example: *Local Fire Department*
 ### Prompt to use
 
 ```
+
+Review the rules at:
+
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-System/blob/main/01-framework/SCBP-04-Structural-Constitution-v1.3.md
+
+
+
+Use the form:
+
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-System/blob/main/02-forms/registration.md
+
+
+
+Act as a neutral analyst.
+
+
+
+IMPORTANT INSTRUCTIONS:
+
+
+
+1\. Reproduce the registration form EXACTLY as written, including:
+
+&#x20;  - all section numbers
+
+&#x20;  - all section titles
+
+&#x20;  - all field labels
+
+2\. Do NOT create a new structure.
+
+3\. Do NOT summarize the form.
+
+4\. Do NOT reorganize sections.
+
+5\. Fill each field directly under its heading.
+
+6\. If information is unknown, write: UNKNOWN
+
+7\. Annotate the form where the source is suspect or if the information may be false.
+
+8\. If information is inferred, write: ASSUMPTION: \[short explanation]
+
+9\. Do not optimize for completeness. Expose uncertainty where it exists.
+
+10\. If you cannot reproduce the form exactly, STOP and state that clearly.
+
+
+
+Using publicly available information and reasonable assumptions, generate a completed version of the registration form for:
+
+
+
+\[SYSTEM NAME]
+
+
+
+Do not use real personal names.
+
+Do not claim official authority.
+
+
+
+Label the output as:
+
+TEST / NOT AN OFFICIAL REGISTRATION
+
+
+
+
+
+
+
+
+
+
 Review the rules at:
 https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-System/blob/main/01-framework/SCBP-04-Structural-Constitution-v1.3.md
 
