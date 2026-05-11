@@ -76,7 +76,9 @@ https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-Sys
 Use the form:
 https://github.com/BoundedPowerFoundation/Bounded-Power-Framework-Governance-System/blob/main/02-forms/registration.md
 
-Act as a neutral analyst. Using publicly available information and reasonable assumptions, generate a completed version of this registration form for \[SYSTEM NAME]. Annotate the form where the source is suspect or if the information may be false.
+Act as a neutral analyst. Using publicly available information and reasonable assumptions, generate a completed version of this registration form for \[SYSTEM NAME].
+
+Annotate the form where the source is suspect or if the information may be false.
 
 Do not use real personal names. Do not claim official authority. Label the output as TEST / NOT AN OFFICIAL REGISTRATION.
 
