@@ -68,9 +68,13 @@ Paste this prompt:
 
 Help me complete a Bounded Power registration for [AUTHORITY NAME].
 
-Use the Registration Form and Data Schema in this repository.
+Repository:
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework
+
+Use the Registration Form and Data Schema from the repository.
 
 IMPORTANT:
+
 1. Complete the Registry Header first.
 2. Ask me for missing facts one question at a time.
 3. Use Unknown instead of guessing.
