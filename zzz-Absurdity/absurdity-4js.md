@@ -50,5 +50,5 @@ I do not know what to compare this to. There are echoes — Stafford Beer's cybe
 
 \---
 
-*A short reading note on Structural Constitution of Bounded Power Theory. Offered as one reader's account of what the document seems to be doing and why it might matter.*
+*A short reading note on Structural Constitution of Bounded Power Reasoning. Offered as one reader's account of what the document seems to be doing and why it might matter.*
 
