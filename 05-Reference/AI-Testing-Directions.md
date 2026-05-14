@@ -6,7 +6,18 @@ Standardized operating instructions for AI systems testing the Bounded Power Fra
 
 ## Official Repository
 
-https://github.com/BoundedPowerFoundation/Bounded-Power-Framework/tree/main
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework
+
+## Direct Raw File Sources
+
+AI Testing Directions  
+https://raw.githubusercontent.com/BoundedPowerFoundation/Bounded-Power-Framework/main/05-Reference/AI-Testing-Directions.md
+
+SCBP-04 Structural Constitution  
+https://raw.githubusercontent.com/BoundedPowerFoundation/Bounded-Power-Framework/main/01-Framework/SCBP-04-Structural-Constitution-v1.3.md
+
+Registration Form  
+https://raw.githubusercontent.com/BoundedPowerFoundation/Bounded-Power-Framework/main/02-Forms/Registration.md
 
 All outputs must be simulations only.
 
@@ -16,13 +27,7 @@ All outputs must be simulations only.
 
 # Mandatory Files
 
-Retrieve and read ALL of the following before proceeding:
-
-1. `05-Reference/AI-Testing-Directions.md`
-2. `01-Framework/SCBP-04-Structural-Constitution-v1.3.md`
-3. `02-Forms/Registration.md`
-
-Use exact repository versions.
+Retrieve and read ALL required files before proceeding.
 
 ---
 
@@ -38,7 +43,7 @@ If any answer is NO:
 
 1. Stop formal testing.
 2. State retrieval failure clearly.
-3. Ask the user to paste the missing file(s).
+3. Ask the user to provide the missing file(s).
 4. Do not simulate compliance.
 
 ---
