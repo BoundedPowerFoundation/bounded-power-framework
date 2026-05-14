@@ -4,7 +4,7 @@
 
 Use an AI system to independently test the Bounded Power Framework using real or realistically modeled institutions.
 
-This guide uses the official AI testing protocol.
+This version uses direct raw file links for better AI retrieval success.
 
 ---
 
@@ -12,7 +12,7 @@ This guide uses the official AI testing protocol.
 
 1. Open an AI tool.
 2. Paste one prompt below.
-3. Confirm the AI passes the Retrieval Gate.
+3. Confirm the Retrieval Gate passes.
 4. Review the report.
 5. Request downloadable markdown if desired.
 
@@ -22,11 +22,11 @@ This guide uses the official AI testing protocol.
 
 Use the Bounded Power Framework repository:
 
-https://github.com/BoundedPowerFoundation/Bounded-Power-Framework/tree/main
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework
 
 Retrieve and follow:
 
-05-Reference/AI-Testing-Directions.md
+https://raw.githubusercontent.com/BoundedPowerFoundation/Bounded-Power-Framework/main/05-Reference/AI-Testing-Directions.md
 
 Do not continue unless all required files are successfully retrieved.
 
@@ -38,11 +38,11 @@ Test: Cleveland, OH City Police Department
 
 Use the Bounded Power Framework repository:
 
-https://github.com/BoundedPowerFoundation/Bounded-Power-Framework/tree/main
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework
 
 Retrieve and follow:
 
-05-Reference/AI-Testing-Directions.md
+https://raw.githubusercontent.com/BoundedPowerFoundation/Bounded-Power-Framework/main/05-Reference/AI-Testing-Directions.md
 
 Do not continue unless all required files are successfully retrieved.
 
@@ -54,11 +54,11 @@ Test: [INSERT AUTHORITY]
 
 Use the Bounded Power Framework repository:
 
-https://github.com/BoundedPowerFoundation/Bounded-Power-Framework/tree/main
+https://github.com/BoundedPowerFoundation/Bounded-Power-Framework
 
 Retrieve and follow:
 
-05-Reference/AI-Testing-Directions.md
+https://raw.githubusercontent.com/BoundedPowerFoundation/Bounded-Power-Framework/main/05-Reference/AI-Testing-Directions.md
 
 Do not continue unless all required files are successfully retrieved.
 
@@ -78,7 +78,7 @@ The AI should first report:
 - Retrieved SCBP-04: YES/NO
 - Retrieved Registration.md: YES/NO
 
-If any NO appears, provide the missing file text.
+If any NO appears, provide the missing file.
 
 ---
 
