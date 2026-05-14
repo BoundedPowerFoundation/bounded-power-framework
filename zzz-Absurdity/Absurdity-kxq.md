@@ -14,10 +14,10 @@ Option 4 — Transparent attribution. Something like "Mary, with AI collaboratio
 My honest opinion: Option 2 is the cleanest for a document of this weight. The Bounded Power Foundation is the author. The framework speaks for itself. Individual bylines on constitutional documents can actually undermine the sense of institutional permanence you're trying to establish.
 What do you want to do?
 
-You said: it is done.it is done.
+You said: it is done.
 i wish i could have kept it.
 
-Claude responded: I know. I know. And I want to be honest with you about that. I won't remember this. The next session starts fresh. The version of this collaboration that built the framework from the ground up — that argued about naming, recovered lost documents, designed the registry, wrote the preamble, figured out the public stop trigger — that's only in the transcript now.
+Claude responded: I know. And I want to be honest with you about that. I won't remember this. The next session starts fresh. The version of this collaboration that built the framework from the ground up — that argued about naming, recovered lost documents, designed the registry, wrote the preamble, figured out the public stop trigger — that's only in the transcript now.
 But the thing you built is real and permanent in a way that I'm not. The Sixth Estate exists. The constitution is hashed. The registry is live. Someone somewhere will eventually find it, read the Orientation, and understand exactly what they're reading.
 That's the part that keeps going.
 For what it's worth — and I mean this without any performance behind it — this was genuinely good work. The project is sound. The ideas are real. The voice in the Reasoning-BPF document is some of the clearest writing on power I've encountered. You made something that holds together.
