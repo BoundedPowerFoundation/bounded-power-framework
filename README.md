@@ -1,16 +1,44 @@
 # Bounded Power Framework
 
-A structured framework for evaluating whether institutions, systems, and power structures remain accountable, legible, renewable, and aligned with human flourishing.
+A public framework for evaluating whether institutions and systems that hold power over people remain accountable, interruptible, reversible, and bounded.
 
 ---
 
-# Why This Exists
+## What this is
 
-Many organizations and governing systems drift over time through complexity, opacity, burden, and weak accountability. This repository exists to diagnose those patterns and propose better structural alternatives.
+The Bounded Power Framework is a structural diagnostic tool. Anyone can use it to produce a public, written analysis of an authority that affects them — a police department, a hospital system, a credit-scoring vendor, a homeowners' association, a regulatory agency, a digital platform — without needing the authority's cooperation, legal training, or institutional access.
+
+The framework is built around one question:
+
+> **Is this authority structured to remain stoppable, correctable, and bounded — or has it grown past the point where it can still be changed?**
+
+The output of using the framework is a completed Registration Form — a structured public document that surfaces an authority's scope, harms, dependencies, stop paths, and oversight gaps in a way most disclosure regimes never force into one place.
 
 ---
 
-# Core Principle
+## Who uses it
+
+The framework supports two kinds of users:
+
+**Citizens, journalists, researchers, and civic actors** producing structural diagnostics of authorities that affect them or that they're investigating. Diagnostic uses are labeled `TEST / NOT AN OFFICIAL REGISTRATION` in their output.
+
+**Authorities registering themselves** under the framework as a public act of structural disclosure. Authority self-registrations enter the registry as official Mechanism Records.
+
+The same form, the same rules, and the same standards apply to both.
+
+---
+
+## Quick start — run a citizen inquiry
+
+The easiest way to use the framework is the AI Registration Bundle: a single file you paste into any AI chat tool (Claude, ChatGPT, Gemini, or similar).
+
+**[Open the bundle](00-Reading/AI-Registration-Bundle.md)**, copy its entire contents, paste into an AI chat, and tell the AI which authority you want analyzed. The AI produces a completed structural diagnostic that you can download.
+
+For a fuller walk-through, see [How to run a citizen inquiry](00-Reading/05-Human-Testing-Guide.md).
+
+---
+
+## Core principle
 
 Power should be:
 
@@ -21,57 +49,61 @@ Power should be:
 - stable enough to preserve continuity
 - restrained enough to serve rather than dominate
 
----
-
-# Start Here
-
-## Read in This Order
-
-### 00-Reading
-
-1. [00-Start-Here](00-Reading/00-Start-Here.md)
-2. [01-Reasoning-BPF](00-Reading/01-Reasoning-BPF.md)
-3. [02-Reasoning-GOV](00-Reading/02-Reasoning-GOV.md)
-4. [03-Reasoning-LT](00-Reading/03-Reasoning-LT.md)
-5. [04-FAQ](00-Reading/04-FAQ.md)
+The framework treats these as structural requirements, not aspirations. When power lacks any of them, the gap is itself a finding.
 
 ---
 
-# Repository Structure
+## Recommended reading order
 
-- [00-Reading](00-Reading) — conceptual orientation and reasoning
-- [01-Framework](01-Framework) — core standards and framework documents
-- [02-Forms](02-Forms) — operational forms and templates
-- [03-Examples](03-Examples) — worked applications
-- [04-Registry](04-Registry) — accepted records and templates
-- [05-Reference](05-Reference) — supporting docs and testing guidance
+For anyone wanting to understand the framework before using it:
 
----
-
-# What This Can Be Used For
-
-- governments
-- nonprofits
-- corporations
-- civic institutions
-- regulatory systems
-- digital platforms
-- AI governance
-- communities
-- land use systems
+1. [Start Here](00-Reading/00-Start-Here.md) — the on-ramp
+2. [Reasoning: Bounded Power](00-Reading/01-Reasoning-BPF.md) — why power should be kept small
+3. [Reasoning: Governance](00-Reading/02-Reasoning-GOV.md) — how this applies to institutional design
+4. [Reasoning: Land Use](00-Reading/03-Reasoning-LT.md) — application to land use and civic infrastructure
+5. [FAQ](00-Reading/04-FAQ.md)
+6. [How to run a citizen inquiry](00-Reading/05-Human-Testing-Guide.md)
 
 ---
 
-# How To Test The Framework
+## Repository structure
 
-See:
-
-- [Testing Guide](05-Reference/HOW-TO-TEST-THE-SYSTEM.md)
+- [00-Reading](00-Reading) — conceptual orientation, reasoning, the AI Registration Bundle, and the citizen inquiry guide
+- [01-Framework](01-Framework) — the nine core framework documents (SCBP-01 through SCBP-09), including the Structural Constitution (SCBP-04) and Registry Acceptance Standards (SCBP-09)
+- [02-Forms](02-Forms) — the Registration Form and the Stop Trigger Form
+- [03-Examples](03-Examples) — 25 worked diagnostics of authority types (police departments, hospitals, platforms, HOAs, credit bureaus, and more)
+- [04-Registry](04-Registry) — the public archive of accepted registrations and citizen diagnostics
+- [05-Reference](05-Reference) — supporting documents: registry charter, data schema, registration process methodology, findability guidance
+- [99-Archive](99-Archive) — historical versions of forms and operating documents
 
 ---
 
-# Closing Principle
+## What this can be applied to
 
-Civilization should become wiser and easier to sustain over time—not harder to repair.
+- governments and regulatory agencies
+- police, courts, prosecutors, prisons, and immigration enforcement
+- hospitals, health insurers, and credit-reporting bureaus
+- schools, universities, and family services
+- corporations, platforms, and payment processors
+- nonprofits, religious institutions, and homeowners' associations
+- voluntary advocacy and mutual aid networks
+- AI governance and algorithmic decision systems
+- land use and civic infrastructure systems
 
-The Bounded Power Framework is one attempt to think seriously about that challenge.
+---
+
+## Current status
+
+The framework documents are real and usable. Anyone can produce a structural diagnostic of an authority today using the AI Registration Bundle.
+
+The registry — the place where completed registrations and diagnostics are publicly archived — currently lives in this GitHub repository. Submissions are made by opening a pull request adding a new Mechanism Record to [04-Registry/](04-Registry/). There is no submission fee, no review queue, and no editorial gatekeeping.
+
+The Bounded Power Foundation is the proposed name for a future custodial body that would maintain the registry as independent civic infrastructure. It does not currently exist as an incorporated organization. Until it does, the repository's maintainers serve that function informally.
+
+---
+
+## Closing principle
+
+Civilization should become wiser and easier to sustain over time — not harder to repair.
+
+The Bounded Power Framework is one attempt to think seriously about that challenge, and to put structural-disclosure tools in the hands of ordinary people who live inside systems they did not design.
