@@ -1,7 +1,3 @@
-*Part of a thought experiment. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md). Nothing described here is operating.*
-
----
-
 # Bounded Power
 
 ## Structural Constitution for Limiting Institutional Authority
@@ -9,8 +5,6 @@
 **The Bounded Power Framework**
 
 A structural architecture designed to ensure that institutional authority remains limited, interruptible, reversible, and subject to renewal.
-
-*Bounded Power Foundation*
 
 \---
 
@@ -99,11 +93,13 @@ These are not aspirations. They are structural requirements. When they are met, 
 
 The average person has almost no practical leverage over the systems that govern their daily life. They can vote. They can file complaints. They can, in some circumstances, join class action lawsuits. Beyond that, the tools are thin and the friction is high.
 
-This framework adds something that currently does not exist: a publicly visible, permanently documented record of what every registered authority is allowed to do, when that authorization expires, what conditions would trigger a stop, and how to initiate one.
+This framework adds something that currently does not exist: a publicly visible, permanently documented record of what an authority is allowed to do, when that authorization expires, what conditions would trigger a stop, and how to initiate one.
+
+Records of this kind can be produced two ways. An authority can register itself, filing a structured public declaration of its own scope, dependencies, and stop paths. Or anyone affected by an authority — citizens, journalists, researchers, civic actors — can produce a structural diagnostic of that authority using public information, even without the authority's cooperation. Citizen-produced diagnostics are clearly labeled and filed under a separate naming pattern, but they go into the same registry and use the same form, the same rules, and the same standards.
 
 This matters in two ways.
 
-First, visibility. Right now, if you want to know what a government agency, a private company, or a regulatory body is authorized to do, how long that authorization lasts, and what would trigger a review — that information either doesn't exist in one place, is buried in language that takes specialists to navigate, or simply isn't public. Under this framework, every registered authority has a plain-language public record. That record cannot be silently altered. It is permanent and auditable.
+First, visibility. Right now, if you want to know what a government agency, a private company, or a regulatory body is authorized to do, how long that authorization lasts, and what would trigger a review — that information either doesn't exist in one place, is buried in language that takes specialists to navigate, or simply isn't public. Under this framework, any authority that has been registered or diagnosed has a plain-language public record. That record cannot be silently altered. It is permanent and auditable.
 
 Second, the stop trigger. Any affected party can submit a stop trigger — a structured, documented report that something is wrong. It does not immediately stop anything. What it does is create a permanent, public, timestamped record that a specific concern was raised about a specific authority on a specific date, and that a response is now required within a defined window.
 
@@ -135,7 +131,3 @@ One principle runs through all of it: if something conflicts, the narrower autho
 
 *SCBP-01 — Orientation*  
 *All authority governed solely by the Structural Constitution*
-
----
-
-> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*
