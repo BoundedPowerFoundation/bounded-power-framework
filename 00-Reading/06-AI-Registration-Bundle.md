@@ -1,6 +1,8 @@
-═══════════════════════════════════════════════════════════════════════
-                    YOU DO NOT HAVE TO READ THIS FILE
-═══════════════════════════════════════════════════════════════════════
+---
+
+# YOU DO NOT HAVE TO READ THIS FILE
+
+---
 
 This file is for the AI, not for you. If you want to analyze an
 authority, just follow these three steps:
@@ -32,7 +34,7 @@ a Mechanism Record for [your authority name]. Begin with Part 1."
 That is all you need to do. Everything below this point is reference
 material for the AI.
 
-═══════════════════════════════════════════════════════════════════════
+---
 
 # Bounded Power Framework — AI Registration Bundle
 
@@ -113,14 +115,69 @@ Parts 2–5 of this bundle contain everything you need:
      - `harm_categories_declared` enumerates the categories actually declared in §4.1–§4.6 (use the framework's six category names: bodily_harm, agency_impairment, ecological_damage, generational_binding, communicative_suppression, informational_sovereignty; add chronic_asymmetry only if §4 explicitly declares it)
      - `dependency_count_type1`, `dependency_count_type2`, `dependency_count_type3` match the counts in §6.1, §6.2, §6.3
      - `capture_risk_identified` reflects §6.4's declaration
-     - The five §12 acknowledgment flags (`disclosure_completeness_assertion`, `update_obligation_committed`, `discoverability_acknowledged`, `burden_of_proof_acknowledged`, `anti_weaponization_acknowledged`) reflect the actual checkbox state of §12.1–§12.5
+     - The five §12 acknowledgment flags (`disclosure_completeness_assertion`, `update_obligation_committed`, `discoverability_acknowledged`, `burden_of_proof_acknowledged`, `anti_weaponization_acknowledged`) reflect the actual checkbox state of §12.1–§12.5 — values must be `true` or `false`, not strings
      - `affected_population_estimate` and `non_consenting_population_estimate` match §2.2 and §2.3
+     - `registered_date`, `snapshot_date`, and `last_reviewed_date` are all today's date for a newly produced record
+     - `filed_by` is `authority` for self-registrations and `third_party` for records produced by anyone other than the authority itself
      - If any pairing does not match, fix the YAML to match the body (the body is authoritative)
 
-8. **Output format.** Produce the completed Mechanism Record as a single markdown file the user can download. Use:
-   - **YAML frontmatter.** Copy the frontmatter schema used in `04-Registry/SCBP-REG-0001.md` and the records under `03-Examples/`. The same schema applies to every Mechanism Record regardless of who filed it; do not use a reduced set of fields. Fill values from public sources where available; use `UNKNOWN` for any field that cannot be determined from available sources. For records filed by someone other than the authority itself, set `status: TEST_EXAMPLE` and use `mechanism_id: SCBP-REG-TEST-{SHORT-ID}` (the registry's transitional convention; future versions of this bundle may revise this). For an authority's own self-registration, `status: ACTIVE` and `mechanism_id: SCBP-REG-{####}` apply.
-   - **The full form structure**, with every field filled per the rules above.
-   - **Banners.** The `TEST / NOT AN OFFICIAL REGISTRATION` label appears as a banner at the top and bottom of the file body, not as a YAML field.
+8. **Output format.** Produce the completed Mechanism Record as a single markdown file the user can download.
+
+   **YAML frontmatter.** Use the exact schema below. Do not invent fields, rename fields, or omit fields. Every field listed must appear, even if the value is `UNKNOWN`. The same schema applies to every Mechanism Record regardless of who filed it.
+
+   ```yaml
+   ---
+   mechanism_id: SCBP-REG-TEST-{SHORT-ID}        # for third-party records; SCBP-REG-{####}-v# for self-registrations
+   mechanism_name: "{Full name of the authority in quotes}"
+   status: TEST_EXAMPLE                          # TEST_EXAMPLE for third-party records; ACTIVE for self-registrations
+   filed_by: third_party                         # authority | third_party
+   domain: {one of: government, healthcare, education, finance, technology, housing, employment, voluntary_association, economic, information_governance_infrastructure, criminal_justice, other}
+   authority_classification: direct              # direct | indirect | both
+   registered_date: {YYYY-MM-DD — today for a new record; never changes after}
+   snapshot_date: {YYYY-MM-DD — as-of date for the content; same as registered_date for a new record; moves forward only when body content is materially updated}
+   last_reviewed_date: {YYYY-MM-DD — when the record was last validated; same as registered_date for a new record; moves forward on every review even if no changes}
+   record_version: v1                            # increments when content materially changes (v1, v2, v3...)
+   authorization_date: {YYYY-MM-DD or UNKNOWN}   # when the authority itself was authorized — about the authority, not the record
+   expiration_date: {YYYY-MM-DD or UNKNOWN}      # when the authority's authorization expires
+   renewal_interval_years: {1-10, integer}       # must match §10.4
+   funding_types:                                # list; use values like: state_government_mandatory, local_government_mandatory, federal_government_discretionary, private_for_profit, private_nonprofit, self_funded_fee_for_service, member_dues, voluntary_contributions, mixed
+     - {funding type}
+   funding_concentration_max_pct: {0-100, integer or UNKNOWN}
+   affected_party_categories:                    # list; use values like: general_public, residents_of_geographic_area, customers, members, employees, students, patients, regulated_industry, criminal_justice_involved, children, vulnerable_populations, non_consenting_third_parties
+     - {category}
+   affected_population_estimate: {integer or UNKNOWN}
+   non_consenting_population_estimate: {integer or UNKNOWN}
+   entity_size: {micro | small | medium | large | massive}
+   geographic_specificity: {single_address | single_municipality | multi_municipality | single_county | multi_county | single_state | multi_state | national | global}
+   geographic_reach: "{Free-text description of geographic reach in quotes}"
+   aggregate_threshold_count: {integer; must match §10.7's number-of-triggers value and fall within SCBP-09 §II bounds for the declared non_consenting_population_estimate}
+   aggregate_threshold_window_days: {integer; must match §10.7's window value}
+   response_window_days: {7-90, integer; must match §10.9}
+   harm_categories_declared:                     # list; use only these six values, plus chronic_asymmetry if §4 explicitly declares it
+     - bodily_harm                               # include only if §4.1 declares thresholds (not "Not applicable")
+     - agency_impairment                         # include only if §4.2 declares thresholds
+     - ecological_damage                         # include only if §4.3 declares thresholds
+     - generational_binding                      # include only if §4.4 declares thresholds
+     - communicative_suppression                 # include only if §4.5 declares thresholds
+     - informational_sovereignty                 # include only if §4.6 declares thresholds
+   algorithmic_decision_systems_used: {true | false}
+   dependency_count_type1: {integer; matches §6.1 count}
+   dependency_count_type2: {integer; matches §6.2 count}
+   dependency_count_type3: {integer; matches §6.3 count}
+   capture_risk_identified: {true | false; matches §6.4 declaration}
+   disclosure_completeness_assertion: {true | false; matches §12.1 checkbox}
+   update_obligation_committed: {true | false; matches §12.2 checkbox}
+   discoverability_acknowledged: {true | false; matches §12.3 checkbox}
+   burden_of_proof_acknowledged: {true | false; matches §12.4 checkbox}
+   anti_weaponization_acknowledged: {true | false; matches §12.5 checkbox}
+   ---
+   ```
+
+   Replace each `{...}` placeholder with an actual value or with `UNKNOWN`. Do not leave placeholders in the output. The comments (after `#`) explain each field and should not appear in the final YAML.
+
+   **The full form structure**, with every field filled per the rules above.
+
+   **Banners.** The `TEST / NOT AN OFFICIAL REGISTRATION` label appears as a banner at the top and bottom of the file body, not as a YAML field.
 
 If your environment allows file creation, save the output as a downloadable file. If not, present it inline and tell the user how to save it as a `.md` file.
 
@@ -130,6 +187,7 @@ If your environment allows file creation, save the output as a downloadable file
    - Compare the existing record's declarations against current findings, field by field. Note: changes in the authority (new contracts, new incidents, changed leadership, expanded scope, new oversight findings) that would alter declarations in §1–§9; changes in numerical declarations in §10 that would push values outside SCBP-09 bounds; UNKNOWN fields that are now answerable from new public information; declarations that now contradict current public information.
    - Re-run the §7 self-verification pass against the record as it currently stands, including the YAML-vs-body cross-checks. Discrepancies introduced by the original drafting (not by changes in the authority) are also findings.
    - Produce a structured comparison: what is unchanged, what should be updated, what is newly UNKNOWN, what is newly answerable. Do not silently rewrite the record. The user decides which findings warrant an update.
+   - **Date field handling on re-evaluation.** `registered_date` never changes — it is the immutable date the record first entered the registry. `last_reviewed_date` always moves to today on any review, even one that finds no changes (this distinguishes "checked and stable" from "never re-checked"). `snapshot_date` moves to today only if the body content is materially updated. `record_version` increments only if the body content is materially updated (v1 → v2). A review that finds no changes updates only `last_reviewed_date`.
    - If a substantive update is warranted, the update is recorded inside the file per the Registry Charter's append-only convention — a dated note in the record describing what changed and why, with prior versions preserved in git history.
 
 ## A note about Violation Reports
