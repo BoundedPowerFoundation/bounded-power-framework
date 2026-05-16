@@ -45,7 +45,7 @@ If you can't decide, pick one of these — they're well-documented in public sou
 
 ## Step 2 — Open the AI Registration Bundle
 
-Open the [AI Registration Bundle](AI-Registration-Bundle.md) in this repository.
+Open the [AI Registration Bundle](06-AI-Registration-Bundle.md) in this repository.
 
 The bundle is a single file containing everything an AI needs to produce a Mechanism Record: the Registration Form, the Structural Constitution (SCBP-04), the Registry Acceptance Standards (SCBP-09), and the process methodology.
 
