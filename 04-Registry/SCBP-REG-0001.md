@@ -36,10 +36,6 @@ burden_of_proof_acknowledged: true
 anti_weaponization_acknowledged: true
 ---
 
-*Part of a thought experiment. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md). Nothing described here is operating.*
-
----
-
 # Mechanism Record — SCBP-REG-0001
 
 **Bounded Power Foundation — Public Registry and Framework**
@@ -417,7 +413,3 @@ The Foundation has no trade-secret restrictions. All operations, methodologies, 
 *SCBP-REG-0001 — Bounded Power Foundation*
 *This mechanism registers itself first, under the same rules it applies to all others.*
 *All authority governed by the Structural Constitution (SCBP-04)*
-
----
-
-> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*
