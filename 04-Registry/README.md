@@ -10,7 +10,7 @@ This directory is the public archive of records filed under the Bounded Power Fr
 
 All three kinds of records use forms from [02-Forms/](../02-Forms/) and are governed by the same SCBP-04 constitutional rules and SCBP-09 numerical bounds.
 
-For the Registration Form, see [02-Forms/01-Registration.md](../02-Forms/01-Registration.md). For the Violation Report Form, see [02-Forms/02-Stop-Trigger.md](../02-Forms/02-Stop-Trigger.md). For a guided way to produce a citizen diagnostic, see [00-Reading/AI-Registration-Bundle.md](../00-Reading/AI-Registration-Bundle.md).
+For the Registration Form, see [02-Forms/01-Registration.md](../02-Forms/01-Registration.md). For the Violation Report Form, see [02-Forms/02-Stop-Trigger.md](../02-Forms/02-Stop-Trigger.md). For a guided way to produce a citizen diagnostic, see [00-Reading/06-AI-Registration-Bundle.md](../00-Reading/06-AI-Registration-Bundle.md).
 
 ---
 
