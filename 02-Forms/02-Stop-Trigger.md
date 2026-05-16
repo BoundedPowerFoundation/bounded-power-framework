@@ -1,5 +1,7 @@
 # Stop Trigger / Violation Report Form
 
+> *Revision 2026-05-16: Aggregate-trigger section corrected to reference each authority's declared SCBP-09 §II threshold rather than a hardcoded "10 in 90 days." The previous hardcoded value contradicted SCBP-09's proportional scale (3–1,000 reports depending on non-consenting population size); aggregation now correctly references the value declared in the authority's Mechanism Record §10.7. The mechanism_id template was simplified to remove the old `SCBP-REG-TEST-{IDENTIFIER}` pattern (collapsed into the single sequential `SCBP-REG-####` convention), and "citizen diagnostic" language was replaced with neutral filer-agnostic language reflecting the single-class record model.*
+
 This is the form for filing a Stop Trigger — a structured public report that a specific authority did, failed to do, or threatened to do something that violates SCBP-04 or exceeds the authority's own declared bounds. The artifact produced by filing is called a Violation Report.
 
 ---
@@ -118,7 +120,11 @@ Additional context, related incidents, or notes for future reviewers.
 
 ## Aggregate triggers
 
-If 10 or more independent Violation Reports are filed against the same authority within any 90-day period, an automatic aggregation review is initiated, regardless of the individual report classifications. The aggregation review is itself a public record. See SCBP-08 for the full Civic Trigger Protocol.
+If independent Violation Reports filed against the same authority within any 90-day period reach that authority's declared aggregate threshold, an automatic aggregation review is initiated regardless of the individual report classifications. The threshold is the value declared in the authority's Mechanism Record §10.7, which falls within the proportional bounds defined in SCBP-09 §II — ranging from 3 in 90 days for authorities with very small non-consenting affected populations up to 1,000 in 90 days for very large populations.
+
+If the authority has no Mechanism Record in the registry, no declared threshold exists. In that case, stakeholders from any affected-party category may convene a review at any count of reports — the absence of a declared threshold is itself a structural finding under R69 (burden of proof on the authority).
+
+The aggregation review is itself a public record. See SCBP-08 for the full Civic Trigger Protocol.
 
 ---
 
