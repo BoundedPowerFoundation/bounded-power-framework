@@ -1,10 +1,14 @@
 ---
-mechanism_id: SCBP-REG-0001-v3
+mechanism_id: SCBP-REG-0001-v4
 mechanism_name: "Bounded Power Foundation — Public Registry and Framework"
 status: ACTIVE
+filed_by: authority
 domain: information_governance_infrastructure
 authority_classification: indirect
 registered_date: 2026-05-05
+snapshot_date: 2026-05-05
+last_reviewed_date: 2026-05-16
+record_version: v4
 authorization_date: 2026-05-05
 expiration_date: 2028-05-05
 renewal_interval_years: 2
@@ -42,7 +46,7 @@ anti_weaponization_acknowledged: true
 
 | Field | Value |
 |---|---|
-| Mechanism ID | SCBP-REG-0001-v3 |
+| Mechanism ID | SCBP-REG-0001-v4 |
 | Status | ACTIVE |
 | Registered | 2026-05-05 |
 | Authorization expires | 2028-05-05 |
@@ -51,6 +55,8 @@ anti_weaponization_acknowledged: true
 > *v2 update notes: This record was originally registered under an earlier form structure. It has been updated to use form v4 (the version produced from the 2026 stress-testing process). The Foundation registers itself first, under the same rules it applies to all others.*
 >
 > *v3 update notes: §2.2 revised to distinguish between the acted-upon population (zero) and the indirect-influence reading population (positive but indeterminate), reconciling §2.2 with §11.4. §10.8 supplemented with a self-applies-to-itself note acknowledging that the form's §10.7 leak (identified in the bad-faith counter-example) applies symmetrically to the Foundation's own threshold selection. No substantive operational change; both updates make existing structural conditions visible rather than altering them.*
+>
+> *v4 update notes: YAML frontmatter brought into compliance with the AI Registration Bundle's required schema. Four fields added: `filed_by: authority` (self-registration), `record_version: v4` (parallel to the version in `mechanism_id`), `snapshot_date: 2026-05-05` (date the body content was last materially updated — unchanged since v3), and `last_reviewed_date: 2026-05-16` (date of this YAML rebuild review). No substantive change to scope, thresholds, stop paths, dependencies, or any body content. This update brings the Foundation's own record into compliance with the schema the Foundation asks every other registrant to follow.*
 
 ---
 
@@ -399,6 +405,7 @@ The Foundation has no trade-secret restrictions. All operations, methodologies, 
 | 2026-05-05 | Initial registration | First entry in registry |
 | 2026-05-06 | Re-filed with form v4 | Updated to use stress-tested form structure; same authorization period |
 | 2026-05-09 | Updated to v3 | §2.2 reconciliation with §11.4; self-applies-to-itself note added at §10.8 in response to external assessment surfacing the parallel to the bad-faith counter-example. No change to scope, thresholds, stop paths, or authorization period. |
+| 2026-05-16 | Updated to v4 | YAML frontmatter brought into compliance with the AI Registration Bundle's required schema. Added `filed_by`, `record_version`, `snapshot_date`, `last_reviewed_date`. No change to body content. The Foundation's own record now follows the schema the Foundation asks every other registrant to follow. |
 
 ## Stop Event Log
 
