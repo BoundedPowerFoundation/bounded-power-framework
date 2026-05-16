@@ -42,13 +42,13 @@ The simplest way to produce a Mechanism Record is the AI Registration Bundle: a 
 
 **Three steps:**
 
-1. Open the [AI Registration Bundle](AI-Registration-Bundle.md). Copy its entire contents.
+1. Open the [AI Registration Bundle](06-AI-Registration-Bundle.md). Copy its entire contents.
 2. Open an AI chat tool. Paste the bundle into a new conversation.
 3. Tell the AI which authority you want analyzed (e.g., *"Cleveland, OH Police Department"*). Send.
 
 The AI produces a downloadable Mechanism Record clearly labeled `TEST / NOT AN OFFICIAL REGISTRATION`.
 
-For a fuller walk-through of the citizen inquiry process, see [How to run a citizen inquiry](05-Human-Testing-Guide.md).
+For a fuller walk-through of the citizen inquiry process, see [How to run a citizen inquiry](05-Citizen-Inquiry-Guide.md).
 
 ---
 
@@ -123,8 +123,8 @@ If you want to understand the framework more deeply before using it:
 
 If you want to skip the conceptual reading and start filing:
 
-- [AI Registration Bundle](AI-Registration-Bundle.md) — produce a Mechanism Record now
-- [Human Testing Guide](05-Human-Testing-Guide.md) — fuller walk-through of citizen inquiry
+- [AI Registration Bundle](06-AI-Registration-Bundle.md) — produce a Mechanism Record now
+- [Citizen Inquiry Guide](05-Citizen-Inquiry-Guide.md) — fuller walk-through
 
 ---
 
