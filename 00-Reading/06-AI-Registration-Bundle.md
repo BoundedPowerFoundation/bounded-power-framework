@@ -405,7 +405,7 @@ This form supports two kinds of users.
 
 The same form, the same rules, and the same SCBP-09 numerical bounds apply to both. The form's diagnostic power does not depend on the authority's cooperation.
 
-For a guided way to complete a citizen diagnostic, see [00-Reading/AI-Registration-Bundle.md](../00-Reading/AI-Registration-Bundle.md).
+For a guided way to complete a citizen diagnostic, see [00-Reading/06-AI-Registration-Bundle.md](../00-Reading/06-AI-Registration-Bundle.md).
 
 ---
 
