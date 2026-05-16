@@ -43,7 +43,7 @@ This bundle is a snapshot of the following files from the Bounded Power Framewor
 - Registration Form — canonical path: `02-Forms/01-Registration.md`
 - SCBP-04 Structural Constitution v1.3 — canonical path: `01-Framework/SCBP-04-Structural-Constitution-v1.3.md`
 - SCBP-09 Registry Acceptance Standards v1.0 — canonical path: `01-Framework/SCBP-09-Registry-Acceptance-Standards-v1.0.md`
-- Registration Process Methodology — canonical path: `05-Reference/REGISTRATION-PROCESS-METHODOLOGY.md`
+- Registration Process Methodology — canonical path: `05-Reference/01-Registration-Process-Methodology.md`
 
 The bundle is organized into five parts:
 
