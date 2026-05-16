@@ -28,13 +28,13 @@ The same form, the same rules, and the same standards apply to both.
 
 ---
 
-## Quick start — run a citizen inquiry
+## Quick start — run an inquiry
 
 The easiest way to use the framework is the AI Registration Bundle: a single file you paste into any AI chat tool (Claude, ChatGPT, Gemini, or similar).
 
 **[Open the bundle](00-Reading/AI-Registration-Bundle.md)**, copy its entire contents, paste into an AI chat, and tell the AI which authority you want analyzed. The AI produces a completed structural diagnostic that you can download.
 
-For a fuller walk-through, see [How to run a citizen inquiry](00-Reading/05-Human-Testing-Guide.md).
+For a fuller walk-through, see [How to run a citizen inquiry](00-Reading/05-Citizen-Inquiry-Guide.md).
 
 ---
 
@@ -62,7 +62,7 @@ For anyone wanting to understand the framework before using it:
 3. [Reasoning: Governance](00-Reading/02-Reasoning-GOV.md) — how this applies to institutional design
 4. [Reasoning: Land Use](00-Reading/03-Reasoning-LT.md) — application to land use and civic infrastructure
 5. [FAQ](00-Reading/04-FAQ.md)
-6. [How to run a citizen inquiry](00-Reading/05-Human-Testing-Guide.md)
+6. [How to run a citizen inquiry](00-Reading/05-Citizen-Inquiry-Guide.md)
 
 ---
 
@@ -70,9 +70,9 @@ For anyone wanting to understand the framework before using it:
 
 - [00-Reading](00-Reading) — conceptual orientation, reasoning, the AI Registration Bundle, and the citizen inquiry guide
 - [01-Framework](01-Framework) — the nine core framework documents (SCBP-01 through SCBP-09), including the Structural Constitution (SCBP-04) and Registry Acceptance Standards (SCBP-09)
-- [02-Forms](02-Forms) — the Registration Form and the Stop Trigger Form
+- [02-Forms](02-Forms) — the Registration Form and the Stop Trigger / Violation Report Form
 - [03-Examples](03-Examples) — 25 worked diagnostics of authority types (police departments, hospitals, platforms, HOAs, credit bureaus, and more)
-- [04-Registry](04-Registry) — the public archive of accepted registrations and citizen diagnostics
+- [04-Registry](04-Registry) — the public archive of Mechanism Records and Violation Reports
 - [05-Reference](05-Reference) — supporting documents: registry charter, data schema, registration process methodology, findability guidance
 - [99-Archive](99-Archive) — historical versions of forms and operating documents
 
