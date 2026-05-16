@@ -95,11 +95,11 @@ For anyone wanting to understand the framework before using it:
 
 ## Current status
 
-The framework documents are real and usable. Anyone can produce a structural diagnostic of an authority today using the AI Registration Bundle.
+The framework is in active development. The framework documents — the Structural Constitution, the Registry Charter, the Registration Form, SCBP-REG-0001, and the example records — describe the intended steady state of a public registry and framework custodian. They are usable today as design documents and as working tools: anyone can produce a structural diagnostic of an authority right now using the AI Registration Bundle.
 
-The registry — the place where completed registrations and diagnostics are publicly archived — currently lives in this GitHub repository. Submissions are made by opening a pull request adding a new Mechanism Record to [04-Registry/](04-Registry/). There is no submission fee, no review queue, and no editorial gatekeeping.
+The registry — the place where completed registrations and diagnostics are publicly archived — currently lives in this collection. Submissions are accepted by GitHub pull request, by GitHub issue, or by email to BoundedPowerFoundation@proton.me. There is no submission fee, no review queue, and no editorial gatekeeping; submissions are reviewed informally and as time permits.
 
-The Bounded Power Foundation is the proposed name for a future custodial body that would maintain the registry as independent civic infrastructure. It does not currently exist as an incorporated organization. Until it does, the repository's maintainers serve that function informally.
+The Bounded Power Foundation is the proposed name for a future custodial body that would maintain the registry as independent civic infrastructure. It does not currently exist as an incorporated organization. Operational capacity for the registry — review, response, intake processing — is being built incrementally. The framework's institutional language throughout these documents describes the intended steady state rather than current operational capacity.
 
 ---
 
