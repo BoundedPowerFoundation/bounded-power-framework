@@ -18,13 +18,13 @@ The output of using the framework is a completed Registration Form — a structu
 
 ## Who uses it
 
-The framework supports two kinds of users:
+The framework supports one kind of record with two kinds of filers:
 
-**Citizens, journalists, researchers, and civic actors** producing structural diagnostics of authorities that affect them or that they're investigating. Diagnostic uses are labeled `TEST / NOT AN OFFICIAL REGISTRATION` in their output.
+**A third party — citizen, journalist, researcher, or civic actor — analyzing an authority from public sources.** Anyone affected by an authority can produce a Mechanism Record analyzing it, using publicly available information. Third-party records carry the `PUBLIC SOURCES ONLY` banner at the top and bottom — signaling that the record has not been confirmed by the authority it describes.
 
-**Authorities registering themselves** under the framework as a public act of structural disclosure. Authority self-registrations enter the registry as official Mechanism Records.
+**The authority being analyzed.** An authority can file a Mechanism Record about itself as a public act of structural disclosure, or file corrections to a third-party-produced record that already exists about it. When the authority files, the record's status flips to `ACTIVE` and the `PUBLIC SOURCES ONLY` banner is removed.
 
-The same form, the same rules, and the same standards apply to both.
+The same form, the same rules, and the same SCBP-09 numerical bounds apply to both.
 
 ---
 
