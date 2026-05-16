@@ -47,10 +47,6 @@ burden_of_proof_acknowledged: true
 anti_weaponization_acknowledged: true
 ---
 
-*Part of a thought experiment. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md). Nothing described here is operating.*
-
----
-
 # Mechanism Record — REG-EXAMPLE-PUBLIC-UNIVERSITY-TRUSTEES
 
 **PUBLIC-UNIVERSITY-TRUSTEES-EXAMPLE**
@@ -510,7 +506,3 @@ The Penn State / Spotlight PA litigation pattern is informative: even with thoro
 
 *REG-EXAMPLE-PUBLIC-UNIVERSITY-TRUSTEES — illustrative high-existing-disclosure registration*
 *Not a real registration. Not part of the Roll. No actual board has filed anything.*
-
----
-
-> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. This example is not a registration; it is an illustrative worked-out application of the registration form by the framework's author to a type of authority the author does not operate. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*

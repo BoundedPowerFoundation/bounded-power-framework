@@ -42,10 +42,6 @@ burden_of_proof_acknowledged: true
 anti_weaponization_acknowledged: true
 ---
 
-*Part of a thought experiment. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md). Nothing described here is operating.*
-
----
-
 # Mechanism Record — REG-EXAMPLE-FOMC-MONETARY-POLICY
 
 **FOMC-MONETARY-POLICY-EXAMPLE**
@@ -524,7 +520,3 @@ This finding cuts both ways. A reader who concludes that R28 should apply to all
 
 *REG-EXAMPLE-FOMC-MONETARY-POLICY — illustrative high-existing-disclosure registration*
 *Not a real registration. Not part of the Roll. The Federal Reserve has not filed anything and would not.*
-
----
-
-> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. This example is not a registration; it is an illustrative worked-out application of the registration form by the framework's author to a type of authority the author does not operate. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*
