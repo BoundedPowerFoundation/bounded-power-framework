@@ -1,7 +1,3 @@
-*Part of a thought experiment. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md). Nothing described here is operating.*
-
----
-
 # BOUNDED POWER — OPERATIONS MANUAL
 
 ## A Practical Guide to Authorizing and Maintaining Authority Within SCBP Rules
@@ -582,6 +578,3 @@ Where this manual references specific stages or steps, the Structural Constituti
 
 *SCBP-03 — Operations Manual — Operational Guidance Layer*
 
----
-
-> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*
