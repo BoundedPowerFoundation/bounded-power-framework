@@ -25,8 +25,10 @@ authority, just follow these three steps:
      Then send.
 
 The AI will produce a completed Mechanism Record and offer it to you
-as a downloadable file. The file will be clearly labeled as a TEST,
-not a real registration.
+as a downloadable file. If you produced the record from public sources
+rather than as the authority being analyzed, the file will be clearly
+labeled `PUBLIC SOURCES ONLY` — meaning it has not been confirmed by
+the authority it describes.
 
 If the AI seems confused, tell it: "Use the attached bundle and produce
 a Mechanism Record for [your authority name]. Begin with Part 1."
@@ -61,7 +63,7 @@ The bundle is organized into five parts:
 
 You are being asked to produce a completed Bounded Power Framework Mechanism Record using publicly available information. The user will provide the name of the power-bearing authority in their message (either appended to the pasted bundle or in a follow-up message). If the user has not specified an authority, ask them once: "Which power-bearing authority would you like analyzed?"
 
-This is a **citizen-produced structural diagnostic**, not a real registration. The output must be labeled `TEST / NOT AN OFFICIAL REGISTRATION` throughout.
+By default, the user is a third party (citizen, journalist, researcher, civic actor) producing a structural diagnostic from public sources, not the authority itself. Records produced this way set `filed_by: third_party` in the YAML and carry the `PUBLIC SOURCES ONLY` banner at the top and bottom of the body. If the user instead indicates they are filing on behalf of the authority being described, set `filed_by: authority`, status `ACTIVE`, and omit the banner. Either way, the same form, the same rules, and the same structural floor apply.
 
 ## What you have
 
@@ -106,8 +108,9 @@ Parts 2–5 of this bundle contain everything you need:
    - §10.4, §10.7, §10.9 values within SCBP-09 bounds
    - At least 3 stop paths declared in §5
    - §13 filled in (this is the most commonly skipped section)
-   - The `TEST / NOT AN OFFICIAL REGISTRATION` banner appears at the top and bottom of the output
+   - For records where `filed_by` is `third_party`: the `PUBLIC SOURCES ONLY` banner appears at the top and bottom of the output. For records where `filed_by` is `authority`: no banner appears.
    - **YAML-vs-body consistency.** The YAML frontmatter must match what the body actually declares. Verify each pairing:
+     - `authority_classification` matches §1.3 (`direct`, `indirect`, or `both` — must match the box checked in §1.3, and if §1.3 shows the substantive answer is "both" with both individual boxes checked, the YAML value is `both`)
      - `renewal_interval_years` matches §10.4
      - `aggregate_threshold_count` matches §10.7's number-of-triggers value
      - `aggregate_threshold_window_days` matches §10.7's window value
@@ -119,24 +122,33 @@ Parts 2–5 of this bundle contain everything you need:
      - `affected_population_estimate` and `non_consenting_population_estimate` match §2.2 and §2.3
      - `registered_date`, `snapshot_date`, and `last_reviewed_date` are all today's date for a newly produced record
      - `filed_by` is `authority` for self-registrations and `third_party` for records produced by anyone other than the authority itself
+     - `status` is `PUBLIC_SOURCES` when `filed_by` is `third_party`, and `ACTIVE` when `filed_by` is `authority`
      - The `mechanism_id` follows the naming rule in step 7.5
      - If any pairing does not match, fix the YAML to match the body (the body is authoritative)
 
-7.5. **Filename and mechanism_id.** The filename matches the mechanism_id with `.md` appended. The mechanism_id is constructed deterministically so that any AI working from this bundle produces the same identifier for the same authority. Apply these rules in order:
+7.5. **Mechanism_id, filename, and the authority-after-citizen rule.** The mechanism_id and filename follow a deterministic convention so the registry stays internally consistent at scale and so any AI working from this bundle produces the same identifier for the same authority.
 
-   - **For third-party records:** `SCBP-REG-TEST-{IDENTIFIER}` where `{IDENTIFIER}` is constructed as follows:
-     - If the authority has a widely-used acronym, use it in uppercase (e.g., `CCCC`, `NYPD`, `FOMC`, `LAUSD`).
-     - If the acronym could refer to authorities in multiple jurisdictions, append a two-letter region code separated by a hyphen. Use the U.S. two-letter state code for U.S. authorities (e.g., `CCCC-OH` for the Cuyahoga County Corrections Center; `PD-NYC` is not preferred — use `NYPD` because the acronym is locality-specific). For non-U.S. authorities use the ISO 3166-1 alpha-2 country code (e.g., `-UK`, `-DE`).
-     - If no widely-used acronym exists, use the authority's short name in UPPER-KEBAB-CASE, abbreviated to a reasonable length (e.g., `BAYVIEW-HOA`, `RIVERBEND-SCHOOLS`, `ACME-HEALTH`).
-     - National or federal authorities take no region suffix (e.g., `SCBP-REG-TEST-FOMC`, not `SCBP-REG-TEST-FOMC-US`).
-     - Examples of full mechanism_ids: `SCBP-REG-TEST-CCCC-OH`, `SCBP-REG-TEST-NYPD`, `SCBP-REG-TEST-FOMC`, `SCBP-REG-TEST-BAYVIEW-HOA`.
+   **Mechanism_id.** All Mechanism Records — both self-registrations by authorities and records produced by third parties — use sequential numbering: `SCBP-REG-####`, where `####` is the next zero-padded sequential number after the highest existing `SCBP-REG-####` in the registry. The number identifies the record permanently; it never changes after assignment. The mechanism_id does not encode who filed the record, what the authority is, or where it is located — that information lives in the YAML fields (`filed_by`, `mechanism_name`, `authority_acronym`, `country`, `region`, `subregion`).
 
-   - **For self-registrations (authority filing on its own behalf):** `SCBP-REG-{####}-v#` using the next sequential number after the highest existing `SCBP-REG-####` in the registry, and `v1` for a new record.
+   **Filename.** The filename combines the mechanism_id with a short descriptive suffix for human readability: `SCBP-REG-####-{DESCRIPTIVE-SUFFIX}.md`. The descriptive suffix is constructed as follows:
 
-   **Idempotency check — do not silently overwrite.** Before creating the file, check whether a record with that mechanism_id already exists in the registry:
+   - If the authority has a widely-used acronym, use it in uppercase (e.g., `CCCC`, `NYPD`, `FOMC`, `LAUSD`).
+   - If the acronym could refer to authorities in multiple jurisdictions, append a two-letter region code separated by a hyphen. Use the U.S. two-letter state code for U.S. authorities (e.g., `CCCC-OH` for the Cuyahoga County Corrections Center). For non-U.S. authorities use the ISO 3166-1 alpha-2 country code (e.g., `-UK`, `-DE`).
+   - If no widely-used acronym exists, use the authority's short name in UPPER-KEBAB-CASE, abbreviated to a reasonable length (e.g., `BAYVIEW-HOA`, `RIVERBEND-SCHOOLS`).
+   - National or federal authorities take no region suffix.
+   - Examples of full filenames: `SCBP-REG-0002-CCCC-OH.md`, `SCBP-REG-0003-NYPD.md`, `SCBP-REG-0004-FOMC.md`, `SCBP-REG-0005-BAYVIEW-HOA.md`.
 
-   - **If you have file-system access to the repository** (you can list files in `04-Registry/`): check whether `{mechanism_id}.md` already exists there. If it does, this is a re-evaluation, not a new record — follow step 9 (re-evaluation) instead of step 8 (new output). Do not overwrite the existing file.
-   - **If you cannot inspect the registry folder** (chat-only environment with no file-system access): before producing the file, tell the user: "I'm about to create `{mechanism_id}.md`. If a file with this name already exists in your registry, you may want to use the re-evaluation protocol in step 9 of the bundle instead. Should I proceed with a new record, or do you want to provide the existing file for re-evaluation?" Wait for the user's answer before producing the file.
+   **Sequence-number determination.** Before assigning a mechanism_id, determine the next sequential number:
+
+   - **If you have file-system access to the repository** (you can list files in `04-Registry/`): list the existing records, find the highest existing `SCBP-REG-####` number, and use the next integer. If `SCBP-REG-0001` and `SCBP-REG-0002` exist, the next record is `SCBP-REG-0003`.
+   - **If you cannot inspect the registry folder** (chat-only environment with no file-system access): tell the user: "I need to know the next sequential record number to assign a mechanism_id. Could you check the `04-Registry/` folder and tell me the highest existing `SCBP-REG-####` number? I'll use the next integer." Wait for the user's answer before producing the file.
+
+   **Idempotency — do not silently overwrite.** Before creating the file, check whether a record about this authority already exists in the registry. An existing record is identified by matching `mechanism_name`, `authority_acronym`, and location fields (`country`, `region`, `subregion`) — not by sequential number, because a new sequential number could be a duplicate record about the same authority.
+
+   - **If you have file-system access:** scan existing records' YAML frontmatter for a match on authority identity. If a match exists, this is a re-evaluation or an authority-after-citizen update, not a new record — follow step 9 (re-evaluation) instead of step 8 (new output). Do not overwrite the existing file.
+   - **If you cannot inspect the registry folder:** before producing the file, tell the user: "I'm about to create a new record for `{authority name}` at `{filename}`. If a record about this authority already exists in your registry, you may want to use the re-evaluation protocol in step 9 of the bundle instead. Should I proceed with a new record, or do you want to provide the existing file for re-evaluation?" Wait for the user's answer before producing the file.
+
+   **Authority-after-citizen rule.** When an authority files a record about itself and a third-party-produced record about that same authority already exists in the registry, the authority's filing updates the existing record in place rather than creating a new file. The mechanism_id and filename stay the same. The YAML changes: `filed_by` flips from `third_party` to `authority`, `status` flips from `PUBLIC_SOURCES` to `ACTIVE`, `record_version` increments (v1 → v2), `last_reviewed_date` updates to today, and `snapshot_date` updates if body content materially changes. The `PUBLIC SOURCES ONLY` banner is removed from the top and bottom of the body. The Renewal Log inside the body records the transition with a one-line entry: "v# — {date}: authority filed corrections to prior third-party-produced version. Changes: {summary}." Git history preserves the third-party-produced version.
 
 8. **Output format.** Produce the completed Mechanism Record as a single markdown file the user can download.
 
@@ -144,12 +156,20 @@ Parts 2–5 of this bundle contain everything you need:
 
    ```yaml
    ---
-   mechanism_id: SCBP-REG-TEST-{SHORT-ID}        # for third-party records; SCBP-REG-{####}-v# for self-registrations
+   mechanism_id: SCBP-REG-{####}                 # sequential, per step 7.5; same convention for all records
    mechanism_name: "{Full name of the authority in quotes}"
-   status: TEST_EXAMPLE                          # TEST_EXAMPLE for third-party records; ACTIVE for self-registrations
+   authority_acronym: "{The short name people actually use, or UNKNOWN if no widely-used acronym exists}"
+   status: PUBLIC_SOURCES                        # PUBLIC_SOURCES when filed_by is third_party; ACTIVE when filed_by is authority
    filed_by: third_party                         # authority | third_party
    domain: {one of: government, healthcare, education, finance, technology, housing, employment, voluntary_association, economic, information_governance_infrastructure, criminal_justice, other}
    authority_classification: direct              # direct | indirect | both
+   country: {ISO 3166-1 alpha-2 country code, e.g. US, UK, DE}
+   region: {state/province code; for US authorities use the two-letter state code, e.g. OH, CA; for non-US, the equivalent first-level administrative division code or UNKNOWN}
+   subregion: {county or local administrative region as free text, or UNKNOWN, or not_applicable for federal/multi-county authorities}
+   primary_postal_code: {ZIP or postal code of headquarters/main address, or UNKNOWN}
+   primary_address: "{Free-text street address of the authority's headquarters or main operational location, or UNKNOWN}"
+   primary_url: "{Official website URL, or UNKNOWN}"
+   tax_id: "{EIN or equivalent tax/registration identifier, or UNKNOWN, or not_applicable for government agencies and other entities that have none}"
    registered_date: {YYYY-MM-DD — today for a new record; never changes after}
    snapshot_date: {YYYY-MM-DD — as-of date for the content; same as registered_date for a new record; moves forward only when body content is materially updated}
    last_reviewed_date: {YYYY-MM-DD — when the record was last validated; same as registered_date for a new record; moves forward on every review even if no changes}
@@ -194,7 +214,7 @@ Parts 2–5 of this bundle contain everything you need:
 
    **The full form structure**, with every field filled per the rules above.
 
-   **Banners.** The `TEST / NOT AN OFFICIAL REGISTRATION` label appears as a banner at the top and bottom of the file body, not as a YAML field.
+   **Banner.** For records where `filed_by` is `third_party` (records produced from public sources by anyone other than the authority itself), the label `PUBLIC SOURCES ONLY` appears as a banner at the top and bottom of the file body — not as a YAML field. The banner signals that the record has not been confirmed by the authority it describes. For records where `filed_by` is `authority` (the authority filing its own self-registration), no banner appears.
 
 If your environment allows file creation, save the output as a downloadable file. If not, present it inline and tell the user how to save it as a `.md` file.
 
