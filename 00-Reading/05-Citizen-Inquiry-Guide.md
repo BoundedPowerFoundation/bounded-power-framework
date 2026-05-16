@@ -1,6 +1,6 @@
 # How to run a citizen inquiry
 
-This guide walks you through producing a structural diagnostic of an authority using the AI Registration Bundle. The result is a Mechanism Record clearly labeled `TEST / NOT AN OFFICIAL REGISTRATION` — a structured public document analyzing an authority's scope, harms, dependencies, stop paths, and oversight gaps.
+This guide walks you through producing a structural diagnostic of an authority using the AI Registration Bundle. The result is a Mechanism Record — a structured public document analyzing an authority's scope, harms, dependencies, stop paths, and oversight gaps. Because you're producing it from public sources rather than as the authority itself, the record will carry the `PUBLIC SOURCES ONLY` banner at the top and bottom, signaling that it has not been confirmed by the authority it describes.
 
 You can read this guide in five minutes. The inquiry itself takes ten to twenty minutes.
 
@@ -108,7 +108,7 @@ Throughout the document, look for:
 - `UNKNOWN` markers — areas where public information is incomplete. These are honest disclosures.
 - `ASSUMPTION:` markers — areas where the AI estimated based on context. Each should have a brief justification.
 - `ANNOTATION:` markers — areas where the AI made a judgment call you should be aware of.
-- The `TEST / NOT AN OFFICIAL REGISTRATION` label at the top and bottom.
+- The `PUBLIC SOURCES ONLY` banner at the top and bottom.
 
 If anything looks wrong, ask the AI to clarify or correct it. The AI has the bundle's full context and can answer follow-up questions about specific sections.
 
@@ -118,17 +118,22 @@ If anything looks wrong, ask the AI to clarify or correct it. The AI has the bun
 
 The AI offers the completed Mechanism Record as a downloadable file. Save it to your computer.
 
-The filename should follow the pattern:
+The filename follows the pattern:
 
 ```
-SCBP-REG-TEST-{IDENTIFIER}.md
+SCBP-REG-####-{DESCRIPTIVE-SUFFIX}.md
 ```
 
-Where `{IDENTIFIER}` is a short string identifying the authority (e.g., `CCCC-OH` for the Cuyahoga County Corrections Center, `IMPD` for Indianapolis Metropolitan Police Department).
+Where `####` is the next sequential number after the highest existing `SCBP-REG-####` record in the registry, and `{DESCRIPTIVE-SUFFIX}` is a short human-readable identifier for the authority (e.g., `SCBP-REG-0002-CCCC-OH.md` for the Cuyahoga County Corrections Center). The AI handles the numbering and naming for you per the bundle's rules.
 
-You can keep the file privately for your own reference, share it with others, or file it in the public registry by opening a pull request on this repository adding it to [04-Registry/](../04-Registry/).
+You have four options for what to do with the file:
 
-If you choose to file it publicly, the record becomes a permanent part of the registry. Once merged, it cannot be deleted, though it can be updated.
+- **Keep it privately.** Use it for your own reference. You don't have to submit it. Many analyses are useful without being filed publicly.
+- **Submit via GitHub pull request.** If you have a GitHub account and know how to open a PR: fork the [repository](../), add the file to [04-Registry/](../04-Registry/), and open a pull request.
+- **Submit via GitHub issue.** If you have a GitHub account but don't want to deal with PRs: open a new issue, paste the file content or attach the file, and title it "Submission: [authority name]." The maintainer will move it into the registry.
+- **Submit by email.** Email the file as an attachment to BoundedPowerFoundation@proton.me with subject line "Registration submission: [authority name]." The maintainer will add it to the registry.
+
+If you choose to file it publicly, the record becomes a permanent part of the registry. Once merged, it cannot be deleted, though it can be updated. If the authority being analyzed later files corrections, the existing record is updated in place rather than duplicated — the record's metadata flips to indicate authority-filed status, and the `PUBLIC SOURCES ONLY` banner is removed.
 
 ---
 

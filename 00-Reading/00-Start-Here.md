@@ -46,7 +46,7 @@ The simplest way to produce a Mechanism Record is the AI Registration Bundle: a 
 2. Open an AI chat tool. Paste the bundle into a new conversation.
 3. Tell the AI which authority you want analyzed (e.g., *"Cleveland, OH Police Department"*). Send.
 
-The AI produces a downloadable Mechanism Record clearly labeled `TEST / NOT AN OFFICIAL REGISTRATION`.
+The AI produces a downloadable Mechanism Record. If you produced it from public sources rather than as the authority being analyzed, the record carries the `PUBLIC SOURCES ONLY` banner at the top and bottom — signaling that it has not been confirmed by the authority it describes.
 
 For a fuller walk-through of the citizen inquiry process, see [How to run a citizen inquiry](05-Citizen-Inquiry-Guide.md).
 
@@ -54,15 +54,13 @@ For a fuller walk-through of the citizen inquiry process, see [How to run a citi
 
 ## Two kinds of records you can file
 
-The Bounded Power Framework supports two distinct citizen actions, plus one optional authority action.
+The Bounded Power Framework supports two kinds of records.
 
-**Citizen action — Mechanism Record.** A structural analysis of an authority. The framework's main use. Produces the kind of record described above. Either AI-assisted or written by hand.
+**Mechanism Record.** A structural analysis of an authority — the framework's main use. Either AI-assisted or written by hand. Records can be filed by a third party (citizen, journalist, researcher, civic actor) analyzing the authority from public sources, or by the authority itself as a public act of structural disclosure. The same form, the same rules, and the same standards apply to both. Third-party records carry the `PUBLIC SOURCES ONLY` banner; authority-filed records do not. If an authority later files corrections to a third-party-produced record, the existing record is updated in place rather than duplicated.
 
-**Citizen action — Violation Report.** A focused report that an authority did, failed to do, or threatened to do something that violates SCBP-04 or exceeds the authority's own declared bounds. Shorter than a Mechanism Record, focused on a single incident, filed using the [Violation Report Form](../02-Forms/02-Stop-Trigger.md).
+**Violation Report.** A focused report that an authority did, failed to do, or threatened to do something that violates SCBP-04 or exceeds the authority's own declared bounds. Shorter than a Mechanism Record, focused on a single incident, filed using the [Violation Report Form](../02-Forms/02-Stop-Trigger.md).
 
-**Authority action — Self-registration.** An authority can choose to file its own Mechanism Record under the framework as a public act of structural disclosure. The same form, the same rules, and the same standards apply as for citizen-produced Mechanism Records.
-
-All three kinds of records live in the [public registry](../04-Registry/).
+Both kinds of records live in the [public registry](../04-Registry/).
 
 ---
 
