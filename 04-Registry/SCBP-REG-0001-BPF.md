@@ -1,14 +1,22 @@
 ---
-mechanism_id: SCBP-REG-0001-v4
+mechanism_id: SCBP-REG-0001
 mechanism_name: "Bounded Power Foundation — Public Registry and Framework"
+authority_acronym: "BPF"
 status: ACTIVE
 filed_by: authority
 domain: information_governance_infrastructure
 authority_classification: indirect
+country: UNKNOWN
+region: UNKNOWN
+subregion: UNKNOWN
+primary_postal_code: UNKNOWN
+primary_address: UNKNOWN
+primary_url: "https://github.com/BoundedPowerFoundation/Bounded-Power-Framework"
+tax_id: not_applicable
 registered_date: 2026-05-05
 snapshot_date: 2026-05-05
 last_reviewed_date: 2026-05-16
-record_version: v4
+record_version: v5
 authorization_date: 2026-05-05
 expiration_date: 2028-05-05
 renewal_interval_years: 2
@@ -46,7 +54,8 @@ anti_weaponization_acknowledged: true
 
 | Field | Value |
 |---|---|
-| Mechanism ID | SCBP-REG-0001-v4 |
+| Mechanism ID | SCBP-REG-0001 |
+| Record version | v5 |
 | Status | ACTIVE |
 | Registered | 2026-05-05 |
 | Authorization expires | 2028-05-05 |
@@ -57,6 +66,8 @@ anti_weaponization_acknowledged: true
 > *v3 update notes: §2.2 revised to distinguish between the acted-upon population (zero) and the indirect-influence reading population (positive but indeterminate), reconciling §2.2 with §11.4. §10.8 supplemented with a self-applies-to-itself note acknowledging that the form's §10.7 leak (identified in the bad-faith counter-example) applies symmetrically to the Foundation's own threshold selection. No substantive operational change; both updates make existing structural conditions visible rather than altering them.*
 >
 > *v4 update notes: YAML frontmatter brought into compliance with the AI Registration Bundle's required schema. Four fields added: `filed_by: authority` (self-registration), `record_version: v4` (parallel to the version in `mechanism_id`), `snapshot_date: 2026-05-05` (date the body content was last materially updated — unchanged since v3), and `last_reviewed_date: 2026-05-16` (date of this YAML rebuild review). No substantive change to scope, thresholds, stop paths, dependencies, or any body content. This update brings the Foundation's own record into compliance with the schema the Foundation asks every other registrant to follow.*
+>
+> *v5 update notes: YAML frontmatter updated to match the schema revisions adopted across the framework. Eight new fields added (`authority_acronym: BPF`, `country: UNKNOWN`, `region: UNKNOWN`, `subregion: UNKNOWN`, `primary_postal_code: UNKNOWN`, `primary_address: UNKNOWN`, `primary_url: <repository URL>`, `tax_id: not_applicable`). `mechanism_id` corrected from `SCBP-REG-0001-v4` to `SCBP-REG-0001` — version now lives in `record_version` alone, matching the convention adopted for all new records. The location fields are marked `UNKNOWN` rather than declaring the maintainer's personal jurisdiction, both because the Foundation is a proposed-but-not-yet-incorporated entity with no formal location and because disclosure of personal location for an unincorporated volunteer maintainer is not load-bearing for the framework's purposes. No substantive change to scope, thresholds, stop paths, dependencies, or any body content.*
 
 ---
 
@@ -406,6 +417,7 @@ The Foundation has no trade-secret restrictions. All operations, methodologies, 
 | 2026-05-06 | Re-filed with form v4 | Updated to use stress-tested form structure; same authorization period |
 | 2026-05-09 | Updated to v3 | §2.2 reconciliation with §11.4; self-applies-to-itself note added at §10.8 in response to external assessment surfacing the parallel to the bad-faith counter-example. No change to scope, thresholds, stop paths, or authorization period. |
 | 2026-05-16 | Updated to v4 | YAML frontmatter brought into compliance with the AI Registration Bundle's required schema. Added `filed_by`, `record_version`, `snapshot_date`, `last_reviewed_date`. No change to body content. The Foundation's own record now follows the schema the Foundation asks every other registrant to follow. |
+| 2026-05-16 | Updated to v5 | YAML frontmatter updated to match schema revisions adopted across the framework. Added 8 location/identity fields (`authority_acronym`, `country`, `region`, `subregion`, `primary_postal_code`, `primary_address`, `primary_url`, `tax_id`). Corrected `mechanism_id` from `SCBP-REG-0001-v4` to `SCBP-REG-0001` (version now lives in `record_version` alone). Location fields marked `UNKNOWN`; tax ID marked `not_applicable`. No change to body content. |
 
 ## Stop Event Log
 
