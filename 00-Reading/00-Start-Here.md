@@ -107,7 +107,7 @@ The Mechanism Record surfaces gaps in these areas as findings.
 2. **Mark `UNKNOWN` instead of inventing data.** Gaps are honest disclosures.
 3. **Mark `ASSUMPTION:` when estimating.** Briefly explain the basis.
 4. **Separate evidence from inference.** Both are valid; conflating them is not.
-5. **Be fair even when critical.** Use the dull-truth register described in the [Registration Process Methodology](../05-Reference/REGISTRATION-PROCESS-METHODOLOGY.md). A defender and a critic of the authority should both call your prose factually accurate.
+5. **Be fair even when critical.** Use the dull-truth register described in the [Registration Process Methodology](../05-Reference/01-Registration-Process-Methodology.md). A defender and a critic of the authority should both call your prose factually accurate.
 6. **Structural analysis matters more than rhetoric.** The framework's rules surface findings; you do not need to editorialize.
 
 ---
