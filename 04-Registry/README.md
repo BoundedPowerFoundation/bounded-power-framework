@@ -6,7 +6,7 @@ This directory is the public archive of records filed under the Bounded Power Fr
 
 **Mechanism Records — citizen-produced structural diagnostics.** Anyone affected by an authority — citizens, journalists, researchers, civic actors — can produce a Mechanism Record analyzing that authority using public information. Citizen diagnostics use the naming pattern `SCBP-REG-TEST-{IDENTIFIER}.md`, are labeled `TEST / NOT AN OFFICIAL REGISTRATION` throughout, and also sit in this directory.
 
-**Violation Reports.** Anyone affected by an authority can file a Violation Report documenting a specific incident in which the authority did, failed to do, or threatened to do something that violates SCBP-04 or exceeds the authority's own declared bounds. Violation Reports use the naming pattern `SCBP-VR-{IDENTIFIER}-{DATE}.md` and live in [violations/](violations/).
+**Violation Reports.** Anyone affected by an authority can file a Violation Report documenting a specific incident in which the authority did, failed to do, or threatened to do something that violates SCBP-04 or exceeds the authority's own declared bounds. Violation Reports use the naming pattern `SCBP-VR-{IDENTIFIER}-{DATE}.md` and live in [Violations/](Violations/).
 
 All three kinds of records use forms from [02-Forms/](../02-Forms/) and are governed by the same SCBP-04 constitutional rules and SCBP-09 numerical bounds.
 
@@ -38,7 +38,7 @@ Second, it serves as a worked example of how a small, indirect-authority entity 
 
 Note: the Bounded Power Foundation is the proposed name for a future custodial body and does not currently exist as an incorporated organization. SCBP-REG-0001 records what its declaration would look like, so the same structural scrutiny the framework applies to others applies to itself.
 
-### [violations/](violations/) — Violation Reports
+### [Violations/](Violations/) — Violation Reports
 
 Individual reports of specific incidents in which an authority did, failed to do, or threatened to do something that violates SCBP-04 or exceeds the authority's own declared bounds. Each report is a permanent, public, timestamped record. Filing does not halt the authority, but it does create a documented record that the concern was raised and that a response is now required within a defined window.
 
@@ -80,7 +80,7 @@ SCBP-VR-{IDENTIFIER}-{DATE}.md
 
 Where `{IDENTIFIER}` is a short string identifying the authority (matching the convention above) and `{DATE}` is the date of the incident being reported in `YYYY-MM-DD` format. If multiple VRs are filed for the same authority on the same date, a sequence suffix is added: `SCBP-VR-{IDENTIFIER}-{DATE}-A.md`, `SCBP-VR-{IDENTIFIER}-{DATE}-B.md`, etc.
 
-Violation Reports live in [violations/](violations/), not in this directory's root.
+Violation Reports live in [Violations/](Violations/), not in this directory's root.
 
 ---
 
@@ -89,7 +89,7 @@ Violation Reports live in [violations/](violations/), not in this directory's ro
 Filings are made by opening a pull request on this repository, adding the completed record to the appropriate location:
 
 - Mechanism Records (both self-registrations and citizen diagnostics) → this directory
-- Violation Reports → [violations/](violations/)
+- Violation Reports → [Violations/](Violations/)
 
 There is no submission fee, no review queue, and no editorial gatekeeping. The repository's maintainers verify that:
 
