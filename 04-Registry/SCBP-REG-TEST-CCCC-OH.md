@@ -1,126 +1,94 @@
 ---
 mechanism_id: SCBP-REG-TEST-CCCC-OH
+mechanism_name: "Cuyahoga County Corrections Center"
 status: TEST_EXAMPLE
-label: TEST / NOT AN OFFICIAL REGISTRATION
-form_version: v4
+filed_by: third_party
+domain: criminal_justice
+authority_classification: direct
+registered_date: 2026-05-16
+snapshot_date: 2026-05-16
+last_reviewed_date: 2026-05-16
+record_version: v1
+authorization_date: UNKNOWN
+expiration_date: UNKNOWN
+renewal_interval_years: 2
+funding_types:
+  - local_government_mandatory
+  - federal_government_discretionary
+funding_concentration_max_pct: UNKNOWN
+affected_party_categories:
+  - criminal_justice_involved
+  - vulnerable_populations
+  - non_consenting_third_parties
+affected_population_estimate: 26000
+non_consenting_population_estimate: 26000
+entity_size: large
+geographic_specificity: single_county
+geographic_reach: "Cuyahoga County, Ohio. Detention occurs at the primary facility (1215 W 3rd St, Cleveland, OH) and at satellite locations operated under the Cuyahoga County Sheriff's Department."
+aggregate_threshold_count: 15
+aggregate_threshold_window_days: 90
+response_window_days: 30
+harm_categories_declared:
+  - bodily_harm
+  - agency_impairment
+  - communicative_suppression
+  - informational_sovereignty
+algorithmic_decision_systems_used: false
+dependency_count_type1: 2
+dependency_count_type2: 4
+dependency_count_type3: 3
+capture_risk_identified: true
+disclosure_completeness_assertion: true
+update_obligation_committed: false
+discoverability_acknowledged: true
+burden_of_proof_acknowledged: true
+anti_weaponization_acknowledged: true
 ---
 
 # TEST / NOT AN OFFICIAL REGISTRATION
 
-*This document is a worked example produced for methodology demonstration. It is not a real registration. The Cuyahoga County Corrections Center has not submitted itself for registration under the Bounded Power Framework. Content is drawn from public sources and is subject to the limits noted in `UNKNOWN` and `ASSUMPTION` markers throughout.*
+> This is a citizen-produced structural diagnostic of the Cuyahoga County Corrections Center, prepared using publicly available information. The authority itself has not filed this record. Honesty assertions in §12 are reframed as "this reflects what could be verified from public sources; gaps are marked UNKNOWN." A human reviewer should address annotations and resolve UNKNOWN fields before this record is treated as anything more than a structural diagnostic.
 
 ---
 
-*Part of a thought experiment. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md). Nothing described here is operating.*
-
----
-
-# Authority Registration
-
-## Diagnostic Disclosure Form — v4
-
-> *v1: Initial diagnostic disclosure form. Framework-organized.*
-> *v2: Embedded worked examples added to diagnostic prompts in Sections 1-9.*
-> *v3: §10.7 amended to reference non-consenting affected population per SCBP-09 §II amendment (Round 1 stress test finding).*
-> *v4: Final stress-test revisions across Sections 1, 2, 3, 4, 6, 7, 8 (Round 1-3 stress test findings).*
-
----
+# Mechanism Record — Cuyahoga County Corrections Center
 
 ## SECTION 1 — What is this authority?
 
-```
-1.1 — Mechanism name (the public identifier, not the legal name):
+**1.1 — Mechanism name:** Cuyahoga County Corrections Center (CCCC), commonly referred to as the Cuyahoga County Jail.
 
-      Cuyahoga County Corrections Center (CCCC), operated by the
-      Cuyahoga County Sheriff's Department, Corrections Division.
-      Includes Jail I and Jail II at 1215 W. 3rd Street, Cleveland,
-      Ohio, within the Justice Center complex.
+**1.2 — Functional description:**
+The authority operates the primary pretrial and short-sentence detention facility for Cuyahoga County, Ohio. Functionally, the authority can:
 
-1.2 — Functional description:
-      What can this mechanism compel, restrict, allocate, require, or impose?
-      Describe in plain language what it actually does.
+- Detain persons booked on criminal charges by Cuyahoga County law enforcement agencies, on warrants issued by Cuyahoga County courts, on federal warrants pursuant to housing agreements with the U.S. Marshals Service, and on holds from other jurisdictions.
+- Confine detainees to cells and housing units, restrict their movement within the facility, and control their access to food, water, medical care, communication with the outside, recreation, sunlight, and personal property.
+- Apply physical restraint, including handcuffs, restraint chairs, and physical holds, in accordance with the Sheriff's Department use-of-force policy.
+- Determine housing assignments, including assignment to general population, medical units, mental health units, segregation, and suicide watch.
+- Mediate communication with the outside through approved channels (currently a third-party digital mail vendor for personal correspondence, a third-party commissary and phone vendor for telephone and electronic communications, and video visitation terminals; in-person visitation is also offered).
+- Transfer custody of detainees to courts, to MetroHealth (the contracted medical provider) for hospital-level care, to other jurisdictions, and upon release to the public.
 
-      The authority confines persons against their will pursuant to
-      arrest, court commitment order, or sentence. The authority
-      can: hold detainees in cells for the duration of pretrial
-      proceedings or short sentences; physically restrain detainees,
-      including through use of force; classify detainees into
-      housing units (general population, mental health, restrictive
-      housing); control detainee access to food, medical care,
-      mental health care, hygiene, visitation, telephone, and mail;
-      enforce facility rules through internal disciplinary action;
-      cooperate with law-enforcement agencies on intake and with
-      courts on appearance, release, and transfer. The authority
-      receives approximately 26,000 admissions per year. The
-      authority acknowledges that during confinement, the affected
-      person's ability to work, communicate, parent, vote (in some
-      cases), seek medical care of their choosing, and exercise
-      most ordinary civil liberties is suspended or constrained.
+The authority annually processes approximately 26,000 bookings. Detained persons include pretrial detainees (the majority), sentenced misdemeanants serving short sentences, persons held on federal warrants under the Marshals Service housing agreement, and persons held for other jurisdictions.
 
-1.3 — Authority classification:
-      Is this authority direct (issues binding directives), or indirect
-      (advisory, scoring, recommending, scoring, ranking, routing,
-      filtering, allocating, or otherwise materially shaping decisions
-      made by others)?
-      [X] Direct
-      [X] Indirect — describe the form of indirect influence:
-          Booking and detention records are propagated to:
-          court information systems, the FBI NCIC and Ohio LEADS
-          criminal-history databases, commercial background-check
-          aggregators, news media (booking blotters, mugshot sites),
-          and public-records databases. These propagated outputs
-          materially shape downstream decisions made by employers,
-          landlords, lenders, immigration authorities, child-welfare
-          agencies, and other actors, and persist after release.
-      [X] Both
+**1.3 — Authority classification:**
 
-1.4 — Domain (select primary; mark others if applicable):
-     [X] Government
-     [ ] Economic
-     [ ] Technology
-     [ ] Infrastructure
-     [X] Data / Information  (booking and detention records propagation)
-     [ ] Education
-     [X] Healthcare  (the authority operationalizes clinical care to
-         detainees through MetroHealth System per §6.1; under R72 the
-         operationalized clinical decisions are part of the authority)
-     [ ] Cultural / Religious
-     [ ] Voluntary association
-     [X] Other (describe):  Detention / confinement (the framework's
-         primary domain category for jail authority; treated here as
-         a sub-category of Government).
+- [X] Direct — the authority issues binding custody and confinement decisions over individual detainees.
+- [X] Indirect — describe the form of indirect influence: classification decisions (mental-health status, security level, housing assignment) and incident records produced by the authority materially shape downstream criminal-justice decisions (bond hearings, charging decisions, parole eligibility, civil commitment referrals). The authority's death and incident records also shape state inspection findings and federal contracting decisions.
+- [ ] Both *(both boxes above are checked; this is a "both" authority in framework terms.)*
 
-1.5 — Statutory or constitutional basis (the upstream authority/authorities
-      under which this mechanism operates — if any). For complex
-      authorities operating under multiple frameworks (e.g.,
-      federal + state + accreditation), list each separately:
+**1.4 — Domain:**
+- [X] Government (primary)
+- [X] Healthcare (medical and mental health care delivered inside the facility through a contracted provider — see §6.1)
 
-      - Ohio Revised Code Chapter 341 (County Jails): vests
-        operational authority in the elected county sheriff.
-      - Ohio Administrative Code 5120:1-8 and 5120:1-12: Minimum
-        Standards for Jails in Ohio, administered by the Ohio
-        Department of Rehabilitation and Correction, Bureau of
-        Adult Detention.
-      - Cuyahoga County Charter: establishes the elected Sheriff
-        as corrections operator and the County Executive and
-        County Council as the budgetary and political authority.
-      - Court commitment orders from Cuyahoga County Common Pleas
-        Court, Cleveland Municipal Court, and other municipal
-        courts and mayor's courts within the county.
-      - U.S. Constitution, 8th and 14th Amendments (conditions of
-        confinement and due process); 42 U.S.C. §1983 (civil-rights
-        enforcement against state-actor confinement conduct).
-      - Prison Rape Elimination Act (PREA), 34 U.S.C. §30301 et seq.
-      - Americans with Disabilities Act, Title II.
-      - Civil settlement instruments requiring periodic independent
-        corrections-consultant inspection (the current consultant is
-        a third-party reviewer engaged under settlement of prior
-        civil litigation per public reporting).
-      - The authority acknowledges that no single dated authorization
-        document exists; authority is continuous under state law and
-        county charter, with no statutory expiration. This shapes
-        the §10 disclosures.
-```
+**1.5 — Statutory or constitutional basis:**
+
+- Ohio Revised Code Chapter 311 (county sheriff powers and duties)
+- Ohio Revised Code Chapter 341 (county jails)
+- Ohio Administrative Code Chapter 5120:1-8 (Minimum Standards for Jails in Ohio, enforced by the Ohio Department of Rehabilitation and Correction, Bureau of Adult Detention)
+- Cuyahoga County Charter and Cuyahoga County Code (county-level authorization for the Sheriff's Department and the Corrections Center as a division thereof)
+- U.S. Constitution (Eighth and Fourteenth Amendments; conditions-of-confinement floor)
+- Intergovernmental agreements with the U.S. Marshals Service for housing of federal detainees
+
+ANNOTATION: Authority operates under multiple overlapping frameworks. State Minimum Standards enforcement is the most operationally salient external authority, alongside any active federal-court consent decrees or settlements arising from the multiple wrongful-death and conditions lawsuits noted in §1.2 background.
 
 *Rules addressed: R04 (Authority Classification Stability), R58 (Indirect Authority Recognition).*
 
@@ -128,123 +96,31 @@ form_version: v4
 
 ## SECTION 2 — Who can this authority act upon?
 
-```
-2.1 — Affected party categories (select all that apply):
-     [X] General public (no opt-in required to be affected)
-     [X] Residents of defined geographic area (specify):
-         Cuyahoga County residents; also non-residents who are
-         arrested by any law-enforcement agency operating within
-         Cuyahoga County.
-     [ ] Customers / voluntary service users
-     [ ] Members (voluntary affiliation)
-     [ ] Employees / workers
-     [ ] Students / educational participants
-     [X] Patients / healthcare recipients
-         (detainees receiving medical and mental-health care
-         operationalized through MetroHealth System and contract
-         providers; the authority operationalizes these clinical
-         decisions per R72)
-     [ ] Regulated industry participants
-     [X] Criminal justice involved individuals
-     [ ] Children / minors
-         ASSUMPTION: minors are not housed at CCCC; the county
-         juvenile facility is a separate institution. UNKNOWN
-         whether any 17-year-olds bound over to adult court are
-         held at CCCC.
-     [X] Vulnerable populations (specify):
-         Persons with mental illness (per the County Justice and
-         Health-Equity Officer, approximately 70% of detainees have
-         a mental health condition, substance use disorder, or both);
-         pregnant detainees; detainees with physical disabilities;
-         detainees experiencing acute withdrawal at intake.
-     [ ] Future generations (long-duration environmental or financial impact)
-     [X] Non-consenting third parties (describe):
-         Family members of detainees, including minor children of
-         detainees, whose contact with the detainee is mediated by
-         the authority's visitation, telephone, mail, and deposit
-         systems; persons whose criminal-history records are
-         created and propagated by the authority's booking outputs
-         and persist after release.
+**2.1 — Affected party categories:**
+- [X] General public — anyone arrested in Cuyahoga County or on a Cuyahoga County warrant may be booked into the facility, regardless of prior consent.
+- [X] Residents of defined geographic area — Cuyahoga County, OH, primarily.
+- [X] Criminal justice involved individuals
+- [X] Children / minors — ANNOTATION: minors charged as adults under Ohio's bindover provisions may be held in the adult facility, subject to sight-and-sound separation requirements. Juveniles charged as juveniles are held at the separate Cuyahoga County Juvenile Detention Center.
+- [X] Vulnerable populations — persons with serious mental illness, persons with substance use disorders, persons with chronic medical conditions, pregnant persons, persons with physical disabilities (including amputees and persons with mobility limitations), and persons experiencing acute psychiatric crisis.
+- [ ] Future generations
+- [X] Non-consenting third parties — family members of detainees experience constrained communication, financial costs (commissary, phone, mail-scanning vendor fees), and indirect harm; minor children of detained parents experience parental separation.
 
-2.2 — Approximate number of people directly affected:
+**2.2 — Approximate number of people directly affected:** Approximately 26,000 bookings per year per the Sheriff's published description. The point-in-time population varies; the U.S. Marshals' 2018 inspection found 2,420 detainees against a then-stated capacity of 1,765. ASSUMPTION: 26,000 annual bookings represents the affected population for §2.2 purposes; a smaller subset (~1,500–2,000) is in custody at any moment.
 
-      Approximately 26,000 admissions per year (per Cuyahoga County
-      Sheriff's Department public statements). ASSUMPTION: this
-      represents a smaller number of unique persons due to repeat
-      bookings; UNKNOWN exact unique-person count. Operational
-      capacity 1,436 beds; documented emergency capacity 1,723;
-      historical population peaks above stated capacity have been
-      documented (the 2018 U.S. Marshals report documented 2,420
-      detainees at a facility rated for 1,765 at that time).
+**2.3 — Non-consenting population:** Approximately 26,000 annually. The framework distinguishes opt-in interaction from coerced interaction. Detention is by definition non-consensual: persons are booked on arrest or warrant, not by choice. Pretrial detainees (the majority) have not been convicted of any offense at the time of detention. Persons held on federal contracts and persons held for other jurisdictions are similarly non-consenting.
 
-2.3 — Of the affected population, what number/proportion are
-      non-consenting (i.e., are subject to this authority without
-      opting in):
+ANNOTATION: Family members and minor children of detainees are also affected non-consenting parties but are not counted in the 26,000 figure. A more complete count would include them; public data does not support a precise figure.
 
-      *Note on voluntary-but-stuck populations:* Affiliation that
-      requires substantial cost to exit (financial, social,
-      professional, geographic, network-effect) is not meaningfully
-      voluntary in the framework's sense. If your authority operates
-      over a population that is technically voluntary but
-      structurally cannot exit, declare that population as
-      non-consenting. The relevant test is not "did they sign up"
-      but "can they meaningfully leave."
+**2.4 — Vulnerable population specifics:**
+- [X] Children — minors held under bindover; protective measures are governed by Ohio Revised Code and federal Prison Rape Elimination Act (PREA) standards.
+- [X] Patients during medical care — detainees receiving medical care inside the facility (through MetroHealth-contracted providers) or at MetroHealth Medical Center under transport.
+- [X] Detained or confined persons — the entire detained population.
+- [X] Persons in coercive economic relationships — ANNOTATION: detainees are wholly economically dependent on the authority for food, water, hygiene, and access to outside support; commissary and communication services are operated by contracted vendors at prices set without market competition from the detainee's perspective.
+- [X] Persons unable to advocate for themselves due to disability, incapacity, or circumstance — including persons with serious mental illness, persons with cognitive disabilities, non-English speakers, and persons in acute medical crisis.
 
-      100% of the directly affected population is non-consenting.
-      Detention is by definition involuntary. The non-consenting
-      population for §10.7 threshold purposes is the full ~26,000
-      annual admission count. Non-consenting status applies whether
-      the detainee is pretrial (legally innocent), serving a
-      sentence, or held on a hold from another jurisdiction.
+Protective measures publicly identifiable include: PREA compliance program (Sheriff's Department publishes a PREA zero-tolerance policy), medical care contracted to MetroHealth Systems, state-mandated minimum standards inspections by the Ohio Department of Rehabilitation and Correction Bureau of Adult Detention, internal grievance procedure (paper and electronic kiosk), and access to counsel.
 
-2.4 — Vulnerable population specifics:
-      Does this authority act upon any of the following? If yes,
-      describe the protective measures in place:
-      [ ] Children (under age of majority)
-          ASSUMPTION: minors are not housed at CCCC per §2.1 above.
-      [X] Patients during medical care
-          Protective measure: medical and mental-health care is
-          provided by MetroHealth System (a Type 1 dependency per
-          §6.1) under contract since 2019. The authority
-          acknowledges that the clinical workforce is structurally
-          independent of the sheriff's corrections workforce but
-          that custodial control over patient access to clinical
-          contact is retained by corrections staff. The 2018
-          U.S. Marshals report identified medical-care deficiencies
-          that preceded the MetroHealth contract; subsequent
-          publicly reported in-custody deaths (at least 24 since
-          2018 per The Marshall Project - Cleveland reporting)
-          include cases in which the Ohio Bureau of Adult Detention
-          identified custodial-side errors in summoning or
-          facilitating clinical response.
-      [X] Detained or confined persons
-          Protective measures: Ohio Administrative Code 5120:1-8
-          and 5120:1-12 minimum standards; annual ODRC inspections;
-          independent corrections-consultant inspections under
-          civil settlement; mandatory critical-incident reporting
-          to the ODRC Bureau of Adult Detention; medical care
-          contracted to an external provider (MetroHealth). The
-          authority acknowledges that the ODRC's enforcement
-          authority does not extend to closing a non-compliant
-          facility; the only state-level escalation available is
-          litigation by the ODRC director against the sheriff, a
-          mechanism that has not historically been used.
-      [ ] Persons in coercive economic relationships (e.g., employees
-          where the authority is the employer)
-      [X] Persons unable to advocate for themselves due to disability,
-          incapacity, or circumstance
-          Protective measure: ADA Title II compliance obligations;
-          public-defender representation for indigent detainees;
-          MetroHealth psychiatric staff for detainees with mental
-          illness. The authority acknowledges documented incidents
-          involving detainees with physical disabilities (two
-          deaths of double-amputee detainees in the 2023–2025
-          period per public reporting) and detainees in the mental
-          health unit (the 2025 Jennifer Wade case per public
-          reporting), and that these cases are the substantive
-          subject of state Bureau of Adult Detention reviews
-          referenced in §8.5.
-```
+ANNOTATION: Public reporting between 2018 and the snapshot date documents repeated state-inspection findings of non-compliance, federal findings of substandard conditions, at least 24 deaths in custody since 2018, a 2024 state corrective action plan, a homicide ruling in the in-custody death of a double amputee detainee in 2025, an episode of all-day air-conditioning failure during a 2025 heatwave, repeated citations for inadequate natural light, and multiple settled wrongful-death lawsuits. The framework presumes the listed protective measures are nominally in place; public evidence indicates they have not consistently produced their intended protective effect.
 
 *Rules addressed: R14 (Non-Participant Exposure Mapping), R26 (Non-Participant Harm Floor).*
 
@@ -252,1648 +128,575 @@ form_version: v4
 
 ## SECTION 3 — What can it do, and what can it not do?
 
-```
-3.1 — Geographic reach:
-      Geographic specificity (select one):
-      [ ] Single municipality (specify):
-      [ ] Multi-municipality (specify each):
-      [X] Single county/parish:
-          Cuyahoga County, Ohio. The facility receives detainees
-          arrested by any law-enforcement agency operating within
-          Cuyahoga County (including Cleveland Division of Police,
-          Cuyahoga County Sheriff's deputies, suburban municipal
-          police departments, state police, and federal agencies
-          operating within county lines).
-      [ ] Multi-county (specify each):
-      [ ] Single state/province:
-      [ ] Multi-state/multi-province (specify):
-      [ ] Single nation (specify):
-      [ ] Multi-national (specify):
-      [ ] Global, with acknowledgment of jurisdictional limits
+**3.1 — Geographic reach:**
+- [X] Single county/parish: Cuyahoga County, Ohio (primary facility at 1215 W 3rd St, Cleveland, OH 44113; satellite locations within the county as designated by the Sheriff's Department).
+- Detainees physically located inside the facility are within the authority's reach; detainees transported elsewhere (to MetroHealth, to court, to other jurisdictions on transfer) remain within the authority's custody chain until formal handoff.
 
-3.2 — Coercive ceiling:
-      What is the strongest action this authority can take against
-      a person, organization, or system? List specific actions and
-      their numerical or temporal limits.
+**3.2 — Coercive ceiling:**
 
-      - Physical confinement: the authority may detain a person in
-        a cell continuously for the duration set by the underlying
-        court commitment, up to one year for state-prisoner
-        placements at the county-jail level. Pretrial detention
-        duration is set by the committing court, not by the
-        authority.
-      - Restrictive housing: placement in restrictive housing
-        (administrative segregation) at the authority's
-        classification discretion. UNKNOWN current maximum
-        continuous duration; ASSUMPTION the authority's policy
-        permits multi-week continuous placement.
-      - Use of force: the authority's corrections officers are
-        authorized to use physical force, including mechanical
-        restraint, to maintain order and enforce compliance. The
-        authority acknowledges that a use-of-force-related death
-        (Tasha Grant, May 2025) was ruled a homicide by the
-        Cuyahoga County Medical Examiner per public reporting.
-      - Restriction of communication: limits on telephone duration
-        (per public reporting, up to 30 minutes per call during
-        normal hours and 10 minutes during peak hours), visitation
-        scheduling, mail review.
-      - Restriction of property: control over commissary,
-        personal-property storage, and incoming funds.
-      - The authority may not impose sentences (this is a court
-        function) and may not extend confinement beyond the
-        committing court's order.
+The authority's coercive ceiling, as constrained by Ohio law and federal constitutional law, includes:
 
-3.3 — Resource ceiling:
-      Maximum operating budget:
-          UNKNOWN exact line-item figure for CCCC operations alone.
-          ASSUMPTION: jail operations represent the substantial
-          majority of the Cuyahoga County Sheriff's Department
-          operating budget. The Sheriff's Department employs
-          approximately 1,000 personnel at the facility per public
-          reporting; ASSUMPTION operating cost is in the range of
-          $80–120 million per year based on national jail-cost
-          benchmarks for a facility of this size, but no public
-          figure verified.
-      Maximum staff (FTE):
-          Approximately 1,000 sheriff's-department personnel work
-          at the existing facility per public reporting from county
-          officials in 2025, including corrections officers,
-          law-enforcement personnel, and contract workers.
-      Maximum data systems and data volume:
-          Booking records and detention records on ~26,000
-          admissions per year; body-worn-camera and fixed-camera
-          surveillance footage; medical records held by MetroHealth
-          (not held by the sheriff directly); telephone-call
-          recordings held by Securus Technologies; commissary and
-          deposit transaction records held by third-party vendors.
-          UNKNOWN aggregate data volume.
+- Detention (confinement to the facility) for as long as authorized by judicial order, statutory hold period, or pending transfer.
+- Confinement to a cell or housing unit, including segregation housing under disciplinary or administrative classification.
+- Use of physical restraint (handcuffs, restraint chairs, physical holds) under the Sheriff's use-of-force policy.
+- Control of access to food, water, recreation, sunlight, medical care, hygiene, telephone, mail, and visitation, subject to constitutional and state-minimum-standard floors.
+- Strip search, body cavity search, and biometric collection (fingerprints, photographs) on booking.
+- Transfer of custody.
 
-3.4 — Explicit exclusions — what this authority may NOT do:
-      List by category. Each exclusion is a structural commitment;
-      the registry will treat any action outside the listed
-      authorities as outside the authority's scope.
-      [X] Geographic exclusions:
-          The authority may not detain persons arrested outside
-          Cuyahoga County except by inter-agency transfer agreement.
-      [X] Action exclusions (what enforcement actions are off-limits):
-          - May not impose criminal sentences (a court function).
-          - May not extend detention beyond the committing court's
-            order.
-          - May not use food as punishment. (The 2018 U.S. Marshals
-            report documented food-as-punishment in the Restrictive
-            Housing Unit; the county publicly committed to
-            discontinuing this practice in 2018. The exclusion is
-            stated here as a structural commitment per R66.)
-          - May not deny medical or mental-health care to detainees
-            who request it. (The authority acknowledges that this
-            exclusion has been the subject of multiple Bureau of
-            Adult Detention findings of non-compliance.)
-          - May not retaliate against detainees who file grievances
-            or speak with media, inspectors, or counsel (R33,
-            Stop Friction Prohibition).
-      [X] Data exclusions (what data may not be collected, retained,
-          or shared):
-          - May not retain medical records (held by MetroHealth per
-            HIPAA-compliant arrangement).
-          - UNKNOWN explicit retention limit on body-worn-camera
-            footage; the sheriff's department publicly committed in
-            February 2025 to release critical-incident bodycam
-            footage within 7 business days, but this is a release
-            policy, not a retention limit.
-      [X] Procedural exclusions (e.g., may not enter into
-          revenue-share contractor relationships):
-          - May not enter into compensation arrangements with
-            Type 1 contractors structured as revenue-share or
-            per-detainee-day outcome-tied compensation that would
-            create incentive for prolonged detention or increased
-            confinement intensity.
-          - May not condition Type 1 contractor compensation on
-            citation, disciplinary, or restraint-event volume.
-          - UNKNOWN whether the Securus phone-system or commissary
-            vendor contracts include revenue-share components paid
-            to the authority; commissary-and-phone vendor revenue
-            sharing is industry-standard in U.S. jails and would
-            constitute a §3.4 finding if present. This is flagged
-            for §6.4 capture-risk review.
-      [X] Temporal exclusions (e.g., may not act outside
-          declared operational hours):
-          The facility operates 24 hours per day. No temporal
-          exclusions apply to detention itself. Visitation,
-          telephone, and external-services hours are scheduled per
-          posted policy.
-      [X] Other exclusions:
-          - May not detain persons not subject to a charging
-            instrument, arrest authority, or court order. (Per
-            March 2025 policy change, Cleveland Division of Police
-            uncharged-person bookings — approximately one-third of
-            3,430 uncharged persons booked in 2023 were released
-            without ever being charged per public reporting — are
-            no longer accepted.)
-          - May not use restraint as punishment outside of
-            specific authorized use-of-force events.
+The authority does not have authority to: impose sentences (this is a court function), impose monetary penalties (this is a court function), execute persons, or detain persons beyond authorized hold periods absent judicial order.
 
-3.5 — Indirect influence boundaries:
-      If this authority is indirect (per §1.3), what outputs does
-      it produce that materially influence decisions made by others
-      (scores, rankings, classifications, recommendations,
-      authorizations)?
-      For each output: who uses it, and what decision does it
-      shape?
+ANNOTATION: The U.S. Marshals' 2018 facility-review report documented use of force as punishment, food deprivation as punishment, and detainees held in cells without working toilets or running water. These findings describe practices that exceeded the authority's stated ceiling. The framework treats outcome dominance (R80) as authority-expansion regardless of stated limits.
 
-      - Booking records (name, charge, booking date, mugshot):
-        used by court systems for arraignment scheduling; by
-        commercial background-check aggregators and "mugshot"
-        websites for indefinite public republication; by employers
-        and landlords for hiring and tenancy decisions; by news
-        media for booking blotters.
-      - Detention records (intake/release dates, housing
-        classification, disciplinary incidents): used by courts
-        for bail and sentencing decisions; by probation and parole
-        for supervision decisions; by ICE for immigration-detainer
-        decisions.
-      - Criminal-history record contributions to Ohio LEADS and
-        FBI NCIC: used by every U.S. law-enforcement agency, by
-        firearms licensing authorities, by occupational-licensing
-        boards, and by some employers under FCRA-regulated
-        background-check processes.
-      - In-custody death records: used by the Ohio Bureau of Adult
-        Detention for inspection findings and by civil-rights
-        plaintiffs for litigation.
+**3.3 — Resource ceiling:**
 
-      The authority acknowledges that these propagated outputs
-      persist after a detainee's release, after dismissal of
-      charges, and after expungement of court records, because
-      downstream republication is not controlled by the originating
-      authority. This is the substantive §3.5 disclosure and bears
-      on §9.4 and §9.5.
+- Maximum operating budget: 2026 Cuyahoga County Sheriff's Department budget approved at approximately $205 million; the sheriff's fiscal office had requested $213 million. ANNOTATION: this is the total Sheriff's Department budget; the jail-specific portion is a substantial but not separately published share. The 2024-2025 biennial budget allocated over $360 million to the Sheriff's Department across both years. UNKNOWN: jail-specific operating budget as a separate line.
+- Maximum staff (FTE): UNKNOWN as a precise figure. The 2024 budget added 40 corrections officer positions to restore staffing to pre-pandemic levels. Repeated public reporting describes ongoing understaffing and high overtime expenditure as the dominant budget driver.
+- Maximum data systems and data volume: UNKNOWN. The authority operates booking, custody, classification, medical (through MetroHealth), commissary, communications (through Securus and related vendors), and incident-reporting systems.
 
-3.6 — Anti-proxy declaration:
-      The framework prohibits achieving restricted effects through
-      proxies (R66, R74). For each restricted effect this authority
-      cannot directly produce, identify any proxies, statistical
-      substitutes, or behavioral indicators that this authority
-      will not use to produce equivalent outcomes:
+**3.4 — Explicit exclusions — what this authority may NOT do:**
 
-      - The authority may not impose sentence; the authority will
-        not use prolonged pretrial detention, restrictive housing
-        placement, classification, or transfer policies as a proxy
-        to produce sentence-equivalent confinement effects.
-      - The authority may not punish through food deprivation; the
-        authority will not use commissary access restriction,
-        meal-quality differentiation, or feeding-schedule
-        modification as proxies for food-based punishment.
-      - The authority may not deny medical care; the authority
-        will not use grievance-process friction, kiosk-only
-        complaint filing, or staff inattention as proxies for
-        denial of care. (The authority acknowledges that the
-        November 2024 independent inspector's findings identified
-        paper-grievance-form availability deficiencies; this is
-        the substantive R66 concern.)
-      - The authority may not retaliate against complainants; the
-        authority will not use housing reassignment, classification
-        downgrade, or programming-access denial as proxies for
-        retaliation.
-```
+- [X] Geographic exclusions: cannot detain persons outside Cuyahoga County jurisdiction except under transport custody chains or interstate compact.
+- [X] Action exclusions: cannot impose criminal sentences; cannot impose monetary fines; cannot perform medical or psychiatric procedures except as authorized by contracted medical staff under the patient-care relationship governed by MetroHealth.
+- [X] Data exclusions: ANNOTATION: no published data-collection-limit declaration could be identified. Booking and custody data are retained per Ohio public-records law. Federal HIPAA constrains medical-record disclosure for the contracted medical provider.
+- [X] Procedural exclusions: cannot use food, sunlight, water, or medical care as disciplinary punishment under state minimum standards and federal constitutional law; ANNOTATION: practices documented in the 2018 U.S. Marshals report and subsequent reporting indicate these procedural exclusions have not consistently been observed.
+- [X] Temporal exclusions: must release detainees upon expiration of judicial hold authority.
+- [ ] Other exclusions: UNKNOWN.
 
-*Rules addressed: R04 (Functional Effect), R35 (Scope Narrowing Default), R55 (Fragmentation), R66 (Anti-Proxy), R74 (Proxy Equivalence Expansion). SCBP-09 §VII (Geographic Specificity), §VIII (Coercive Ceiling Specificity).*
+ANNOTATION: A constitutional registration would include an exclusion against use-of-force as discipline, an exclusion against food deprivation as discipline, an exclusion against denying medically necessary care, and an exclusion against retaliation for grievance-filing. The framework treats undeclared but legally-existing exclusions as part of the authority's bounded scope; the absence of a written declaration here is itself a structural finding under R67.
+
+**3.5 — Indirect influence boundaries:**
+
+The authority produces outputs that materially influence decisions made by others:
+
+- Booking records, classification decisions, and incident reports flow into the Cuyahoga County court system and influence bond decisions, charging decisions, and sentencing.
+- Death and medical-incident records influence state inspection findings, federal contracting decisions (the U.S. Marshals Service's decision to withdraw federal detainees from the main facility in 2018 was downstream of inspection findings), and civil litigation.
+- Classification of detainees as having mental illness, suicide risk, or medical needs shapes downstream institutional placement (state psychiatric hospitals, community supervision).
+- The authority's stated housing capacity and operational condition shape the courts' bond decisions in the aggregate (chronic overcrowding pressures earlier release; chronic understaffing creates incentive against new admissions).
+
+**3.6 — Anti-proxy declaration:**
+
+ANNOTATION: no public-facing anti-proxy declaration could be identified. A constitutional registration would commit that:
+- Disciplinary effects (segregation, loss of privileges) will not be imposed through proxies such as medical-housing reassignment, classification changes, or vendor-mediated communication restriction.
+- Use-of-force restrictions will not be circumvented through use of restraint chairs or extended restraint periods.
+- Limits on cell isolation will not be circumvented through extended "administrative" or "protective" segregation.
+
+R66 and R74 apply; the absence of these declarations in public documents is a structural finding.
+
+*Rules addressed: R04, R35, R55, R66, R74. SCBP-09 §VII, §VIII.*
 
 ---
 
 ## SECTION 4 — What harms can it cause?
 
-```
-4.1 — Bodily harm threshold:
-      Threshold (measurable condition that triggers review):
+**4.1 — Bodily harm threshold:**
 
-      Multiple thresholds, all triggering provisional stop review
-      under R23:
+Measurable thresholds that should trigger stop review:
 
-      (a) In-custody death rate: if the rolling 12-month in-custody
-          mortality rate, calculated per 100,000 admissions, exceeds
-          the most recent published Bureau of Justice Statistics
-          (BJS) national local-jail mortality rate by more than
-          one standard deviation, threshold breach.
-          ASSUMPTION: this is a constructed peer-benchmark
-          threshold per the methodology's Step 7 healthcare/
-          confinement guidance; UNKNOWN whether the authority has
-          historically operated within this band. The Marshall
-          Project - Cleveland reported at least 24 deaths since
-          2018 and at least 20 since 2020; on ~26,000 admissions
-          per year this approximates ~75–100 deaths per 100,000
-          admissions, which exceeds typical BJS national local-jail
-          rates.
+- Any death in custody not attributable to a pre-existing terminal medical condition, or any death where the immediate proximate cause is staff action or staff inaction (proximate use of force, restraint, denial of timely medical response).
+- Any death in custody where the Cuyahoga County Medical Examiner rules the manner of death homicide.
+- Any rolling 12-month period in which deaths in custody per 1,000 admissions exceed the Bureau of Justice Statistics national jail-mortality benchmark for comparable jurisdictions.
+- Any staff use of force resulting in hospitalization, fracture, traumatic brain injury, or asphyxiation.
+- Any episode in which a detainee experiences a medical emergency requiring CPR or hospital transport where staff response was delayed beyond 90 seconds from the point of observed distress.
+- Any failure to administer prescribed medication for more than 24 hours.
 
-      (b) Use-of-force-related death: any single use-of-force-
-          related death (homicide-ruled death, restraint-related
-          death, asphyxiation, positional asphyxia) triggers
-          immediate threshold breach and stop review.
+ANNOTATION: public reporting documents at least 24 deaths in custody since 2018; the May 2025 death of Tasha Grant was ruled homicide by the Cuyahoga County Medical Examiner; the January 2024 death of Glen Williams Jr. involved a delay of more than nine minutes before CPR was initiated; the death of Fred Maynard, a double amputee, occurred after choking in front of jail staff. Multiple of these incidents would have crossed the thresholds above.
 
-      (c) Death following documented medical-care request denial:
-          any in-custody death in which the Ohio Bureau of Adult
-          Detention finds custodial failure to summon or facilitate
-          clinical response triggers threshold breach.
+[ ] Not applicable
 
-      (d) Bureau of Adult Detention findings of non-compliance
-          with medical-care, suicide-prevention, or use-of-force
-          standards in a rolling 24-month period exceeding 3
-          findings triggers threshold breach.
+**4.2 — Agency impairment threshold:**
 
-      [ ] Not applicable — justification:
+Measurable thresholds:
 
-4.2 — Agency impairment threshold:
-      (Restrictions on someone's ability to communicate, participate
-      in governance, access correction processes, or exercise
-      rights)
-      Threshold:
+- Any case in which a detainee is denied access to counsel for more than 24 hours from request.
+- Any case in which a grievance is not processed and answered within the period specified in jail policy.
+- Any case in which retaliation against a detainee who filed a grievance is substantiated by internal investigation, court order, or settlement.
+- Any case in which a detainee is denied access to the courts (delay in transport to scheduled hearings, denial of writ filing materials, denial of confidential legal mail).
 
-      Multiple thresholds:
+ANNOTATION: the 2025 heatwave power outage included reporting that court proceedings were canceled or curtailed and releases delayed. The Marshall Project's reporting includes testimony that staff retaliated against detainees and against staff who spoke about conditions. The 2024 Donald Leach inspection found paper grievance forms were not readily available, forcing electronic-only filing through kiosks of uncertain reliability.
 
-      (a) Grievance-filing access: if independent inspection finds
-          that paper grievance forms are not readily available to
-          detainees, or that electronic-only kiosk filing
-          functionally restricts access, threshold breach.
+[ ] Not applicable
 
-      (b) Counsel access: if any detainee is denied a confidential
-          meeting with retained or appointed counsel within 48
-          hours of request, threshold breach.
+**4.3 — Ecological damage threshold:**
 
-      (c) Mail and external communication: any documented pattern
-          of unmailed or undelivered detainee correspondence to
-          counsel, family, courts, oversight bodies, or media
-          triggers threshold breach.
+[X] Not applicable — justification: the authority's function is detention, not industrial production. The facility's environmental impact is confined to ordinary building-operation discharge governed by municipal environmental regulation.
 
-      (d) Voting: any documented denial of absentee-ballot access
-          to detainees retaining the franchise (pretrial detainees;
-          misdemeanor sentenced detainees who retain voting rights
-          under Ohio law) triggers threshold breach.
+**4.4 — Generational binding threshold:**
 
-      [ ] Not applicable — justification:
+[X] Not applicable — justification: detention authority does not bind future generations to obligations they cannot revise. Downstream effects (criminal records, family disruption, financial costs) are addressed under §4.2 (agency) and §4.6 (informational sovereignty) rather than here.
 
-4.3 — Ecological damage threshold:
-      Threshold:
-      [X] Not applicable — justification:
-          The facility's operational footprint is limited to a
-          downtown urban building (current CCCC) and a planned
-          suburban campus (Central Services Campus). Routine
-          operations do not produce environmental discharges
-          beyond ordinary municipal-building emissions. ASSUMPTION
-          based on the absence of public-record findings of
-          environmental violation at the facility.
+ANNOTATION: a defender of this declaration would note that minor children of incarcerated parents experience measurable lifetime effects from parental incarceration. The framework's "generational binding" category is narrow and refers to formal authority over future generations, not downstream social consequences; "Not applicable" is the correct technical answer, but the social effects are real and surface under other categories.
 
-4.4 — Generational binding threshold:
-      (Commitments that bind future generations to obligations they
-      cannot revise)
-      Threshold:
+**4.5 — Communicative suppression threshold:**
 
-      The authority acknowledges that the 0.25% sales-tax extension
-      approved by Cuyahoga County Council in December 2023 by a 6–5
-      vote, with a 40-year duration, commits county revenue through
-      approximately 2063 to debt service on the Central Services
-      Campus successor facility. This is a generational-binding
-      commitment under R59 (functional continuity of the jail
-      authority across the current and successor facility).
+Measurable thresholds:
 
-      Threshold: if any subsequent county council reduces the
-      0.25% sales-tax allocation to jail-related debt service
-      below the level required to maintain the successor facility's
-      operational capacity within authorized scope, threshold
-      breach (the authority would face capture or contraction
-      review under R61/R62).
+- Any change to mail, phone, visitation, or attorney-access procedures that materially reduces detainee access to outside communication, made without 30-day public notice and a public-comment period.
+- Any episode in which the contracted communications vendor (currently Securus per public reporting) experiences a sustained service interruption (more than 4 hours) without an alternative communication method offered to detainees.
+- Any vendor-imposed surcharge for communication that, when summed across all communication channels, exceeds a peer-benchmark cost per minute for comparable jurisdictions.
+- Any episode of staff interference with attorney-client communication.
 
-4.5 — Communicative suppression threshold:
-      (Suppression, distortion, or monopolization of information
-      others need to protect themselves or participate)
-      Threshold:
+ANNOTATION: effective June 15, 2024, personal mail to detainees is no longer accepted at the facility and is instead routed through a third-party digital mail vendor's facility in Tampa, FL. Mail is scanned and delivered electronically. This is a material change to communicative access; the framework registers it as a §4.5-relevant change.
 
-      (a) Body-worn-camera footage: if the authority fails to
-          produce body-worn-camera footage of a critical incident
-          to state inspectors, family of a deceased detainee, or
-          civil-rights litigants within 7 business days of request,
-          threshold breach. (This is calibrated to the sheriff's
-          department's publicly announced February 2025 policy
-          change.) The authority acknowledges that the Wade and
-          Papp cases (2024–2025) involved bodycam footage not
-          provided to state inspectors and that these omissions
-          are the substantive R67 (Minimum Auditability Floor)
-          concern at this authority.
+[ ] Not applicable
 
-      (b) Inspection records: if the authority fails to make
-          Ohio Department of Rehabilitation and Correction
-          inspection reports available to the public within 30
-          days of receipt, threshold breach.
+**4.6 — Informational sovereignty threshold:**
 
-      (c) In-custody death notification: if next-of-kin of a
-          deceased detainee is not notified within 24 hours of
-          death determination, threshold breach.
+Measurable thresholds:
 
-      [ ] Not applicable — justification:
+- Any retention of booking photographs, fingerprints, biometric data, or detention records beyond the period required by state public-records law or federal retention requirements.
+- Any propagation of pretrial booking information to commercial mugshot-aggregation services without a public-records exemption process.
+- Any retention of detainee medical, mental health, or substance use records beyond the period authorized by HIPAA and Ohio law.
 
-4.6 — Informational sovereignty threshold:
-      (Permanent or indefinite informational indexing of individuals)
-      Threshold:
+ANNOTATION: Cuyahoga County booking records are publicly accessible per Ohio public-records law and propagate to commercial aggregators; the framework registers this as a §4.6 issue inherent to the jurisdiction, not specific to this authority's choices. UNKNOWN: specific data-retention period for medical records.
 
-      The authority acknowledges that booking records, including
-      mugshots, propagate to third-party aggregators and persist
-      indefinitely beyond the originating authority's retention
-      period and beyond release, dismissal, or expungement.
+[ ] Not applicable
 
-      Threshold: the authority commits to retaining booking-record
-      raw data for not longer than the period required by Ohio
-      Revised Code public-records retention schedules. UNKNOWN
-      current specific retention period.
+**4.7 — Additional harm thresholds:**
 
-      The authority acknowledges that under R63 (Downstream Effect
-      Reversibility) the propagation duty extends to downstream
-      republishers, but that operational mechanisms to enforce
-      this duty against commercial "mugshot" sites and background-
-      check aggregators are not currently in place. This is a
-      structural finding and is acknowledged here per R69 (Burden
-      of Proof Reversal).
+- **Habitability and basic conditions:** Any rolling 30-day period in which the facility's housing-unit temperature exceeds 85°F for more than 4 consecutive hours, or falls below 65°F for more than 4 consecutive hours, without functioning climate control. Any rolling 90-day period in which any housing unit fails to provide the minimum natural-light access required by Ohio Administrative Code Chapter 5120:1-8.
 
-      [ ] Not applicable — justification:
+- **Staff-to-detainee ratio:** Any shift on which actual on-duty corrections officer presence in housing units falls below the ratio specified in the Sheriff's staffing policy for the population housed.
 
-4.7 — Additional harm thresholds (any harm category not covered above):
-      Category name:  Capture concentration via Type 1 contractor
-                      compensation structure.
-      Threshold:      If any single Type 1 contractor (commissary,
-                      phone, video-visitation, food service)
-                      provides operating support — through revenue
-                      share, commission, or kickback to the
-                      authority or the county — exceeding 5% of
-                      jail operating expenditure, capture-risk
-                      threshold breach under R03/R66. UNKNOWN
-                      current state of these contracts; flagged
-                      for §6.4 review.
+- **Inspection compliance:** Any annual Ohio Department of Rehabilitation and Correction Bureau of Adult Detention inspection finding more than three non-compliance citations, or any single inspection placing the facility on a corrective action plan.
 
-      Category name:  Disproportionate enforcement contact.
-      Threshold:      If admissions data, broken down by census
-                      tract or by race-ethnicity of detainee, shows
-                      that any single census tract or demographic
-                      group is the source of admissions at a rate
-                      more than 3.0x the county-wide per-capita
-                      rate for two consecutive quarters, threshold
-                      breach. The authority acknowledges that
-                      admissions are largely driven by arresting-
-                      agency conduct (Cleveland Division of Police
-                      and others) rather than the authority's own
-                      conduct; this threshold operates as a §3.5
-                      indirect-influence-boundary signal rather
-                      than a direct-action threshold.
+ANNOTATION: the facility was placed on a state corrective action plan in April 2024. The 2024 inspection found seven non-compliance citations; the 2022 and 2023 inspections found 13. The 2025 power-outage heatwave episode crossed the temperature threshold above. State inspections in 2019, 2021, 2022, 2023, and 2024 cited the facility for inadequate natural light. Multiple of these would have crossed the thresholds above.
 
-4.8 — Threshold change-log commitment:
-      The authority commits to logging all threshold modifications
-      publicly with justification and impact analysis at the time of
-      change (per R08).
-      [X] Yes — committed
-      [ ] Cannot commit — explain:
-```
+**4.8 — Threshold change-log commitment:**
 
-*Rules addressed: R07 (Pre-Authorization Harm Threshold Requirement), R08 (Threshold Registry and Change Log), R21 (Open Harm Categories), R22 (Informational Sovereignty Constraint).*
+[ ] Yes — committed
+[ ] Cannot commit — explain: UNKNOWN whether the authority maintains a public threshold change log per R08. No such log could be identified in publicly available materials.
+
+*Rules addressed: R07, R08, R21, R22.*
 
 ---
 
 ## SECTION 5 — What stops it?
 
-```
-For each stop path, complete the following:
+**STOP PATH 1 — Ohio Department of Rehabilitation and Correction, Bureau of Adult Detention**
 
-STOP PATH 1
-  Who can activate it (must include parties outside this authority):
-    Any detainee, the detainee's counsel, family member with
-    standing, or interested third party may file a writ of habeas
-    corpus, a civil-rights action under 42 U.S.C. §1983, or a
-    motion for release in the committing court. Federal courts
-    (Northern District of Ohio) and state courts (Cuyahoga County
-    Common Pleas, Ohio Court of Appeals, Ohio Supreme Court) hear
-    these matters.
-  Trigger condition (threshold-based, judgment-based, or both):
-    Both. Habeas relief and §1983 injunctive relief are
-    judgment-based; specific conditions-of-confinement claims may
-    invoke threshold-based standards (e.g., deliberate indifference
-    to serious medical need).
-  What "stopped" means specifically (operations halt? authorization
-  lapses? data collection ceases? all three?):
-    "Stopped" in this stop path is per-detainee, not facility-wide:
-    a court order can release a specific detainee, order specific
-    medical care, order specific conditions modifications, or
-    enjoin specific practices. Facility-wide injunction is possible
-    under §1983 class-action remedies (e.g., consent decree) but
-    is rare.
-  Independence justification (why is this stop authority structurally
-  independent of this authority — not just nominally?):
-    The federal judiciary is constitutionally independent of the
-    Cuyahoga County Sheriff. Ohio courts are independent of the
-    sheriff's reporting chain. Counsel representing detainees is
-    structurally independent (public defender or private bar).
-  Post-stop review process and timeline:
-    Per the committing court's order. Federal §1983 cases follow
-    federal civil procedure; habeas matters follow expedited
-    schedules.
+- Who can activate it: ODRC inspection staff, on annual cycle or in response to specific incident referral. Cuyahoga County citizens, advocacy organizations, or media outlets may file complaints prompting inspection.
+- Trigger condition: non-compliance with Ohio Administrative Code Chapter 5120:1-8 (Minimum Standards for Jails in Ohio) as found in inspection.
+- What "stopped" means: ODRC may issue findings, require a corrective action plan, and ultimately reduce or eliminate the facility's authorization to operate. ANNOTATION: in practice, ODRC has cited the facility repeatedly without imposing penalties; the facility has continued to operate while non-compliant on multiple standards across multiple inspection cycles. This is a structural concern under R67 and R73.
+- Independence justification: ODRC is a state-level body structurally independent of the Cuyahoga County Sheriff and Cuyahoga County government in funding, appointment, and reporting chain.
+- Post-stop review process and timeline: inspection findings are issued in writing; corrective action plans are issued by ODRC with specified timelines.
 
-STOP PATH 2
-  Who can activate it (must include parties outside this authority):
-    Ohio Department of Rehabilitation and Correction, Bureau of
-    Adult Detention.
-  Trigger condition (threshold-based, judgment-based, or both):
-    Both. Annual inspection findings, complaint-based investigation,
-    or critical-incident review may identify non-compliance with
-    Ohio Administrative Code 5120:1-8 / 5120:1-12 minimum
-    standards. The bureau may issue a corrective action plan.
-  What "stopped" means specifically (operations halt? authorization
-  lapses? data collection ceases? all three?):
-    A corrective action plan does not halt operations. The
-    authority acknowledges, per The Marshall Project - Cleveland
-    reporting (February 2026), that Ohio law does not authorize
-    the ODRC to close a non-compliant county jail; the only
-    state-level escalation is litigation by the ODRC director
-    against the elected sheriff under ORC 341, which the bureau
-    has not historically used. This is a documented R13
-    (Unplug-Ability Requirement) gap. The authority discloses
-    this gap rather than overstating the stop path.
-  Independence justification (why is this stop authority structurally
-  independent of this authority — not just nominally?):
-    The ODRC is a state executive-branch agency; the Bureau of
-    Adult Detention administers jail-inspection authority
-    independently of any county sheriff. Inspectors are state
-    employees, not county employees.
-  Post-stop review process and timeline:
-    Corrective action plans typically set 30/60/90-day milestones.
-    Monthly follow-up inspections may be ordered (as occurred at
-    CCCC from late 2018 through October 2020 per public reporting).
+**STOP PATH 2 — Federal court order (conditions-of-confinement litigation; civil-rights enforcement)**
 
-STOP PATH 3
-  Who can activate it (must include parties outside this authority):
-    Cuyahoga County Council and Cuyahoga County Executive, jointly
-    or severally, through budget action, charter amendment
-    referral to voters, or public-safety-committee hearings with
-    binding follow-on legislation. Cuyahoga County voters, every
-    four years, may replace the elected sheriff.
-  Trigger condition (threshold-based, judgment-based, or both):
-    Judgment-based. There is no automatic budget-reduction or
-    governance-action trigger. Council has held public-safety
-    hearings following the 2018 U.S. Marshals report and following
-    publicized in-custody deaths.
-  What "stopped" means specifically (operations halt? authorization
-  lapses? data collection ceases? all three?):
-    Budget reduction can reduce operational scale but does not
-    structurally halt operations as long as ORC 341 obligations
-    persist. Voter replacement of the sheriff produces a new
-    operator; it does not stop the facility.
-  Independence justification (why is this stop authority structurally
-  independent of this authority — not just nominally?):
-    The County Council and County Executive are separately elected
-    from the Sheriff. The County Prosecutor (currently Michael
-    O'Malley per public reporting) has, in the 2025–2026 period,
-    publicly contested aspects of the Central Services Campus
-    project, demonstrating structural independence from the
-    sheriff and county executive on jail matters. Voters are
-    structurally independent by definition.
-  Post-stop review process and timeline:
-    Per ordinary county legislative process; voter replacement
-    follows the four-year election cycle.
+- Who can activate it: any affected person with standing, through a civil action in the U.S. District Court for the Northern District of Ohio under 42 U.S.C. §1983; the U.S. Department of Justice under 42 U.S.C. §14141 / 34 U.S.C. §12601 for a pattern-or-practice investigation.
+- Trigger condition: violation of Eighth Amendment (cruel and unusual punishment) or Fourteenth Amendment (pretrial detainee due process) rights; specific incidents of constitutional injury.
+- What "stopped" means: courts may issue injunctive relief, including consent decrees mandating specific changes, monitorship, federal receivership, or compelled facility closure.
+- Independence justification: federal courts are structurally independent of Cuyahoga County government.
+- Post-stop review process and timeline: federal litigation timelines (months to years); injunctive relief can be entered earlier on a preliminary basis.
 
-5.4 — Penalty for activating stop:
-      The framework requires that no procedural, financial, or
-      reputational penalty attach to good-faith stop activation
-      (R15, R33).
-      [ ] Confirmed — no penalty applies
-      [X] Exception claimed — describe specifically:
-          The authority cannot fully confirm under R69 (Burden of
-          Proof Reversal). The 2018 U.S. Marshals report
-          documented that detainees feared retaliation for
-          speaking with inspectors. The authority acknowledges
-          this finding and commits to R33 (No Penalty for
-          Good-Faith Challenge) compliance, but the burden of
-          demonstrating compliance rests on the authority and
-          the authority cannot certify the absence of retaliation
-          risk to detainee complainants on the basis of public
-          information alone.
+ANNOTATION: at least nine wrongful-death lawsuits and multiple conditions-of-confinement lawsuits have produced settlements (e.g., a $950,000 settlement to the Gregory Fox estate). Settlements compensate individuals but have not produced systemic injunctive relief reorganizing the facility's operations.
 
-5.5 — Stop-path independence verification:
-      Can the stop paths above be activated if the authority itself
-      refuses to cooperate?
-      [X] Yes — explain how:
-          Stop Path 1 (judicial) operates against the authority
-          regardless of its cooperation; a court order is binding.
-          Stop Path 2 (state inspection) operates against the
-          authority by statute; the Bureau of Adult Detention has
-          right of entry, though enforcement to compel correction
-          is limited as noted in Stop Path 2.
-      [ ] No — this is a structural finding; explain remediation plan:
-          The authority notes the partial-No condition described
-          above as to Stop Path 2 escalation: state inspection
-          can document non-compliance but cannot compel closure.
-          This is a structural finding under R13 and R61.
+**STOP PATH 3 — Cuyahoga County Council and County Executive (budget and authorization)**
 
-5.6 — Civic trigger acknowledgment:
-      The authority acknowledges that any party affected by it may
-      file a civic trigger (Tripwire, Challenge, or contribute to
-      Aggregate) per SCBP-08, and commits to publicly responding
-      within the response window declared in §10.
-      [X] Acknowledged
-```
+- Who can activate it: County Council by majority vote; County Executive by executive action; county voters by ballot measure or by replacing officials at election.
+- Trigger condition: political determination that the facility's current operation is unacceptable.
+- What "stopped" means: budget reduction, transfer of authority, requirement to close specific portions of the facility, replacement of senior leadership, formal corrective action.
+- Independence justification: County Council and County Executive are elected by Cuyahoga County voters and are structurally separate from the Sheriff's Department (though all are part of county government).
+- Post-stop review process and timeline: variable; budget cycles are biennial; legislative action requires standard county-council processes.
 
-*Rules addressed: R13 (Unplug-Ability), R15 (Stop Friction Prohibition), R23 (Tripwire Protocol), R24 (Redundant Stop Activation), R32 (Independent Stop Authority), R33 (No Penalty for Good-Faith Challenge).*
+ANNOTATION: this stop path's independence is partial. The Sheriff's Department operates under the County Executive; the County Council provides funding and oversight. In practice, public reporting (June 2025) notes that the County Executive did not inform the County Council about the April 2024 state corrective action plan. Information asymmetry between the executive branch and the council weakens this stop path. This is a §5.5 finding.
+
+**5.4 — Penalty for activating stop:**
+
+[ ] Confirmed — no penalty applies
+[X] Exception claimed — describe specifically: ANNOTATION: detainees and family members who file grievances or speak publicly may face informal retaliation. The 2018 U.S. Marshals report documented detainees' fear of retaliation for speaking with inspectors. Public reporting in 2025 documents staff fearing retaliation for speaking to media. R15 is not satisfied in practice.
+
+**5.5 — Stop-path independence verification:**
+
+[ ] Yes
+[X] No — this is a structural finding; explain remediation plan: ANNOTATION:
+- Stop Path 1 has nominal independence but operationally limited enforcement teeth; repeated non-compliance without penalty signals R73 enforcement-discretion concerns.
+- Stop Path 2 has full structural independence but operates on a litigation timescale (months to years) inconsistent with rapid harm interruption.
+- Stop Path 3 has partial independence but has been compromised by information asymmetry (see April 2024 corrective action plan not disclosed to County Council until later).
+
+A remediation plan would require: ODRC enforcement powers strengthened with mandatory penalty schedules; independent monitor with real-time access; County Council notification protocol for any state corrective action; an independent civilian oversight body with subpoena and unannounced-inspection authority.
+
+**5.6 — Civic trigger acknowledgment:**
+
+[ ] Acknowledged
+
+ANNOTATION: as a third-party diagnostic, this record cannot assert the authority's acknowledgment. The framework's civic trigger mechanism (SCBP-08) is not currently part of the authority's stated stop-path system.
+
+*Rules addressed: R13, R15, R23, R24, R32, R33.*
 
 ---
 
 ## SECTION 6 — What does it depend on?
 
-```
-6.1 — Type 1 dependencies (operational extensions acting under
-      this authority):
-      For each: name, what they do under this authority, contractual
-      relationship, and compensation structure (select one — note
-      that revenue-share and outcome-tied are themselves capture
-      risks under R03/R66):
+**6.1 — Type 1 dependencies (operational extensions acting under this authority):**
 
-      MetroHealth System (clinical care):
-      - Function: provides medical and mental-health care to
-        detainees, operationalized within the authority's facility
-        per R72 (External System Equivalence).
-      - Contractual relationship: contract since 2019 (per public
-        reporting); ASSUMPTION renewed periodically per county
-        procurement schedule.
-      - Compensation structure:
-        [ ] Flat fee per action
-        [ ] Hourly / project-based
-        [X] Retainer
-            ASSUMPTION: structured as a contracted service
-            engagement with fixed periodic payment. UNKNOWN exact
-            structure.
-        [ ] Revenue share — describe percentage and source
-        [ ] Outcome-tied — describe specific outcomes
-        [ ] Uncompensated / volunteer
-        [ ] Other — describe
+- **MetroHealth Systems** — contracted medical and mental health care provider for detainees. Provides all medical care inside the facility. Compensation structure: [X] Other — describe: per contract between MetroHealth and Cuyahoga County. UNKNOWN: specific contract terms. ANNOTATION: MetroHealth is a public hospital system; this is a public-public contracting relationship, not a for-profit vendor. R72 applies: medical decisions made by MetroHealth staff are operationalized as the authority's custody decisions; affected detainees cannot meaningfully distinguish them.
 
-      Securus Technologies (detainee telephone and digital mail):
-      - Function: operates inmate phones and the digital-mail
-        processing facility (PO Box 20407, Tampa, FL 33622).
-      - Contractual relationship: vendor contract.
-      - Compensation structure:
-        [ ] Flat fee per action
-        [ ] Hourly / project-based
-        [ ] Retainer
-        [X] Revenue share — describe percentage and source
-            UNKNOWN exact terms. Commission and revenue-share
-            arrangements between detainee-communication vendors
-            and U.S. jails are industry-standard; the authority
-            flags this for §6.4 capture-risk review and notes
-            that under R66/R74 such arrangements may produce
-            proxy-equivalent effects on detainee phone-access
-            cost.
-        [ ] Outcome-tied — describe specific outcomes
-        [ ] Uncompensated / volunteer
-        [ ] Other — describe
+- **Securus Technologies (and successor digital mail vendor)** — operates personal-mail digitization (Tampa, FL), phone and electronic communications, and commissary-money systems. Compensation structure: [X] Other — describe: detainee-pays model, where families and detainees bear the cost of communication services and the vendor remits commission to the county. This is a revenue-share arrangement structurally; R66 capture-risk applies. ANNOTATION: revenue-share arrangements between jails and communications vendors are an established structural finding; the commission tied to communication volume creates structural alignment between the authority's allowance of communication and the authority's revenue stream.
 
-      Commissary vendor:
-      - Function: operates detainee commissary purchasing system.
-      - Contractual relationship: vendor contract.
-      - Compensation structure:
-        UNKNOWN current vendor and current terms. Flagged for §6.4
-        capture-risk review on the same basis as the telephone
-        vendor.
+**6.2 — Type 2 dependencies (independent authorities with structural relationship):**
 
-      IC Solutions (video visitation):
-      - Function: operates video-visitation system.
-      - Contractual relationship: vendor contract.
-      - Compensation structure: UNKNOWN.
+- **Cuyahoga County Court of Common Pleas and Cuyahoga County Municipal Courts** — courts issue the warrants and orders that constitute the authority's authorization to detain individual persons. Upstream: the authority depends on court orders to lawfully detain. Downstream: the authority's records influence court decisions.
 
-      Food-service contractor:
-      - Function: provides detainee meals.
-      - Contractual relationship: UNKNOWN current vendor. The 2018
-        U.S. Marshals report documented food-service deficiencies
-        (improperly stored sandwiches, kitchen sanitation issues);
-        subsequent county statements indicated correction of these
-        items.
-      - Compensation structure: UNKNOWN.
+- **Cuyahoga County Prosecutor's Office** — charging decisions determine who is admitted to the facility. Upstream.
 
-      Independent corrections consultant:
-      - Function: conducts periodic facility inspection per civil
-        settlement.
-      - Contractual relationship: retained under civil-litigation
-        settlement (Donald Leach is the consultant cited in public
-        reporting on the November 2024 inspection).
-      - Compensation structure:
-        [ ] Flat fee per action
-        [X] Hourly / project-based  ASSUMPTION
-        [ ] Retainer
-        [ ] Revenue share
-        [ ] Outcome-tied
-        [ ] Uncompensated / volunteer
-        [ ] Other
+- **Ohio Department of Rehabilitation and Correction, Bureau of Adult Detention** — sets minimum standards and conducts annual inspections. Upstream regulatory authority.
 
-6.2 — Type 2 dependencies (independent authorities with a
-      structural relationship to this one):
+- **U.S. Marshals Service** — contracts with the facility for housing of federal detainees, paying approximately $1.5 million per year per 2018 reporting (per the news at that time; current figure UNKNOWN). The Marshals withdrew federal detainees from the main facility in 2018 following their facility-review report. Two-way relationship: the Marshals' contracting decision is itself a stop-path-adjacent mechanism (see §5).
 
-      *If your authority has no Type 2 dependencies, state so
-      explicitly — this is a legitimate disclosure for voluntary
-      or fully-independent authorities.*
+**6.3 — Type 3 dependencies (infrastructure whose failure would compromise stop paths or auditability):**
 
-      - Cuyahoga County Common Pleas Court (commits detainees;
-        adjudicates underlying charges; releases). Upstream and
-        downstream — the authority depends on court orders for
-        admission and release; the court depends on the authority
-        for custody pending proceedings.
-      - Cleveland Municipal Court and other municipal/mayor's
-        courts within Cuyahoga County. Same upstream/downstream
-        relationship.
-      - Cuyahoga County Prosecutor's Office (charging decisions
-        determining who is committed). Upstream.
-      - Cuyahoga County Public Defender's Office (represents
-        indigent detainees). Stakeholder relationship.
-      - Cleveland Division of Police and other county/municipal
-        law-enforcement agencies operating within Cuyahoga County.
-        Upstream — booking source.
-      - U.S. Marshals Service, Northern District of Ohio.
-        Historically a downstream user (paying customer for federal
-        detainee housing); the Marshals withdrew federal detainees
-        from CCCC following the 2018 report; UNKNOWN current status
-        as of May 2026.
-      - Ohio Department of Rehabilitation and Correction, Bureau
-        of Adult Detention. Upstream regulator.
-      - Cuyahoga County Medical Examiner (death investigations and
-        autopsy determinations; the medical examiner has issued
-        public rulings on multiple in-custody deaths, including
-        homicide and accidental classifications).
-      - Ohio Bureau of Criminal Investigation. Stakeholder; per
-        public reporting, the Cuyahoga County sheriff has not
-        requested a BCI investigation of an in-custody death since
-        2016.
+- **Power and HVAC infrastructure** — the June 2025 power-substation fire that cut cooling to the facility during a heatwave demonstrated this dependency. Without functioning power and climate control, the facility cannot meet the basic-conditions thresholds in §4.7, and stop paths reliant on inspection (§5.1) and federal litigation (§5.2) may issue findings but cannot rapidly restore conditions.
 
-6.3 — Type 3 dependencies (infrastructure whose failure would
-      compromise stop paths or auditability):
-      For each: name, what specifically fails if this dependency
-      is lost, what stop path or audit capability is compromised:
+- **Records and incident-reporting systems** — the U.S. Marshals' 2018 finding of "failure to perform post mortem mortality reviews" and "insufficient and unclear answers regarding six recent inmate deaths" indicates that auditability depends on functional record-keeping. Where records are absent, incomplete, or contradictory, all stop paths' evaluation capacity is compromised.
 
-      - Body-worn-camera footage retention and production:
-        bodycam footage is required to evaluate use-of-force
-        events, in-custody-death sequences, and grievance-related
-        retaliation claims. Public reporting on the Wade and Papp
-        2024–2025 cases documented that body-cam footage was not
-        provided to state inspectors. If body-cam footage is not
-        retained or not produced, Stop Path 2 (state inspection)
-        and Stop Path 1 (litigation discovery) auditability is
-        compromised. This is a documented R67 (Minimum Auditability
-        Floor) concern.
-      - Fixed-camera surveillance footage retention: same function
-        and same compromise as body-cam if not retained or not
-        produced. The Marshall Project - Cleveland reporting
-        described fixed-camera footage that "skips badly" and
-        lacks timestamps in some incidents.
-      - State inspection report publication channel (ODRC public-
-        records portal): public access to inspection findings is
-        required for civic trigger filing under SCBP-08. If
-        production is delayed or restricted, civic-trigger
-        functionality is compromised.
-      - Sheriff's Department data systems: booking records, intake
-        screening records, cell-check logs, classification records.
-        If unavailable to inspectors, audit-trail integrity for
-        R67 dimensions is compromised.
+- **Body-worn camera and surveillance infrastructure** — recent updates to the body-worn camera policy (Sheriff's Department 2024 announcement) make footage of critical incidents subject to release within seven days. If this infrastructure or its release protocol fails, independent evaluation of use-of-force and medical-response incidents is compromised, which directly weakens Stop Path 2 (litigation).
 
-6.4 — Capture risk identification:
-      Does any single funding source, contractor, vendor, or partner
-      provide more than 33% of operating support, OR control critical
-      data, OR provide infrastructure that cannot be replaced within
-      90 days?
-      [ ] No
-      [X] Yes — identify and describe the structural risk:
+**6.4 — Capture risk identification:**
 
-      - Sales-tax revenue concentration: the 0.25% sales-tax
-        extension approved in 2023 is committed for 40 years to
-        debt service and operations of the Central Services
-        Campus successor facility. This is a single revenue
-        instrument funding the bulk of capital and significant
-        portions of ongoing operations. R03 capture concern: the
-        political durability of this revenue source creates
-        institutional incentive against R76 (Mandatory Degradation)
-        scope reduction.
-      - MetroHealth as sole-source clinical-care provider: the
-        authority depends on a single Type 1 clinical contractor
-        for all detainee medical and mental-health care. Loss of
-        the MetroHealth contract within 90 days would not be
-        replaceable within that window. R03/R12 capture concern.
-      - Securus and commissary vendor revenue-share arrangements:
-        flagged but UNKNOWN whether current contracts include
-        capture-relevant components. Under R69 (Burden of Proof
-        Reversal) the authority cannot certify the absence of
-        these arrangements on public information alone.
-      - Physical infrastructure: the existing Justice Center jail
-        towers cannot be replaced within 90 days; the planned
-        successor facility (Central Services Campus) is under
-        construction with full operation projected mid-2029. R61
-        (Anti-Entrenchment) concern is acknowledged.
+[X] Yes — identify and describe the structural risk:
 
-6.5 — Reversibility-affecting dependencies:
-      Which dependencies, if removed, would make it harder to
-      dismantle this authority within its declared dismantling
-      timeline (§9.1)?
+- **Communication-revenue capture:** the Securus / digital-mail vendor arrangement is a revenue-share structure. The authority benefits financially from detainee communications; this creates structural alignment between communication volume and revenue.
+- **State-inspection / enforcement asymmetry:** the Ohio Department of Rehabilitation and Correction has cited the facility repeatedly across years without imposing penalties. Per public reporting, county jails have opposed expanded state enforcement authority. The regulator's enforcement powers are structurally weakened by political resistance from the regulated population (county jails collectively).
+- **Sheriff-Executive alignment:** the Sheriff is appointed in Cuyahoga County (per the County Charter), not elected as in most Ohio counties. This makes the Sheriff structurally aligned with the County Executive in a way that reduces the Sheriff's independence as a stop-mechanism check on county-executive operational decisions affecting the jail. Whether this is net protective or net concerning is a structural question; the framework records it as a capture-risk-relevant feature.
 
-      - The Central Services Campus successor facility construction
-        commitment. Per R59 (Functional Continuity Consolidation),
-        CCCC and the successor facility are evaluated as one
-        continuous authority. The successor facility's $890+
-        million construction commitment, financed by 40-year debt
-        and sales-tax revenue stream, makes dismantling of "jail
-        authority in Cuyahoga County" structurally implausible
-        on any timeline shorter than the bond-amortization period.
-      - Court co-location: the existing CCCC is physically
-        integrated with the downtown Justice Center, which houses
-        the courts that depend on co-located custody for court
-        operations. The County Prosecutor and Common Pleas judges
-        have publicly contested the Garfield Heights successor
-        site location on operational-dependency grounds per public
-        reporting.
-      - MetroHealth contract: ending custodial detention would not
-        end the medical-care obligation for the population while
-        custody exists; the clinical-care obligation is the binding
-        operational constraint.
+**6.5 — Reversibility-affecting dependencies:**
 
-6.6 — Coordination disclosures:
-      Does this authority coordinate, synchronize, or align
-      operationally with any other authority in ways that, taken
-      together, function as a single shared authority system (R55,
-      R59)? If yes, name and describe.
+- The Sheriff's Department's overall budget structure ($205M for 2026, with the jail consuming a substantial share) and the planned $1 billion replacement facility ("Central Services Campus" in Garfield Heights, expected to open late 2028 or early 2029) constitute substantial sunk and committed costs. These costs make full dismantling of the authority structurally difficult; replacement (rebuilding a fully constituted jail elsewhere) is the only realistic scenario, not dismantling.
+- Long-term contractor relationships with Securus and other vendors carry termination costs and continuity obligations.
+- The state's reliance on local jails for pretrial detention means no alternative housing exists at scale for the population currently detained; dismantling the authority requires either alternative facilities or systemic pretrial-detention reform.
 
-      Yes. Coordination relationships under R55/R59:
+**6.6 — Coordination disclosures:**
 
-      - With Cleveland Division of Police and other arresting
-        agencies: intake and booking are operationally integrated;
-        the authority receives nearly all of its admissions from
-        these agencies and policy changes (such as the March 2025
-        end of uncharged-person bookings) are coordinated.
-      - With Cuyahoga County Common Pleas Court: pretrial
-        detention, court appearance, and release coordination is
-        continuous and operationally integrated.
-      - With U.S. Marshals Service, Northern District of Ohio
-        (historically): federal-detainee housing through 2018, then
-        withdrawn; UNKNOWN current status.
-      - With successor facility planning: under R59, the current
-        CCCC and the planned Central Services Campus are one
-        continuous authority for framework purposes.
+The authority coordinates with other Cuyahoga County criminal-justice authorities — the Prosecutor's Office, the Public Defender's Office, the courts, the Sheriff's law enforcement division, the Medical Examiner. In framework terms (R55, R59), the system functions as a single criminal-justice authority system with the jail as one component. Expiration, renewal, and reversibility considerations applied to the jail in isolation are partial; the larger system is the appropriate evaluative unit. This is a structural disclosure, not a finding of evasion.
 
-6.7 — Disclosure completeness assertion:
-      The authority asserts that the dependencies listed above
-      include all Type 1, Type 2, and stop-path-relevant Type 3
-      dependencies known to the authority at the time of
-      registration. The authority acknowledges that complete
-      dependency mapping is structurally unattainable, and that
-      newly-discovered dependencies will be reported as
-      Mechanism Record updates. Undisclosed but discoverable
-      dependencies are themselves a Framework finding.
-      [X] Asserted
-      (TEST disclosure: this assertion is made on behalf of the
-      worked example by the document author from public sources,
-      not by the authority itself. The authority has not actually
-      registered.)
+**6.7 — Disclosure completeness assertion:**
 
-6.8 — External authority operationalization (R72):
-      Identify any external authority (vendor algorithm, payer
-      decision system, regulatory determination, contractor judgment)
-      whose outputs you operationalize within your authority surface,
-      such that the affected party experiences your authority but
-      the underlying decision is external. For each:
-      - Name of external authority
-      - What they decide
-      - How their decision becomes operationalized as your authority
-      - Whether the affected party can distinguish your decision
-        from theirs
+[X] Asserted (with the limitation that this is a third-party diagnostic; "all known to the authority at the time of registration" is reframed as "all known from public sources at the snapshot date." Undisclosed dependencies discoverable from non-public sources are a Framework finding under R69.)
 
-      MetroHealth System (clinical decision-making):
-      - Decides: medical and mental-health diagnoses, treatment
-        plans, medication regimens, transfer-to-hospital
-        determinations.
-      - Operationalization: MetroHealth clinical decisions are
-        executed within the authority's facility by authority and
-        contract personnel. Detainee experiences clinical contact
-        as part of jail confinement.
-      - Distinguishability: the affected party can distinguish
-        clinical from custodial decisions in principle (clinical
-        staff wear medical uniforms; documents are MetroHealth-
-        branded) but cannot distinguish in practice when custodial
-        staff control access to clinical staff.
+**6.8 — External authority operationalization (R72):**
 
-      Committing courts:
-      - Decide: who is admitted, who is released, bond conditions,
-        duration of pretrial detention, sentence length.
-      - Operationalization: the authority confines per court order.
-        Detainee experiences confinement as the authority's act.
-      - Distinguishability: the affected party can distinguish in
-        principle (court orders are documents) but the experience
-        of confinement is the authority's.
+- **MetroHealth Systems medical decisions:** when a MetroHealth provider determines a detainee's medical disposition (hospital transfer, medication, restraint approval for medical reasons), the affected detainee experiences the decision as the authority's custody decision. The detainee cannot meaningfully distinguish the medical authority from the corrections authority. R72 operationalizes MetroHealth decisions as part of the authority's surface.
 
-      Cuyahoga County Medical Examiner:
-      - Decides: cause and manner of in-custody death rulings.
-      - Operationalization: death-rulings shape downstream
-        litigation, BCI referral decisions, and Bureau of Adult
-        Detention findings.
-      - Distinguishability: families of deceased detainees can
-        distinguish in principle; in practice the medical
-        examiner's rulings are received as part of the authority's
-        post-death process.
+- **Securus / communications vendor decisions:** the vendor's technical decisions (call quality, service availability, surveillance, message processing) operationalize as the authority's communication policy from the detainee's perspective.
 
-      The authority does not use vendor-supplied algorithmic risk-
-      scoring tools (e.g., pretrial risk-assessment instruments)
-      within its own operations; such tools, where used, are used
-      by the committing courts upstream and are operationalized as
-      those courts' decisions per the second item above. UNKNOWN
-      whether any classification or housing-assignment algorithms
-      are in use within CCCC.
-```
+- **Court bond decisions:** while structurally separate, the courts' bond decisions determine the authority's population. Decision: bond. Operationalization: pretrial detention. Affected party distinction: detainees know bond decisions are court-made, so this is a weaker R72 case than the above two.
 
-*Rules addressed: R03 (Institutional Capture Prohibition), R12 (Dependency and Capture Review), R39 (Structural Dependency Disclosure), R50 (Capture Risk Monitoring), R55 (Fragmentation), R59 (Functional Continuity), R61 (Anti-Entrenchment), R64 (External Circumvention), R72 (External System Equivalence).*
+*Rules addressed: R03, R12, R39, R50, R55, R59, R61, R64, R72.*
 
 ---
 
 ## SECTION 7 — What metrics, signals, and decision inputs shape outcomes?
 
-```
-7.1 — Declared metrics:
-      List all metrics, variables, signals, classifications, and
-      decision inputs that materially influence the authority's
-      outcomes. For each: name, source, role in decision-making,
-      and publication status across three dimensions:
-      - Aggregate publication: [Y/N] (statistical summaries)
-      - Individual publication: [Y/N] (specific case data)
-      - Methodology publication: [Y/N] (how the metric is computed
-        or applied)
+**7.1 — Declared metrics:**
 
-      Admissions count (booking volume):
-      - Source: sheriff's booking system.
-      - Role: drives operational scale and resource demand.
-      - Aggregate publication: Y (sheriff statements cite ~26,000
-        annual admissions).
-      - Individual publication: Y (booking records are public
-        records under Ohio law).
-      - Methodology publication: Y.
+Metrics publicly identifiable as influencing the authority's operations and outcomes:
 
-      Average daily population (ADP):
-      - Source: sheriff's count records.
-      - Role: drives staffing and housing-unit utilization.
-      - Aggregate publication: Y (ODRC inspection reports cite
-        ADP).
-      - Individual publication: N.
-      - Methodology publication: Y.
+- **Booking volume** — number of admissions per period. Source: booking system. Role: drives operational tempo and staffing demand. Aggregate publication: Y (Sheriff publishes ~26,000/year); Individual publication: Y (daily roster published via Sheriff app per inmate information page); Methodology publication: UNKNOWN.
 
-      Housing-unit classification:
-      - Source: sheriff's classification system.
-      - Role: determines which detainee is housed where (general
-        population, mental health unit, restrictive housing).
-      - Aggregate publication: UNKNOWN.
-      - Individual publication: N.
-      - Methodology publication: UNKNOWN. Flagged as R79 (Metric
-        Completeness) concern: classification practice materially
-        influences detainee conditions of confinement and is not
-        publicly methodologized.
+- **Population on hand** — point-in-time detained population. Source: booking system. Role: drives staffing-ratio decisions. Aggregate publication: UNKNOWN at regular interval; Individual publication: Y (roster); Methodology publication: UNKNOWN.
 
-      Disciplinary incidents and use-of-force events:
-      - Source: sheriff's incident reports.
-      - Role: determine restrictive-housing placement, may
-        influence parole or sentencing recommendations.
-      - Aggregate publication: partial (some figures in ODRC
-        inspection reports).
-      - Individual publication: N.
-      - Methodology publication: N.
-      - Aggregate-N + Individual-N + Methodology-N for the
-        methodology component is an R67 concern under SCBP-09
-        §IX-C.
+- **Use of force incidents** — number, type, and outcome. Source: incident reports and body-worn camera footage. Role: shapes internal-affairs review and external civil-rights litigation. Aggregate publication: N (no publicly available routine dashboard identified); Individual publication: N (critical-incident footage released within seven days per 2024 policy, but routine UoF not published); Methodology publication: N.
 
-      In-custody deaths:
-      - Source: sheriff's reporting to ODRC.
-      - Role: triggers Bureau of Adult Detention review and may
-        trigger BCI referral.
-      - Aggregate publication: Y (ODRC publishes; news media
-        report).
-      - Individual publication: Y (medical examiner rulings are
-        public records).
-      - Methodology publication: Y for medical examiner; Y for
-        ODRC review process; mortality-rate computation per the
-        §4.1 threshold is not currently a sheriff-published
-        metric — this is acknowledged as an R79 metric-completeness
-        gap.
+- **Deaths in custody** — number, manner, cause. Source: Sheriff's Department and Medical Examiner. Role: shapes inspection findings, litigation, federal contracting. Aggregate publication: N (no publicly maintained running count identified); Individual publication: variable (Medical Examiner rulings are public records); Methodology publication: UNKNOWN.
 
-      Grievance filings:
-      - Source: sheriff's grievance system (electronic kiosk plus
-        paper).
-      - Role: surface conditions complaints; may inform corrective
-        action.
-      - Aggregate publication: UNKNOWN.
-      - Individual publication: N.
-      - Methodology publication: partial (the November 2024
-        independent inspector noted that paper-grievance-form
-        availability was deficient).
+- **Grievances filed and processed** — number, category, resolution. Source: grievance system (paper and electronic kiosk). Role: shapes internal-affairs review and inspection findings. Aggregate publication: N; Individual publication: N; Methodology publication: UNKNOWN.
 
-      Booking-record propagation to NCIC/LEADS:
-      - Source: automated sheriff data feed.
-      - Role: shapes downstream decisions per §3.5.
-      - Aggregate publication: N.
-      - Individual publication: N.
-      - Methodology publication: Y (federal NCIC standards are
-        published; sheriff's contribution practice is not
-        independently published).
+- **State inspection compliance** — number of non-compliance citations per cycle. Source: ODRC inspection reports. Role: shapes corrective-action requirements. Aggregate publication: Y (state publishes inspection reports); Individual publication: Y; Methodology publication: Y (OAC 5120:1-8 is published).
 
-7.2 — Indirect signals:
-      Are there factors that influence outcomes informally — through
-      staff judgment, organizational culture, prioritization
-      practices, or pattern-of-operation — that do not appear in
-      formal metrics? If yes, describe.
+- **Overtime expenditure** — corrections officer overtime hours and cost. Source: Sheriff's fiscal office. Role: dominant budget driver; signals chronic understaffing. Aggregate publication: Y (budget hearings); Individual publication: N; Methodology publication: N.
 
-      - Staff response time to medical emergencies: per public
-        reporting on the Glen Williams Jr. and Jennifer Wade
-        cases, response time to in-cell unresponsiveness has
-        varied materially across incidents and across staff. Per
-        The Marshall Project - Cleveland February 2026 reporting,
-        the Bureau of Adult Detention identified systemic errors
-        in medical care, screenings, cell checks, and emergency
-        response in at least 10 of the last 20 jail deaths. This
-        is an informal-pattern indirect signal that materially
-        influences outcomes.
-      - Special Response Team ("Men in Black" per public reporting)
-        operational culture: the 2020 Coalition to Stop the
-        Inhumanity at the Cuyahoga County Jail public statements
-        described this team's conduct as a structural problem.
-        UNKNOWN current operational status.
-      - Cell-check practice: the Bureau of Adult Detention 2025
-        review of the Papp case documented that officers
-        reportedly walked the pod 50 times peeking into cells
-        without identifying a body that was cold and stiff. This
-        is an indirect signal indicating that cell-check practice
-        diverges from declared practice.
-      - Intake screening for substance-withdrawal risk: the Papp
-        case (death within 20 hours of booking after self-
-        disclosed recent fentanyl use) indicates intake-screening
-        practice that diverges from declared screening protocols.
+ANNOTATION: per §IX-C of SCBP-09, Use of Force, Deaths in Custody, and Grievances declared with Aggregate-N + Methodology-N are R67 (Minimum Auditability Floor) concerns. Deaths in custody declared Aggregate-N + Individual-variable + Methodology-N is a presumptive R79 failure: the authority's most consequential outcome metric is not systematically published. The framework's response to this would be provisional pause pending publication of an auditable mortality report.
 
-7.3 — Algorithmic decision systems:
-      Does this authority use, rely upon, or operationalize
-      algorithmic, automated, or AI-based decision systems? If yes:
-      [X] Yes — name the system, describe what decisions it
-          influences, identify the vendor/source, and describe
-          auditability provisions:
-          - Securus Technologies operates phone-call routing,
-            recording, and screening systems. The authority
-            operationalizes Securus's call-management decisions
-            (recording defaults, attorney-call exclusions) within
-            the facility. Auditability of Securus systems is
-            controlled by the vendor.
-          - IC Solutions operates video-visitation matching and
-            scheduling. UNKNOWN auditability.
-          - UNKNOWN whether any housing-classification or
-            disciplinary-risk algorithm is in use; the authority
-            cannot certify the absence of such systems under R69.
-      [ ] No
+**7.2 — Indirect signals:**
 
-7.4 — Outcome-versus-declaration check:
-      The authority commits to maintaining a process by which
-      observed outcomes are periodically compared to declared
-      metric set, with discrepancies investigated and surfaced
-      (per R79, R80).
-      [ ] Committed — describe process:
-      [X] Cannot commit — explain:
-          The authority cannot currently certify that an outcome-
-          versus-declaration reconciliation process exists in a
-          form that satisfies R79. The pattern of state Bureau of
-          Adult Detention findings documenting systemic errors in
-          ten of twenty recent deaths indicates that declared
-          practice and observed outcome diverge in ways the
-          authority has not internally surfaced. This is an
-          acknowledged R79 (Metric Completeness) compliance gap.
-```
+- **Staffing call-off rate** — the proportion of corrections officers calling off shift; per 2025 reporting, approximately 1 in 7 union corrections officers called off during the June 2025 heatwave. This shapes operational decisions on a shift-by-shift basis and influences detainee access to showers, recreation, court transport, and medical response.
+- **Overtime authorization patterns** — per 2025 budget hearings, overtime has been authorized without adequate oversight; this influences which posts are staffed and when.
+- **Word-of-mouth among staff and detainees** — the 2018 Marshals report and subsequent reporting indicate detainee fear of retaliation; informal incentives shape grievance filing and witness cooperation.
+- **Court calendar pressure** — judicial scheduling and bond practices materially influence the population housed and the authority's operational tempo.
 
-*Rules addressed: R58 (Indirect Authority Recognition), R67 (Minimum Auditability Floor), R79 (Metric Completeness), R80 (Outcome Dominance Principle).*
+**7.3 — Algorithmic decision systems:**
+
+[ ] Yes
+[X] No — to the extent publicly identifiable, the authority does not appear to use algorithmic risk-scoring or automated decision systems for classification, housing, or release decisions. Pretrial-risk assessment, if used at the bond stage, is a court-level decision upstream of this authority. ANNOTATION: this is from public sources; internal classification practices may incorporate scored tools not publicly disclosed. R79 reads against this: if observed outcomes cannot be explained by declared metrics, undeclared influence is presumed.
+
+**7.4 — Outcome-versus-declaration check:**
+
+[ ] Committed
+[X] Cannot commit — explain: ANNOTATION: as a third-party diagnostic, this cannot speak for the authority. No publicly identifiable process compares observed outcomes against declared metrics on a recurring basis. R79 and R80 apply: outcome dominance is the framework's standard, and where declared metrics are sparse, outcome-based expansion findings govern.
+
+*Rules addressed: R58, R67, R79, R80.*
 
 ---
 
 ## SECTION 8 — How is this authority watched?
 
-```
-8.1 — Drift monitoring mechanism:
-      What mechanism does this authority use to detect expansion
-      beyond its original mandate? Who operates that mechanism
-      and how often is it run?
+**8.1 — Drift monitoring mechanism:**
 
-      - Ohio Department of Rehabilitation and Correction, Bureau
-      of Adult Detention: annual inspection against Ohio
-      Administrative Code 5120:1-8 / 5120:1-12 minimum standards.
-      Monthly inspections were ordered by the Ohio governor in
-      2018 and continued through October 2020 per public
-      reporting; current inspection cadence is annual.
-      - Independent corrections consultant retained under civil
-      settlement (Donald Leach per public reporting): periodic
-      inspection per settlement terms.
-      - Cuyahoga County Department of Internal Auditing: has
-      conducted audits of Sheriff's Office overtime, Criminal
-      Justice Information Sharing, and other operational areas
-      per public reporting on Oversight.gov.
-      - The authority acknowledges that none of these mechanisms
-      automatically triggers a structural stop on drift findings;
-      this is an R41 (Institutional Drift Monitoring) gap.
+- **State inspections (ODRC, Bureau of Adult Detention)** — annual on a published schedule; produces public inspection reports. Operated by ODRC; runs at least annually.
+- **Internal Affairs Unit (Cuyahoga County Sheriff's Department)** — investigates criminal acts and policy violations by department employees. Operated internally; lacks structural independence from the authority being watched.
+- **Cuyahoga County Department of Internal Auditing (DIA)** — conducts periodic financial and operational audits of the Sheriff's Office (most recent identified: Sheriff's Office overtime audit covering January 2024 – March 2025). Operated by county government but with structural separation from the Sheriff.
+- **Cuyahoga County Agency of Inspector General** — investigates fraud, corruption, waste, abuse, misfeasance, malfeasance, and nonfeasance in county government. Operated independently of the Sheriff but within county government.
 
-8.2 — Capture risk monitoring:
-      What ongoing monitoring detects regulatory or structural
-      capture (e.g., revolving-door risk, contractor dependency
-      drift, funding concentration changes)?
+ANNOTATION: no publicly identifiable drift monitoring mechanism specifically tracks scope expansion of the authority (e.g., use-of-force pattern changes over time, classification-policy drift, communication-policy drift). The closest mechanism — state inspections — checks compliance against fixed standards, not drift.
 
-      - Cuyahoga County Department of Internal Auditing audits
-      Sheriff's Office contracting and overtime periodically.
-      - The County Prosecutor's Office, while structurally
-      adjacent to the authority, has demonstrated independence
-      on Central Services Campus contracting questions per the
-      March–April 2026 public-records reporting (cease-and-desist
-      letter, request for State Auditor special audit). This
-      external scrutiny operates as ad-hoc capture-risk
-      monitoring rather than a structural mechanism.
-      - The authority acknowledges that no continuous capture-
-      risk monitoring program is currently in place; this is an
-      R50 (Capture Risk Monitoring) gap.
+**8.2 — Capture risk monitoring:**
 
-8.3 — Audit interfaces:
-      What interfaces, data exports, or evaluation capabilities are
-      available to independent reviewers? Specifically:
-      - What data is published proactively?
-          ODRC inspection reports (available on request from
-          ODRC); some county press releases regarding deaths and
-          critical incidents; the body-worn-camera footage
-          release policy (7 business days for critical incidents
-          per February 2025 policy).
-      - What data is available on request?
-          Booking records (public records under Ohio law);
-          autopsy records of deceased detainees (public, subject
-          to HIPAA and homicide-investigation exclusions); ODRC
-          inspection reports; officer disciplinary records of
-          completed investigations.
-      - What data is restricted, and on what grounds?
-          Real-time inmate medical records (HIPAA); some
-          surveillance footage during active investigation;
-          internal-investigation records prior to completion;
-          some contractor terms (claimed proprietary).
+- DIA and IG audits address fraud and waste but not structural capture risk in the framework's sense (vendor revenue alignment, regulator-regulated political dynamics, sheriff-executive structural alignment).
+- ANNOTATION: no public-facing capture-risk monitoring identified.
 
-8.4 — Adversarial exposure (R81):
-      Can an external party with no insider access evaluate this
-      authority's scope, effect, harm thresholds, dependencies,
-      reversibility, and stop capability? If not fully, identify
-      the gaps.
+**8.3 — Audit interfaces:**
 
-      Partial. An external party with no insider access can
-      evaluate, from public records:
-      - Scope (substantial — ORC 341, county charter, posted
-        sheriff's policies).
-      - Effect (substantial — admissions counts, ODRC inspection
-        findings, news reporting).
-      - Harm thresholds (substantial for deaths and use of force;
-        partial for medical-care denial and conditions; weak for
-        classification and restrictive-housing practice).
-      - Dependencies (partial — Type 1 vendor identities largely
-        knowable; compensation terms largely unknown).
-      - Reversibility (weak — see §9; the 40-year sales-tax
-        commitment and the $890M+ successor-facility commitment
-        are public, but operational dismantling planning is not
-        publicly documented).
-      - Stop capability (partial — Stop Path 1 is well-documented
-        through court records; Stop Path 2 (ODRC) is well-
-        documented but with known enforcement-gap; Stop Path 3
-        (electoral and budget) is documented but rarely activated).
+- **Published proactively:** state inspection reports (ODRC); county budget documents; Medical Examiner death rulings; county code; Sheriff press releases.
+- **Available on request:** records requestable under Ohio Public Records Act, including incident reports, grievance records (subject to privacy redaction), use-of-force reports.
+- **Restricted:** medical records (HIPAA); internal affairs investigation files (Ohio personnel-record exemptions and active-investigation exemptions); detainee personally identifiable information beyond what is in the public roster.
 
-      Gap summary: classification and restrictive-housing
-      practice; algorithmic-system use; vendor compensation
-      structure; capture-risk monitoring; outcome-versus-
-      declaration reconciliation. These constitute R81 adversarial-
-      exposure gaps and are acknowledged.
+**8.4 — Adversarial exposure (R81):**
 
-8.5 — Known structural failure modes:
-      What failure modes does this authority know about — failure
-      modes that have been observed in similar authorities, in this
-      authority's prior versions, or in this authority's design
-      assumptions? (R42 requires these be documented; this is the
-      registration declaration.)
+The authority's scope, basic operations, and harm-relevant events are partially evaluable by external parties: news organizations (The Marshall Project — Cleveland, Signal Cleveland, News 5 Cleveland, WKYC), advocacy groups, and academic researchers have produced sustained external evaluation across the 2018–2026 period.
 
-      Failure modes documented in public record at this authority:
+Gaps: real-time conditions monitoring is not available; routine use-of-force and grievance data are not published; mortality data is not maintained in a single auditable public registry; medical-care quality data is restricted by HIPAA and by the public-private contract structure; staffing-level data is intermittent.
 
-      - 2018 U.S. Marshals Service report: facility rated
-        "Unsatisfactory/At-Risk"; failure on 84 of 135 ODRC
-        standards in concurrent state inspection; documented
-        deficiencies in sanitation, medical care, food service,
-        food-as-punishment, overcrowding (2,420 detainees at a
-        capacity of 1,765), retaliation fear among detainees.
-      - 2018–2020 monthly state inspection period: facility
-        operated under heightened state supervision following the
-        U.S. Marshals report.
-      - 2022–2023 ODRC inspections: 13 non-compliant standards
-        each year; staff-training failures noted.
-      - 2024 ODRC inspection: 7 non-compliant standards.
-      - April 2024 corrective action plan after staff ignored a
-        detainee's pleas for medical help for several days
-        (Glen Williams Jr., January 2024).
-      - At least 24 in-custody deaths since 2018 per The Marshall
-        Project - Cleveland reporting; at least 20 since 2020.
-      - Specific death reviews with documented systemic error:
-        Glen Williams Jr. (January 2024, ruptured aorta, 9-minute
-        delay to CPR); Fred Maynard (August 2023, choked on
-        sandwich, double amputee); Jennifer Wade (2025, mental
-        health unit, left facedown on concrete for hours,
-        congestive heart failure ruling); Michael Papp (July 2024,
-        fentanyl withdrawal, 20 hours after booking, cell-check
-        failures, body cold and stiff before discovery); Tasha
-        Grant (May 2025, restraint-related death ruled homicide).
-      - Recurring inability to provide body-cam footage to state
-        inspectors (Wade and Papp cases).
-      - Reported finding that the Cuyahoga County sheriff has
-        not requested an Ohio BCI investigation of any in-custody
-        death since 2016 per Ohio Attorney General spokesperson
-        statement.
+ANNOTATION: R81 is partially satisfied through journalism and litigation discovery, not through the authority's own disclosure infrastructure. Structurally, this is non-compliance: the framework requires authority systems to remain evaluable through their own disclosure, not solely through investigative journalism.
 
-      Failure modes acknowledged but not specifically documented
-      at this authority:
-      - Retaliation risk against complainants (R33 concern
-        flagged in §5.4).
-      - Contractor revenue-share capture risk (flagged in §4.7
-        and §6.4).
+**8.5 — Known structural failure modes:**
 
-8.6 — Trade-secret / confidentiality declarations:
-      If portions of your authority's operations cannot be fully
-      disclosed for reasons of trade secret, vendor IP, regulatory
-      restriction, or other confidentiality:
-      - What category of information is restricted? (algorithm
-        internals, methodology details, vendor IP, business data,
-        privileged communications, etc.)
+Documented in public reporting and inspection findings:
 
-        Vendor-IP-claimed: Securus, IC Solutions, and commissary
-        vendor algorithms and contract terms; certain contractor
-        compensation details.
-        Statutorily restricted: detainee medical records (HIPAA);
-        certain juvenile-related records (Ohio law);
-        actively-investigated death and homicide records (until
-        case resolution).
-        Privileged: attorney-client communications between county
-        and counsel.
+- Chronic understaffing and high overtime expenditure, producing shift-by-shift operational gaps.
+- Delayed medical response (multiple in-custody deaths involving delays of minutes between observed distress and CPR initiation).
+- Inadequate suicide-risk screening at booking (the Gregory Fox 2018 case involved a detainee placed in general population after disclosing prior suicide attempts).
+- Use of force as discipline (2018 U.S. Marshals finding).
+- Food deprivation as discipline (2018 U.S. Marshals finding).
+- Detention in cells without working toilets or running water (2018 U.S. Marshals finding).
+- Inadequate natural light in housing units (state findings 2019, 2021, 2022, 2023, 2024).
+- Single-point HVAC and power failures producing facility-wide conditions crises (June 2025).
+- Information asymmetry between Sheriff/Executive and County Council on state enforcement actions (April 2024 corrective action plan not disclosed promptly to Council).
+- Inadequate post-incident review (2018 U.S. Marshals finding regarding post-mortem mortality reviews).
+- Restraint-related deaths (May 2025 Tasha Grant case, ruled homicide).
 
-      - What is the source of the restriction? (vendor contract,
-        regulatory restriction, competitive harm, statutory privilege,
-        other)
+**8.6 — Trade-secret / confidentiality declarations:**
 
-        Mixed: vendor contract; federal statute (HIPAA); state
-        statute (Ohio public-records exemptions); attorney-client
-        privilege.
+- **Category of restricted information:** vendor contract terms (Securus; digital mail vendor), internal classification methodology if any exists in algorithmic form, internal affairs investigation files during active investigation, medical records.
+- **Source of restriction:** vendor contracts, Ohio public-records exemptions, HIPAA, active-investigation privilege.
+- **Auditability mitigation in place:** aggregate inspection reports (ODRC); litigation discovery for active cases; DIA and IG audits; public-records-request channels with statutory turnaround.
+- **R67 commitment:** ANNOTATION: as a third-party diagnostic, this cannot make commitments. R67 floor is not met for use-of-force, deaths in custody, grievance disposition, or medical-care quality at the registry-disclosure level identified.
 
-      - What auditability mitigation is in place despite the
-        restriction? (aggregate disclosure, third-party audit,
-        regulator review, summary methodology, none)
-
-        For vendor-IP-claimed items: partial — Cuyahoga County
-        Department of Internal Auditing reviews contracting.
-        Aggregate-level information on contract terms is
-        publicly obtainable through county procurement records.
-        For HIPAA-restricted clinical records: MetroHealth as
-        Type 1 contractor is subject to its own clinical-quality
-        review processes; aggregate clinical outcomes (deaths,
-        for example) are public through medical-examiner rulings.
-
-      - What R67 (Minimum Auditability Floor) commitment can the
-        authority make despite the restriction?
-
-        The authority commits to making available, on request to
-        independent reviewers and stakeholders: aggregate
-        admissions data; aggregate in-custody death data; ODRC
-        inspection reports; aggregate disciplinary and use-of-
-        force data sufficient to evaluate trend; body-worn-camera
-        footage of critical incidents per the February 2025 policy
-        (7 business days); contractor identities and aggregate
-        contract values.
-
-        The authority acknowledges that the recurring pattern of
-        body-cam footage non-production in death-review cases
-        documented in 2024–2025 represents a current R67 floor
-        violation under SCBP-09 §IX-D and §IX-E, and that
-        remediation has not been demonstrated as of public
-        reporting through April 2026.
-```
-
-*Rules addressed: R38 (Transparency Sufficiency), R40 (Authority Surface Mapping), R41 (Institutional Drift Monitoring), R42 (Structural Failure Documentation), R44 (Independent Audit Capability), R50 (Capture Risk Monitoring), R67 (Minimum Auditability Floor), R81 (Adversarial Exposure Requirement).*
+*Rules addressed: R38, R40, R41, R42, R44, R50, R67, R81.*
 
 ---
 
 ## SECTION 9 — How does it end?
 
-```
-9.1 — Estimated dismantling time:
-      How long would full wind-down take from a termination order to
-      complete cessation? Express as a number of days, with
-      justification.
+**9.1 — Estimated dismantling time:**
 
-      Under R59 (Functional Continuity Consolidation), CCCC and
-      the planned Central Services Campus successor facility are
-      evaluated as one continuous "jail authority in Cuyahoga
-      County."
+ANNOTATION: full dismantling is not on any publicly identified timeline. The closest publicly committed transition is the planned move from the current facility to a new "Central Services Campus" in Garfield Heights, expected to open late 2028 or early 2029, at an approximate cost of $1 billion. This is replacement, not dismantling — the authority continues, in a new building.
 
-      Estimated dismantling time for the function (not the
-      building): UNKNOWN under any timeline shorter than 10–15
-      years. ASSUMPTION: dismantling of the jail function
-      requires (i) statutory or charter-level decarceration
-      action; (ii) replacement of pretrial confinement with
-      pretrial-release infrastructure; (iii) replacement of
-      short-sentence confinement with community-based
-      alternatives; (iv) replacement of the 40-year sales-tax
-      revenue commitment with a non-jail public-safety
-      allocation; (v) bond-debt resolution for the Central
-      Services Campus.
+Pure dismantling estimate: 24 to 36 months minimum to safely transition or release the detained population, unwind contracts, and dispose of records. Faster timelines are physically possible but require corresponding decisions by county and state authorities about alternative housing, pretrial reform, or population reduction. UNKNOWN: any internal dismantling plan; none publicly identified.
 
-      Estimated dismantling time for the existing facility
-      (the building at 1215 W. 3rd Street): ASSUMPTION the
-      current facility will cease use when the Central Services
-      Campus reaches full operation, projected mid-2029. This is
-      facility replacement, not authority dismantling — the
-      function persists in the successor facility per R59.
+**9.2 — Dismantling process:**
 
-9.2 — Dismantling process:
-      Describe the staged process. What happens in week 1? Months 1-3?
-      Months 3-6? When are operations frozen, contracts unwound, data
-      archived/destroyed, staff reassigned?
+ANNOTATION: no public-facing dismantling plan identified. A structurally honest dismantling plan would include:
+- Week 1–2: cease new admissions; develop transfer plans for current population.
+- Month 1–6: transfer current detainees to alternative facilities (other county jails; state institutions where appropriate; release with supervision where appropriate).
+- Month 3–12: unwind contracts with MetroHealth, Securus, and other vendors.
+- Month 6–24: archive records per state retention schedule; destroy or transfer biometric data.
+- Month 12–36: physical facility decommissioning.
 
-      For facility-replacement transition (current CCCC to
-      Central Services Campus), publicly described stages:
-      - Pre-2029: continued operation of CCCC; phased completion
-        and commissioning of Central Services Campus.
-      - Mid-2029 (projected): operational transition; detainees
-        moved to Central Services Campus; CCCC ceases use.
-      - Post-2029: disposition of CCCC buildings within the
-        Justice Center complex (currently subject to a $150M
-        Justice Center repair plan negotiated April 2026 per
-        public reporting).
+The new-facility transition is partial: as currently described, the new facility will absorb the same authority and population, not represent dismantling.
 
-      For authority dismantling (the function itself), no
-      publicly documented staged process exists. This is an
-      acknowledged R43 (Reversibility Verification) gap.
+**9.3 — Entrenchment factors:**
 
-9.3 — Entrenchment factors:
-      What factors, if any, would make dismantling harder than the
-      timeline above suggests? Examples: budget dependencies, sunk
-      infrastructure, contractual obligations with long termination
-      windows, downstream systems that operationalize this
-      authority's outputs.
+- $1 billion in planned capital investment in the replacement facility constitutes structural entrenchment per R61. Construction creates sunk cost that politically forecloses the option not to operate a county jail.
+- The authority is the only large pretrial-detention facility in Cuyahoga County. Without alternative housing or systemic pretrial reform, dismantling cannot be reconciled with the courts' bond-decision practice.
+- Approximately 26,000 annual admissions create operational continuity expectations across the county criminal-justice system.
+- Long-term contracts with MetroHealth, Securus, and other vendors carry termination costs and continuity obligations.
+- Approximately 1,500+ FTE corrections-related employment within county government.
+- The county's borrowing capacity has been committed (in part) to the new facility's debt service.
 
-      - 40-year, 0.25% sales-tax revenue commitment passed by
-        Cuyahoga County Council in December 2023 (6-5 vote),
-        committed to Central Services Campus debt service and
-        jail operations through approximately 2063.
-      - $890+ million bonded debt service on the Central Services
-        Campus.
-      - Co-location with county courts and the operational
-        dependency of the courts on integrated custody.
-      - 1,000-FTE workforce with collective-bargaining and
-        public-employee retirement-system obligations.
-      - Downstream record propagation to NCIC/LEADS, commercial
-        background-check vendors, news media booking blotters,
-        and "mugshot" sites; per R63 these downstream effects
-        persist after the authority's actions, and the authority
-        does not currently have mechanism to propagate reversal
-        of these effects.
-      - Ohio Revised Code Chapter 341 statutory framework: county
-        jails exist as a matter of state law; dismantling
-        requires legislative or charter-level action, not merely
-        operational decision.
+This pattern indicates substantial entrenchment under R61.
 
-      These constitute R61 (Anti-Entrenchment) findings and are
-      acknowledged.
+**9.4 — Data disposition:**
 
-9.4 — Data disposition:
-      What happens to:
-      - Personal data (collected from individuals)?
-          UNKNOWN current sheriff retention schedule. ASSUMPTION:
-          retained per Ohio Revised Code public-records retention
-          schedules indefinitely or on lengthy retention windows.
-      - Institutional records?
-          Retained indefinitely per state public-records law.
-      - Derived outputs (scores, classifications, decisions
-        propagated downstream — see R60, R63, R65)?
-          NCIC and LEADS contributions persist in those systems
-          beyond the authority's control. Mugshot and commercial
-          background-check propagation persists indefinitely.
-          The authority does not currently maintain a propagation
-          duty mechanism per R65 (Propagation Duty Requirement);
-          this is an acknowledged gap.
-      - Audit logs?
-          ODRC inspection records and corrective-action records
-          retained by ODRC; sheriff-side audit logs retained per
-          county retention schedule.
+- Personal data (booking, custody, classification): retention governed by Ohio public-records law and state retention schedule. UNKNOWN: specific disposal timeline on facility termination.
+- Institutional records (incident reports, staffing, fiscal): retention per Ohio public-records schedule.
+- Derived outputs (classifications, criminal-records contributions): propagated to courts, state systems, and federal systems; not under the authority's control to invalidate post-termination. R63 propagation duty applies.
+- Audit logs: retention per state schedule; UNKNOWN specifics.
 
-9.5 — Downstream effect reversibility:
-      What decisions, classifications, restrictions, or records
-      produced by this authority have been propagated to other
-      systems? On termination, what mechanism reverses or invalidates
-      those propagated effects (R63, R65)?
+**9.5 — Downstream effect reversibility:**
 
-      Propagated outputs (per §3.5):
-      - Booking records and mugshots → court systems, commercial
-        aggregators, news media, mugshot sites.
-      - Detention records → court systems, probation, parole, ICE.
-      - Criminal-history contributions → NCIC, LEADS.
-      - In-custody death records → ODRC, civil litigation, news.
+Limited. The authority's outputs propagate to:
+- Court records (charging, bond, sentencing decisions influenced by jail records).
+- State criminal history systems.
+- Federal criminal history systems (NCIC, etc.).
+- Commercial mugshot and background-check aggregators.
+- Civil records (eviction, employment, professional licensing).
 
-      Reversal mechanisms currently in place:
-      - Expungement / sealing of court records under Ohio law for
-        eligible cases. This does not automatically purge
-        commercial-aggregator copies.
-      - HIPAA-restricted medical records held by MetroHealth, not
-        by the authority.
-      - No authority-side mechanism currently exists to enforce
-        R65 propagation duties against commercial aggregators.
+These propagated effects persist beyond the authority's actions and are not reversible by the authority alone. R63 and R65 propagation duties are not satisfied; no public mechanism exists for the authority to issue corrections, invalidations, or notice to downstream systems when its underlying records are revised or its authority over an individual ends.
 
-      This is an acknowledged R63 (Downstream Effect Reversibility)
-      gap.
+**9.6 — Replacement feasibility:**
 
-9.6 — Replacement feasibility:
-      Could this authority be replaced or dissolved without
-      destabilizing services beyond its authorized scope (R51, R61)?
-      If not, what are the structural barriers, and what is the plan
-      to address them?
+The authority's function (pretrial and short-sentence detention for Cuyahoga County) cannot be eliminated without either:
+- Substantial reform of pretrial detention practice (cash bail reform, pretrial release expansion, citation-in-lieu-of-arrest expansion);
+- Alternative facilities elsewhere in the region;
+- Reallocation of function to state-level institutions.
 
-      Facility replacement: yes, in progress. CCCC will be replaced
-      by Central Services Campus in mid-2029 per public planning.
+None of these are currently in active planning at scale. R51 is not currently satisfied: replacement is feasible only through replacement-in-kind (the new facility), not through structural function change.
 
-      Authority replacement (the jail function itself): no.
-      Structural barriers include the statutory framework (ORC 341),
-      the existing court-system dependency, the 40-year revenue
-      commitment, and the absence of replacement infrastructure
-      for pretrial supervision and short-sentence alternatives at
-      the scale required (~26,000 admissions per year). Partial
-      replacements exist (Behavioral Care Center planned within
-      Central Services Campus; Diversion Center for mental-health
-      and substance-use; recent end of uncharged-person bookings)
-      but these reduce, not eliminate, the function.
+**9.7 — Reversibility verification:**
 
-      No publicly documented plan to fully replace or dissolve the
-      jail function exists. This is an acknowledged R51
-      (Institutional Replacement Feasibility) finding.
+No publicly identified dismantling rehearsal, simulation, or verification. R43 reversibility verification is not satisfied. ANNOTATION: the new-facility transition planned for 2028/2029 will involve operational transfer rather than dismantling; some operational learning may emerge from that transition but it is not reversibility verification in the framework's sense.
 
-9.7 — Reversibility verification:
-      Has this authority ever rehearsed dismantling, simulated
-      shutdown, or otherwise verified that the declared timeline is
-      achievable? If yes, describe. If no, the declaration in §9.1
-      is treated as estimated, not verified (R43).
-
-      No. The §9.1 declaration is estimated, not verified, per R43.
-```
-
-*Rules addressed: R27 (Reversibility), R28 (Expiration Default), R43 (Reversibility Verification), R51 (Institutional Replacement Feasibility), R60 (Derived Authority Inheritance), R61 (Anti-Entrenchment), R63 (Downstream Effect Reversibility), R65 (Propagation Duty Requirement).*
+*Rules addressed: R27, R28, R43, R51, R60, R61, R63, R65.*
 
 ---
 
 ## SECTION 10 — Authorization, renewal, and trigger declarations
 
-```
-10.1 — Authorizing body (the entity that legally authorizes this
-       mechanism):
+**10.1 — Authorizing body:**
 
-       Mixed; no single authorizing body. The authority operates
-       under:
-       - State of Ohio (Ohio Revised Code Chapter 341).
-       - Cuyahoga County Charter (establishing Sheriff and
-         budgetary authorities).
-       - Cuyahoga County Council (annual budget appropriation;
-         the 2023 0.25% sales-tax extension specifically).
-       - Individual court commitment orders (per-detainee
-         authorization to confine).
+- Ohio General Assembly (Ohio Revised Code Chapters 311, 341, and related statutes authorizing county sheriffs and county jails).
+- Ohio Department of Rehabilitation and Correction (Minimum Standards for Jails — OAC 5120:1-8).
+- Cuyahoga County Charter and Cuyahoga County Code (county-level authorization).
+- Cuyahoga County voters (charter ratification and amendment).
+- Cuyahoga County Council and County Executive (budget authorization).
 
-       The authority acknowledges that no single dated
-       authorization document expires; this shapes the §10.3
-       and §10.4 declarations below.
+**10.2 — Date of current authorization:** UNKNOWN as a single date. Authority is continuous under statute; the most recent fiscal authorization is the 2026/2027 Biennial Operating Budget adopted by Cuyahoga County Council (approved December 2025 per public reporting; specific final adoption date UNKNOWN at the snapshot date).
 
-10.2 — Date of current authorization:
+**10.3 — Authorization expiration date:** UNKNOWN. Statutory authority does not have a fixed expiration. Fiscal authorization expires at the end of the biennial budget cycle (December 31, 2027) absent renewal.
 
-       Continuous under state and county law. ASSUMPTION for
-       framework-disclosure purposes: most recent material
-       budget authorization is the Cuyahoga County FY 2026
-       budget appropriation (UNKNOWN exact date of enactment);
-       most recent material long-duration authorization is the
-       December 2023 6-5 County Council vote to extend the
-       0.25% sales tax for 40 years to fund the successor
-       facility.
+**10.4 — Renewal interval:** 2 years.
 
-10.3 — Authorization expiration date:
+ANNOTATION: this reflects the biennial budget cycle, which is the most operationally salient renewal mechanism currently in place. State minimum-standards inspection occurs annually but does not constitute renewal in the framework's sense. The framework's recommended interval for high-coercion mechanisms is 1–2 years per SCBP-09 §V; the 2-year value sits at the upper end of that recommendation and reflects the actual budget cycle.
 
-       No statutory expiration. For framework purposes, the
-       authority acknowledges that R28 (Expiration Default)
-       requires affirmative renewal and that continuous
-       authority without periodic renewal is an R28/R62
-       finding. ASSUMPTION for §10.4 below: a constructed
-       renewal interval is declared per SCBP-09 §V bounds.
+**10.5 — Renewal evidence declaration:**
 
-10.4 — Renewal interval (how often this authority must be
-       affirmatively renewed):
-       Min: 1 year, Max: 10 years per SCBP-09 §V
+[ ] Scope integrity evidence
+[ ] Harm compliance evidence
+[ ] Stop path integrity evidence
+[ ] Dependency and capture evidence
+[ ] Reversibility evidence
 
-       3 years.
+ANNOTATION: none of these are currently delivered as part of biennial budget renewal in the structured form the framework requires. Budget hearings cover fiscal scope and operational metrics but do not deliver harm-compliance evidence in framework-required form, stop-path-integrity evidence, dependency-and-capture evidence, or reversibility evidence. R47 is not currently satisfied.
 
-       Justification: SCBP-09 §V recommends 1–2 years for high-
-       coercion or novel mechanisms and 3–5 years for moderate
-       scope. The jail authority is high-coercion (physical
-       confinement of non-consenting persons) but established
-       and statutorily framed; 3 years is the lower end of the
-       moderate-scope range. The authority acknowledges that no
-       real-world periodic renewal currently occurs at this
-       interval; this is a framework-disclosure construction.
+**10.6 — Necessity-decay acknowledgment:**
 
-10.5 — Renewal evidence declaration:
-       At renewal review, this authority commits to providing
-       evidence across the following five domains (per SCBP-03 §5.1
-       and R47):
-       [X] Scope integrity evidence (comparison of authorized vs.
-           operational scope)
-       [X] Harm compliance evidence (threshold monitoring data,
-           breach records, response records)
-       [X] Stop path integrity evidence (confirmation that stop
-           paths remain functional and independent)
-       [X] Dependency and capture evidence (current dependency
-           inventory, change since registration, capture risk
-           findings)
-       [X] Reversibility evidence (updated dismantling plan,
-           rehearsal records if any)
+[ ] Acknowledged
 
-10.6 — Necessity-decay acknowledgment:
-       The authority acknowledges that R62 (Necessity Decay
-       Requirement) means continued necessity weakens over time
-       unless supported by independently verifiable changes in
-       external conditions. The authority commits to demonstrating,
-       at each renewal, that scope, dependency, opacity, persistence,
-       or downstream impact has been *reducing* over time, unless
-       conditions independently require continuation.
-       [X] Acknowledged
+ANNOTATION: R62 (necessity decay) would require the authority to demonstrate, at each renewal, that scope, dependency, opacity, persistence, or downstream impact is reducing over time. Public reporting indicates the authority's planned scope is expanding (new facility, increased budget request), not contracting. R62 is not satisfied; this is a structural finding.
 
-       The authority acknowledges that the construction of the
-       Central Services Campus, with expanded capacity (1,886
-       beds compared with current 1,436 operational capacity)
-       and 40-year revenue commitment, is structurally inconsistent
-       with the spirit of R62/R76 (Mandatory Degradation) at the
-       facility level, and that the offsetting commitments
-       (Behavioral Care Center, Reentry Resource Center,
-       reduction of uncharged-person bookings) are partial
-       offsets. This tension is acknowledged.
+**10.7 — Aggregate trigger threshold:**
 
-10.7 — Aggregate trigger threshold:
-       Number of triggers: 20
-       Within window of: 90 days
-       (Per SCBP-09 §II — bounds depend on declared **non-consenting**
-       affected population from §2.3, NOT the broader affected
-       population. See SCBP-09 §II proportional table.)
+- Number of triggers: 15
+- Within window of: 90 days
 
-10.8 — Aggregate threshold justification:
+This is within SCBP-09 §II bounds for a non-consenting affected population of 26,000 (the 1,000–100,000 bracket: minimum 5 in 90 days, maximum 25 in 90 days). 15 sits in the middle of the bracket.
 
-       Non-consenting affected population per §2.3 is ~26,000
-       per year, placing the authority in the SCBP-09 §II tier
-       of 1,000–100,000 non-consenting: minimum 5 in 90 days,
-       maximum 25 in 90 days. The declared value of 20 in 90 days
-       is set toward the upper end of the bounded range, reflecting
-       (a) the authority's scale (26,000 admissions/year is near
-       the top of the tier), (b) the high baseline rate of
-       individual-level grievance and stop-trigger filing intrinsic
-       to a detention authority (many detainees and family members
-       have standing to file), and (c) the corresponding need to
-       avoid threshold breach on per-individual procedural matters
-       rather than structural concerns. The declared value remains
-       within the upper bound and the authority acknowledges
-       stakeholders may challenge it under SCBP-08 if they regard
-       it as gamed for scope.
+**10.8 — Aggregate threshold justification:**
 
-10.9 — Response time window:
-       Days from a stop trigger filing to required public response: 30
-       Min 7, max 90, default 30 per SCBP-09 §III.
+The non-consenting population (~26,000 annually) places the authority in the 1,000–100,000 bracket. 15 triggers in 90 days reflects a per-capita rate that:
+- Is unlikely to be reached through routine background noise from individual disputes.
+- Is reachable if a structural problem produces multiple independent affected parties' or advocates' filings.
+- Aligns with the observed rhythm of substantive incidents at the facility (deaths and serious incidents have occurred at a rate that, if each produced a trigger filing, would cross 15 in 90 days during high-incident periods).
 
-10.10 — Response window justification (required if longer than 30
-        days):
+**10.9 — Response time window:** 30 days.
 
-        Not applicable; declared at the SCBP-09 §III default of
-        30 days.
-```
+This is the SCBP-09 §III default and reflects a balance between operational feasibility and harm-interruption value.
 
-*Rules addressed: R10 (Renewal Decision Rule), R28 (Expiration Default), R36 (Renewal Eligibility Condition), R37 (Renewal Process Independence), R47 (Renewal Evidence Standard), R57 (Expiration Enforcement), R62 (Necessity Decay), R76 (Mandatory Degradation).*
+**10.10 — Response window justification:** Not required (default value).
+
+*Rules addressed: R10, R28, R36, R37, R47, R57, R62, R76.*
 
 ---
 
 ## SECTION 11 — What does this authority commit to publishing?
 
-```
-11.1 — Citizen ledger publication:
-       Frequency:
-       [ ] Quarterly  [X] Annually  [ ] Other:
-       Content commitments — the ledger will include:
-       [X] Operating expenditures (high-level)
-       [X] Renewal status
-       [X] Stop events (triggers filed, responses, findings)
-       [X] Structural dependency status (changes since last ledger)
-       [X] Other (specify):
-           In-custody death summary; ODRC inspection summary;
-           use-of-force aggregate; admissions and ADP; grievance
-           aggregate; Type 1 contractor list and aggregate
-           contract values; threshold-change-log summary.
+ANNOTATION: this is a third-party diagnostic; commitments below are reframed as "what is currently published" rather than future commitments.
 
-11.2 — Threshold change log:
-       This authority commits to publishing all threshold
-       modifications publicly within 30 days of change, including
-       justification and impact analysis (per R08).
+**11.1 — Citizen ledger publication:**
 
-11.3 — Interpretation change log:
-       This authority commits to logging all reinterpretations
-       affecting scope or thresholds in a publicly auditable log,
-       recorded at the time of interpretation (per R16).
+Frequency: [ ] Quarterly [ ] Annually [X] Other: budget cycle and inspection cycle.
 
-11.4 — Renewal process visibility:
-       At renewal review, all renewal evidence will be made publicly
-       available. The renewal process itself will be conducted by
-       parties structurally independent of this authority (R37).
-       [X] Committed
+Content currently published:
+- [X] Operating expenditures (high-level) — via county budget documents and budget hearings; aggregate Sheriff's Department level, not jail-specific.
+- [ ] Renewal status — not framed as renewal.
+- [ ] Stop events (triggers filed, responses, findings) — partially; state inspection findings and major litigation are public but not in a unified ledger.
+- [ ] Structural dependency status — not in a unified ledger.
+- [X] Other: ODRC inspection reports; press releases on critical incidents.
 
-11.5 — Stop event log:
-       All stop triggers filed against this authority, all responses,
-       and all findings will be permanently recorded in the public
-       Mechanism Record.
-       [X] Acknowledged (note: this is a registry-side commitment,
-           but the authority confirms it understands)
-```
+R17 (citizen ledger output) is partially satisfied through distributed county and state publications. No unified ledger in the framework's sense.
 
-*Rules addressed: R08 (Threshold Registry and Change Log), R16 (Interpretation Change Log), R17 (Citizen Ledger Output), R37 (Renewal Process Independence), R38 (Transparency Sufficiency), R75 (Evidence Integrity Requirement).*
+**11.2 — Threshold change log:**
+
+UNKNOWN: no publicly identifiable threshold change log per R08.
+
+**11.3 — Interpretation change log:**
+
+UNKNOWN: no publicly identifiable interpretation change log per R16. Operational policy changes (e.g., June 2024 mail policy change, 2024 body-worn camera policy update) are announced via press release but not maintained in a unified change log.
+
+**11.4 — Renewal process visibility:**
+
+Budget hearings are public; ODRC inspections are public. R37 (renewal process independence) is partially satisfied — the County Council reviewing the Sheriff's budget has structural separation from the Sheriff's Department, but the County Executive (who appoints the Sheriff and proposes the budget) does not have full structural separation. Per public reporting, information asymmetry between the Executive and Council (April 2024 state corrective action plan not promptly disclosed to Council) compromises this independence.
+
+[ ] Committed
+
+**11.5 — Stop event log:**
+
+[ ] Acknowledged
+
+No unified public stop-event log identified. Stop-relevant events are distributed across ODRC inspection records, federal-court dockets, county-council minutes, and news reports.
+
+*Rules addressed: R08, R16, R17, R37, R38, R75.*
 
 ---
 
 ## SECTION 12 — Honesty assertions
 
-```
-12.1 — Disclosure completeness assertion:
-       I assert that the disclosures in this Mechanism Record reflect
-       all information known to the authority at the time of
-       registration relating to: scope, affected parties, harm
-       thresholds, dependencies, stop paths, decision metrics, and
-       structural risk factors.
-       [X] Asserted
-       (TEST disclosure: this assertion is recorded on behalf of
-       the worked example based on public-source information by
-       the document author, not by the authority. The authority
-       has not actually registered. UNKNOWN-marked items in this
-       document represent gaps the actual authority would be
-       expected to resolve at real registration.)
+ANNOTATION: as a third-party diagnostic, these are reframed per the bundle instructions as "this reflects what could be verified from public sources; gaps are marked UNKNOWN."
 
-12.2 — Update obligation:
-       I commit to updating this Mechanism Record when any of the
-       following change: declared scope, harm thresholds, stop paths,
-       Type 1 or stop-path-relevant Type 3 dependencies, capture
-       risk profile, decision metrics, or any field marked [committed]
-       in this form. Updates will be filed within 30 days of change.
-       [X] Committed
-       (TEST disclosure: same caveat as §12.1.)
+**12.1 — Disclosure completeness assertion:**
 
-12.3 — Discoverability acknowledgment:
-       I acknowledge that undisclosed-but-discoverable information —
-       information that should have been declared at registration but
-       was not — is itself a Framework finding when it surfaces, and
-       may be the subject of a Challenge-class civic trigger under
-       SCBP-08.
-       [X] Acknowledged
+[X] Asserted (third-party reframing): this Mechanism Record reflects information from publicly available sources as of the snapshot date. Gaps are marked UNKNOWN or ANNOTATION. The authority itself has not filed this record and has not made the disclosures the form solicits.
 
-12.4 — Burden of proof acknowledgment:
-       I acknowledge that R69 (Burden of Proof Reversal) places the
-       burden of proving constitutional compliance on this authority,
-       not on stakeholders or the registry. Lack of evidence,
-       incomplete evidence, or inaccessible evidence results in
-       non-compliance findings.
-       [X] Acknowledged
+**12.2 — Update obligation:**
 
-12.5 — Anti-weaponization acknowledgment:
-       I acknowledge that the Framework may not be interpreted to
-       justify harm that the framework itself is designed to prevent
-       (R53). Registration under this framework does not legitimize
-       authority that exceeds the framework's structural limits.
-       [X] Acknowledged
-```
+[ ] Committed
 
-*Rules addressed: R53 (Anti-Weaponization Clause), R69 (Burden of Proof Reversal), R75 (Evidence Integrity Requirement).*
+ANNOTATION: as a third-party diagnostic, no update commitment can be made on the authority's behalf. The framework's R69 (burden of proof) places the update obligation on the authority; the authority's failure to file places the diagnostic burden on third parties.
+
+**12.3 — Discoverability acknowledgment:**
+
+[X] Acknowledged
+
+The framework treats undisclosed-but-discoverable information as a finding when it surfaces. This diagnostic surfaces multiple such items (vendor revenue structures, post-mortem review practices, specific exclusions of dietary or sunlight deprivation as discipline, mortality data publication infrastructure).
+
+**12.4 — Burden of proof acknowledgment:**
+
+[X] Acknowledged
+
+R69 places the burden of demonstrating constitutional compliance on the authority. The authority has not filed a Mechanism Record; under R69, this constitutes a structural finding regardless of the authority's underlying compliance state.
+
+**12.5 — Anti-weaponization acknowledgment:**
+
+[X] Acknowledged
+
+This diagnostic is not a substitute for the authority's own registration. It is a structural surface mapping for civic-actor use, and may not be used to legitimize the authority or to justify outcomes the framework is designed to prevent.
+
+*Rules addressed: R53, R69, R75.*
 
 ---
 
 ## SECTION 13 — Submitter
 
-> *Note: Submitter information is part of the registry's metadata but is not part of the published Mechanism Record. Only "Registered by [authority name]" appears in the public record. Submitter contact details are retained by the registry for follow-up only.*
+Submitted by: Claude (Anthropic AI assistant), acting on a citizen-initiated diagnostic request using the AI Registration Bundle (snapshot date 2026-05-15).
 
-```
-Submitted by (full name):  [TEST EXAMPLE — no real submitter]
-Role / position within or relationship to the authority:
-    Document author; no relationship to the authority. Worked
-    example produced for methodology demonstration from public
-    sources. This is not a real registration.
-Date:  [TEST EXAMPLE — no real submission date]
-Contact for follow-up (email or other):  [TEST EXAMPLE — none]
-```
+Role / position within or relationship to the authority: none. Third-party citizen diagnostic; no relationship to the Cuyahoga County Sheriff's Department, Cuyahoga County government, or any affiliated entity.
 
----
+Date: 2026-05-16
 
-*Authority Registration — Diagnostic Disclosure Form — v4*
-*Bounded Power Foundation*
-*All submissions become permanent public records*
+Contact for follow-up: the human user who initiated this diagnostic via the AI Registration Bundle. A human reviewer should resolve UNKNOWN fields and address ANNOTATION items before this record is treated as anything more than a structural diagnostic.
 
 ---
 
 # TEST / NOT AN OFFICIAL REGISTRATION
 
-*This document is a worked example. The Cuyahoga County Corrections Center has not submitted itself for registration. All content is drawn from public sources and is intentionally incomplete where public information is incomplete (`UNKNOWN` markers) or estimated (`ASSUMPTION` markers). Do not treat this as a registered Mechanism Record under the Bounded Power Framework.*
-
----
-
-> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*
+> This is a citizen-produced structural diagnostic. The Cuyahoga County Corrections Center itself has not filed this record. UNKNOWN fields and ANNOTATION items mark gaps and judgment calls that a human reviewer should address. Per the SCBP-09 framework, this record is filed under the SCBP-REG-TEST-{IDENTIFIER} naming pattern.
