@@ -32,7 +32,7 @@ The same form, the same rules, and the same standards apply to both.
 
 The easiest way to use the framework is the AI Registration Bundle: a single file you paste into any AI chat tool (Claude, ChatGPT, Gemini, or similar).
 
-**[Open the bundle](00-Reading/AI-Registration-Bundle.md)**, copy its entire contents, paste into an AI chat, and tell the AI which authority you want analyzed. The AI produces a completed structural diagnostic that you can download.
+**[Open the bundle](00-Reading/06-AI-Registration-Bundle.md)**, copy its entire contents, paste into an AI chat, and tell the AI which authority you want analyzed. The AI produces a completed structural diagnostic that you can download.
 
 For a fuller walk-through, see [How to run a citizen inquiry](00-Reading/05-Citizen-Inquiry-Guide.md).
 
@@ -63,6 +63,7 @@ For anyone wanting to understand the framework before using it:
 4. [Reasoning: Land Use](00-Reading/03-Reasoning-LT.md) — application to land use and civic infrastructure
 5. [FAQ](00-Reading/04-FAQ.md)
 6. [How to run a citizen inquiry](00-Reading/05-Citizen-Inquiry-Guide.md)
+7. [AI Registration Bundle](00-Reading/06-AI-Registration-Bundle.md) — the working file
 
 ---
 
