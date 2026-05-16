@@ -3,6 +3,8 @@
 *Operational Layer*
 *Subordinate to: the Structural Constitution*
 
+> *Revision 2026-05-16: Section pointers corrected throughout. The Registration Form was renumbered (v3 → v4); references that pointed at the old form section numbers now point at the current ones. Harm threshold references now point at form §4; affected-party-category references now point at form §2. No change to substance.*
+
 ---
 
 ## Purpose
@@ -23,13 +25,13 @@ There are three classes of civic trigger. Each invokes a distinct constitutional
 
 **Invokes:** R23 — Tripwire Protocol (provisional pause pending review)
 
-**Filed when:** the filer alleges a defined harm threshold has been crossed by the authority. The threshold being crossed is the named threshold from the authority's Mechanism Record §7, not a general grievance.
+**Filed when:** the filer alleges a defined harm threshold has been crossed by the authority. The threshold being crossed is the named threshold from the authority's Mechanism Record §4, not a general grievance.
 
 **Effect on filing:** the registry logs the trigger publicly within the registry's standard operational window (per Registry Charter §7). The named authority is notified. The Mechanism Record's Stop Event Log records the filing.
 
 **Response clock:** 30 days from filing, or the authority's declared response window (per SCBP-09 §III) if shorter.
 
-**Review path:** stakeholders from the authority's declared affected-party categories (Mechanism Record §3) may convene a review of the alleged threshold breach. The review's findings are recorded in the Mechanism Record's Stop Event Log alongside the original trigger.
+**Review path:** stakeholders from the authority's declared affected-party categories (Mechanism Record §2) may convene a review of the alleged threshold breach. The review's findings are recorded in the Mechanism Record's Stop Event Log alongside the original trigger.
 
 ### Challenge-class trigger
 
@@ -61,7 +63,7 @@ There are three classes of civic trigger. Each invokes a distinct constitutional
 
 Any party affected by a registered authority may file a Tripwire or Challenge trigger.
 
-"Affected" is interpreted broadly. The authority's Mechanism Record §3 declares categories of affected parties; filers from any of those categories qualify. Filers who do not fit a declared category but believe they are affected may file; the Mechanism Record's declared categories may be wrong, and contesting them is itself an acceptable Challenge.
+"Affected" is interpreted broadly. The authority's Mechanism Record §2 declares categories of affected parties; filers from any of those categories qualify. Filers who do not fit a declared category but believe they are affected may file; the Mechanism Record's declared categories may be wrong, and contesting them is itself an acceptable Challenge.
 
 Aggregate triggers are not filed by individuals — they are initiated automatically by the registry when the threshold is reached.
 
@@ -154,7 +156,7 @@ This means the registry's record will sometimes include filings that are noisy, 
 
 ## Section VI — Stakeholder Review
 
-The framework does not designate, recruit, or convene reviewers. Reviewers are stakeholders from the affected-party categories declared in the authority's own Mechanism Record §3. They self-organize.
+The framework does not designate, recruit, or convene reviewers. Reviewers are stakeholders from the affected-party categories declared in the authority's own Mechanism Record §2. They self-organize.
 
 ### When review occurs
 

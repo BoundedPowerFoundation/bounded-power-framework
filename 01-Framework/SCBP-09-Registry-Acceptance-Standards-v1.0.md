@@ -3,6 +3,8 @@
 *Operational Layer*
 *Subordinate to: the Structural Constitution*
 
+> *Revision 2026-05-16: Section pointers in §§VI, VII, VIII corrected. The Registration Form was renumbered (v3 → v4); references that pointed at the old form section numbers now point at the current ones. §VI now correctly references form §4 (harm thresholds); §§VII and VIII now correctly reference form §3.1 (geographic reach) and form §3.2 (coercive ceiling). No change to substance.*
+
 ---
 
 ## Purpose
@@ -126,7 +128,7 @@ The recommendations are from SCBP-03 §1.6 and are not enforced by the registry.
 
 ## Section VI — Harm Threshold Coverage
 
-The Mechanism Record §7 declares harm thresholds across categories. The framework's open harm categories (R21) are:
+The Mechanism Record §4 declares harm thresholds across categories. The framework's open harm categories (R21) are:
 
 - Bodily harm
 - Agency impairment
@@ -149,7 +151,7 @@ Declared thresholds must be measurable — expressed as observable conditions, n
 
 ## Section VII — Geographic Reach
 
-The Mechanism Record §6 declares geographic reach. The registry does not impose floors or ceilings on geographic reach itself, but the declaration must be specific. "Wherever needed" or similar non-specific declarations are returned for correction.
+The Mechanism Record §3.1 declares geographic reach. The registry does not impose floors or ceilings on geographic reach itself, but the declaration must be specific. "Wherever needed" or similar non-specific declarations are returned for correction.
 
 Acceptable forms:
 - Specific jurisdictions (named cities, counties, states, countries)
@@ -163,7 +165,7 @@ Unacceptable forms:
 
 ## Section VIII — Coercive Ceiling
 
-The Mechanism Record §6 declares coercive ceiling. The registry does not impose floors or ceilings on coercive intensity itself, but the declaration must be specific and bounded.
+The Mechanism Record §3.2 declares coercive ceiling. The registry does not impose floors or ceilings on coercive intensity itself, but the declaration must be specific and bounded.
 
 Acceptable forms:
 - Specific actions (fines up to $X, suspension up to Y days, license revocation, etc.)
