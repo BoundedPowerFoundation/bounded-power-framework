@@ -1,7 +1,3 @@
-*Part of a thought experiment. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md). Nothing described here is operating.*
-
----
-
 # Keeping Power Small
 
 ## Definitions and First Principles
@@ -394,6 +390,3 @@ Further writing would introduce new structure.
 
 New structure is not permitted.
 
----
-
-> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*
