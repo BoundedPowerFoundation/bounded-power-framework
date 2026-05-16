@@ -43,7 +43,7 @@ All mechanisms should be:
 - Core documents include plain-language descriptions of the problem and system  
 
 ### Entry Points
-- README.md and HOW-TO-READ-THIS.md provide immediate orientation  
+- README.md and 00-Reading/00-Start-Here.md provide immediate orientation  
 - Additional short documents provide multiple independent entry paths  
 
 ### Distribution
