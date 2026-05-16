@@ -1,185 +1,93 @@
 BOUNDED POWER FRAMEWORK — HASH REGISTRY
 ================================================
 
-This file is part of a thought experiment.
-See HOW-TO-READ-THIS.md. Nothing described here is operating.
+STATUS: Awaiting regeneration
 
-================================================
+------------------------------------------------
 
 PURPOSE
 -------
-This file records cryptographic fingerprints (SHA-256) of the
-canonical artifacts of the Bounded Power Framework. Any modification
-to a hashed file produces a different hash, making silent alteration
-detectable.
+This file is intended to record cryptographic fingerprints (SHA-256)
+of the canonical artifacts of the Bounded Power Framework. Any
+modification to a hashed file produces a different hash, making
+silent alteration detectable.
 
-The hashes secure each file's integrity within this repository. They
-are not enforcement primitives.
+The hashes secure each file's integrity within this repository.
+They are not enforcement primitives.
 
 The Structural Constitution (SCBP-04) is the only document whose
-clause text carries binding authority within the construction. The
-operational documents, the registry charter, and the registration
-form are hashed because each of them is a canonical artifact
-referenced by the Constitution and by the registry's operating logic;
-silent alteration of any of these would change what the framework
-substantively requires of registrants without changing the
-Constitution.
-
-BPF-Reasoning.md is hashed because it records the reasoning behind
-the SCBP rules — the justifications, design choices, and trade-offs
-that produced the clause text of the Constitution and the
-operational documents. It carries no binding authority, but silent
-alteration of the stated reasoning would misrepresent why the rules
-take the form they do, so its integrity is fixed alongside the
-artifacts whose design it explains.
-
-To verify any file: ensure UTF-8 encoding with LF line endings and no
-BOM, then run sha256sum on the file from the repository root and
-compare against the hash recorded below.
-
-================================================
-
-HASHED ARTIFACTS
-----------------
-
-SCBP-04 — Structural Constitution (v1.3)
-Path:    01-framework/SCBP-04-Structural-Constitution-v1.3.md
-SHA256:  9a987e206078b8310b2e5007a0aef23744942a6d8ca7c821052cb5ccea1c1c27
-Frozen:  2026-05-09
-Layer:   Constitutional — binding clause text
+clause text carries binding authority. The operational documents,
+the registry charter, and the registration form are hashed because
+each of them is a canonical artifact referenced by the Constitution
+and by the registry's operating logic; silent alteration of any of
+these would change what the framework substantively requires of
+registrants without changing the Constitution.
 
 ------------------------------------------------
 
-SCBP-01 — Orientation (v1.0)
-Path:    01-framework/SCBP-01-Orientation-v1.0.md
-SHA256:  b315295ced9a320473466c466938fc5c5c7dd62a1f90912e1c9025eb847328d3
-Frozen:  2026-05-09
-Layer:   Explanatory
+CURRENT STATUS
+--------------
+The hash registry is currently out of date. The previous registry
+was minted against an earlier repository layout (lowercase folder
+names, different filenames, different file content) that has since
+been substantially restructured.
+
+Regenerating the hash registry is deferred until the framework's
+canonical artifacts are stable enough to freeze. The current
+maintenance pass involves substantive content edits, filename
+changes, and structural reorganization, all of which would
+immediately invalidate any newly-minted hashes.
+
+When the canonical artifacts reach a freeze point, fresh SHA-256
+hashes will be computed for each, recorded in this file with the
+freeze date, and made available for verification.
 
 ------------------------------------------------
 
-SCBP-02 — Foundational Theory (v1.0)
-Path:    01-framework/SCBP-02-Foundational-Theory-v1.0.md
-SHA256:  9203f8e0e852e0dbe1c2705fccf6954fde1be27520cd29248839fd4b3a99551f
-Frozen:  2026-05-09
-Layer:   Explanatory
-
-------------------------------------------------
-
-SCBP-03 — Operations Manual (v1.0)
-Path:    01-framework/SCBP-03-Operations-Manual-v1.0.md
-SHA256:  ba6db0ff4b162de73daabd084f7fcc34fc1546fd286e41524ec3b4d5ce2b47c8
-Frozen:  2026-05-09
-Layer:   Operational Guidance
-
-------------------------------------------------
-
-SCBP-05 — Testing Protocol (v1.0)
-Path:    01-framework/SCBP-05-Testing-Protocol-v1.0.md
-SHA256:  a1e7f19060ff5e547df8f7c78e63d3f2c7204576b2c8694ad668467b95cc5838
-Frozen:  2026-05-09
-Layer:   Diagnostic
-
-------------------------------------------------
-
-SCBP-06 — Enforcement System (v1.0)
-Path:    01-framework/SCBP-06-Enforcement-System-v1.0.md
-SHA256:  bbb2656b099859e09c69d4c4c4a6f81fb2d7241ce589452938eeeca1fc6ef883
-Frozen:  2026-05-09
-Layer:   Enforcement
-
-------------------------------------------------
-
-SCBP-07 — Integration and Adversarial Testing (v1.0)
-Path:    01-framework/SCBP-07-Integration-and-Adversarial-Testing-v1.0.md
-SHA256:  e416e859a55f89802ea60e5e3e29bd01f5cf37c2970ce220b6947cfcce53c8bf
-Frozen:  2026-05-09
-Layer:   Operational
-
-------------------------------------------------
-
-SCBP-08 — Civic Trigger Protocol (v1.0)
-Path:    01-framework/SCBP-08-Civic-Trigger-Protocol-v1.0.md
-SHA256:  fe47a264aa632f18bbba415ab266f4bbb9c6e9cbc440bafa66203e3c41a8a0a9
-Frozen:  2026-05-09
-Layer:   Operational
-
-------------------------------------------------
-
-SCBP-09 — Registry Acceptance Standards (v1.0)
-Path:    01-framework/SCBP-09-Registry-Acceptance-Standards-v1.0.md
-SHA256:  c4a47d0667c1f12de1709961864ec2eabee22f705d5e9f6d3f16c391a28fe5a2
-Frozen:  2026-05-09
-Layer:   Operational
-
-------------------------------------------------
-
-Registry Charter
-Path:    REGISTRY-CHARTER.md
-SHA256:  52c66a7cb964d16d7ed6e421e14054b6ac74dca01862b2e734ffdc1c09354672
-Frozen:  2026-05-09
-Layer:   Charter — Registry Operations
-
-------------------------------------------------
-
-Authority Registration Form (v4)
-Path:    02-forms/registration.md
-SHA256:  442e97f2197c255646c8148a93dfc6e09b37aec26bf61b163900444d2e93b346
-Frozen:  2026-05-09
-Layer:   Form
-
-------------------------------------------------
-
-Stop Trigger Form
-Path:    02-forms/stop-trigger.md
-SHA256:  4924334ecddc945435f69a6409682b969d746608302cfe3e64c55d2ad84ea7a0
-Frozen:  2026-05-09
-Layer:   Form
-
-------------------------------------------------
-
-SCBP-REG-0001 — Bounded Power Foundation self-registration (v3)
-Path:    04-registry/SCBP-REG-0001.md
-SHA256:  f8fa17fcea5e73b254b13c623aefcebc01ef90aa26f62be7c6d92e4a1a9879fe
-Frozen:  2026-05-09
-Layer:   Mechanism Record
-
-------------------------------------------------
-
-BPF Reasoning
-Path:    05-reading/BPF-Reasoning.md
-SHA256:  eba47da97ac3e03a5a936121ce7c918c3c85e6326054bb6927dc0633ebaf3e66
-Frozen:  2026-05-10
-Layer:   Explanatory
-
-------------------------------------------------
-
-================================================
-
-VERIFICATION INSTRUCTIONS
---------------------------
+HOW VERIFICATION WILL WORK ONCE HASHES ARE PUBLISHED
+----------------------------------------------------
 1. File encoding must be UTF-8, no BOM
 2. Line endings must be LF (Unix-style, not Windows CRLF)
 3. No trailing spaces on any line
 4. File must end with exactly one newline character
 5. From the repository root, run:
-   sha256sum <path-as-listed-above>
-6. Compare output to the hash recorded above — must match exactly
+   sha256sum <path-as-listed-here>
+6. Compare output to the hash recorded — must match exactly
 
-If a file's hash does not match its registry entry, the file in this
-repository has been altered from the version originally hashed.
+If a file's hash does not match its registry entry, the file in
+this repository has been altered from the version originally hashed.
 
-This registry itself is not hashed (it would have to hash itself).
+------------------------------------------------
+
+ARTIFACTS THAT WILL BE HASHED AT FREEZE
+---------------------------------------
+- 01-Framework/SCBP-01-Orientation-v1.0.md
+- 01-Framework/SCBP-02-Foundational-Theory-v1.0.md
+- 01-Framework/SCBP-03-Operations-Manual-v1.0.md
+- 01-Framework/SCBP-04-Structural-Constitution-v1.3.md  (constitutional — binding)
+- 01-Framework/SCBP-05-Testing-Protocol-v1.0.md
+- 01-Framework/SCBP-06-Enforcement-System-v1.0.md
+- 01-Framework/SCBP-07-Integration-and-Adversarial-Testing-v1.0.md
+- 01-Framework/SCBP-08-Civic-Trigger-Protocol-v1.0.md
+- 01-Framework/SCBP-09-Registry-Acceptance-Standards-v1.0.md
+- 02-Forms/01-Registration.md
+- 02-Forms/02-Stop-Trigger.md
+- 04-Registry/SCBP-REG-0001.md
+- 05-Reference/03-Registry-Charter.md
+- 00-Reading/01-Reasoning-BPF.md
+
+The registry itself is not hashed (it would have to hash itself).
 The registry's integrity rests on the visibility of the version-
 control history of this repository.
 
-================================================
+------------------------------------------------
 
 AMENDMENT
 ---------
-Updates to any hashed artifact produce a new entry in this registry.
-Prior entries are preserved as historical record. Silent replacement
-of an entry without preservation of the prior entry is itself a
-finding under R56 (Canonical Integrity Requirement).
+Updates to any hashed artifact produce a new entry in this
+registry. Prior entries are preserved as historical record.
+Silent replacement of an entry without preservation of the prior
+entry is itself a finding under R56 (Canonical Integrity
+Requirement).
 
 ================================================
