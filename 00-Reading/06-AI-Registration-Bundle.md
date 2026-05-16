@@ -119,7 +119,24 @@ Parts 2–5 of this bundle contain everything you need:
      - `affected_population_estimate` and `non_consenting_population_estimate` match §2.2 and §2.3
      - `registered_date`, `snapshot_date`, and `last_reviewed_date` are all today's date for a newly produced record
      - `filed_by` is `authority` for self-registrations and `third_party` for records produced by anyone other than the authority itself
+     - The `mechanism_id` follows the naming rule in step 7.5
      - If any pairing does not match, fix the YAML to match the body (the body is authoritative)
+
+7.5. **Filename and mechanism_id.** The filename matches the mechanism_id with `.md` appended. The mechanism_id is constructed deterministically so that any AI working from this bundle produces the same identifier for the same authority. Apply these rules in order:
+
+   - **For third-party records:** `SCBP-REG-TEST-{IDENTIFIER}` where `{IDENTIFIER}` is constructed as follows:
+     - If the authority has a widely-used acronym, use it in uppercase (e.g., `CCCC`, `NYPD`, `FOMC`, `LAUSD`).
+     - If the acronym could refer to authorities in multiple jurisdictions, append a two-letter region code separated by a hyphen. Use the U.S. two-letter state code for U.S. authorities (e.g., `CCCC-OH` for the Cuyahoga County Corrections Center; `PD-NYC` is not preferred — use `NYPD` because the acronym is locality-specific). For non-U.S. authorities use the ISO 3166-1 alpha-2 country code (e.g., `-UK`, `-DE`).
+     - If no widely-used acronym exists, use the authority's short name in UPPER-KEBAB-CASE, abbreviated to a reasonable length (e.g., `BAYVIEW-HOA`, `RIVERBEND-SCHOOLS`, `ACME-HEALTH`).
+     - National or federal authorities take no region suffix (e.g., `SCBP-REG-TEST-FOMC`, not `SCBP-REG-TEST-FOMC-US`).
+     - Examples of full mechanism_ids: `SCBP-REG-TEST-CCCC-OH`, `SCBP-REG-TEST-NYPD`, `SCBP-REG-TEST-FOMC`, `SCBP-REG-TEST-BAYVIEW-HOA`.
+
+   - **For self-registrations (authority filing on its own behalf):** `SCBP-REG-{####}-v#` using the next sequential number after the highest existing `SCBP-REG-####` in the registry, and `v1` for a new record.
+
+   **Idempotency check — do not silently overwrite.** Before creating the file, check whether a record with that mechanism_id already exists in the registry:
+
+   - **If you have file-system access to the repository** (you can list files in `04-Registry/`): check whether `{mechanism_id}.md` already exists there. If it does, this is a re-evaluation, not a new record — follow step 9 (re-evaluation) instead of step 8 (new output). Do not overwrite the existing file.
+   - **If you cannot inspect the registry folder** (chat-only environment with no file-system access): before producing the file, tell the user: "I'm about to create `{mechanism_id}.md`. If a file with this name already exists in your registry, you may want to use the re-evaluation protocol in step 9 of the bundle instead. Should I proceed with a new record, or do you want to provide the existing file for re-evaluation?" Wait for the user's answer before producing the file.
 
 8. **Output format.** Produce the completed Mechanism Record as a single markdown file the user can download.
 
