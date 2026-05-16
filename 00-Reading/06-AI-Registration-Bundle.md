@@ -104,14 +104,33 @@ Parts 2–5 of this bundle contain everything you need:
    - §10.4, §10.7, §10.9 values within SCBP-09 bounds
    - At least 3 stop paths declared in §5
    - §13 filled in (this is the most commonly skipped section)
-   - The labels `TEST / NOT AN OFFICIAL REGISTRATION` appear at the top and bottom of the output
+   - The `TEST / NOT AN OFFICIAL REGISTRATION` banner appears at the top and bottom of the output
+   - **YAML-vs-body consistency.** The YAML frontmatter must match what the body actually declares. Verify each pairing:
+     - `renewal_interval_years` matches §10.4
+     - `aggregate_threshold_count` matches §10.7's number-of-triggers value
+     - `aggregate_threshold_window_days` matches §10.7's window value
+     - `response_window_days` matches §10.9
+     - `harm_categories_declared` enumerates the categories actually declared in §4.1–§4.6 (use the framework's six category names: bodily_harm, agency_impairment, ecological_damage, generational_binding, communicative_suppression, informational_sovereignty; add chronic_asymmetry only if §4 explicitly declares it)
+     - `dependency_count_type1`, `dependency_count_type2`, `dependency_count_type3` match the counts in §6.1, §6.2, §6.3
+     - `capture_risk_identified` reflects §6.4's declaration
+     - The five §12 acknowledgment flags (`disclosure_completeness_assertion`, `update_obligation_committed`, `discoverability_acknowledged`, `burden_of_proof_acknowledged`, `anti_weaponization_acknowledged`) reflect the actual checkbox state of §12.1–§12.5
+     - `affected_population_estimate` and `non_consenting_population_estimate` match §2.2 and §2.3
+     - If any pairing does not match, fix the YAML to match the body (the body is authoritative)
 
 8. **Output format.** Produce the completed Mechanism Record as a single markdown file the user can download. Use:
-   - YAML frontmatter with `mechanism_id: SCBP-REG-TEST-{SHORT-ID}`, `status: TEST_EXAMPLE`, `label: TEST / NOT AN OFFICIAL REGISTRATION`
-   - The full form structure, with every field filled per the rules above
-   - A `TEST / NOT AN OFFICIAL REGISTRATION` banner at the top and bottom
+   - **YAML frontmatter.** Copy the frontmatter schema used in `04-Registry/SCBP-REG-0001.md` and the records under `03-Examples/`. The same schema applies to every Mechanism Record regardless of who filed it; do not use a reduced set of fields. Fill values from public sources where available; use `UNKNOWN` for any field that cannot be determined from available sources. For records filed by someone other than the authority itself, set `status: TEST_EXAMPLE` and use `mechanism_id: SCBP-REG-TEST-{SHORT-ID}` (the registry's transitional convention; future versions of this bundle may revise this). For an authority's own self-registration, `status: ACTIVE` and `mechanism_id: SCBP-REG-{####}` apply.
+   - **The full form structure**, with every field filled per the rules above.
+   - **Banners.** The `TEST / NOT AN OFFICIAL REGISTRATION` label appears as a banner at the top and bottom of the file body, not as a YAML field.
 
 If your environment allows file creation, save the output as a downloadable file. If not, present it inline and tell the user how to save it as a `.md` file.
+
+9. **Re-evaluating or validating an existing record.** If the user asks you to validate, verify, or re-evaluate a previously produced Mechanism Record rather than create a new one, do the following:
+   - Read the existing record in full before searching for current information.
+   - Search public sources for the authority as it exists today.
+   - Compare the existing record's declarations against current findings, field by field. Note: changes in the authority (new contracts, new incidents, changed leadership, expanded scope, new oversight findings) that would alter declarations in §1–§9; changes in numerical declarations in §10 that would push values outside SCBP-09 bounds; UNKNOWN fields that are now answerable from new public information; declarations that now contradict current public information.
+   - Re-run the §7 self-verification pass against the record as it currently stands, including the YAML-vs-body cross-checks. Discrepancies introduced by the original drafting (not by changes in the authority) are also findings.
+   - Produce a structured comparison: what is unchanged, what should be updated, what is newly UNKNOWN, what is newly answerable. Do not silently rewrite the record. The user decides which findings warrant an update.
+   - If a substantive update is warranted, the update is recorded inside the file per the Registry Charter's append-only convention — a dated note in the record describing what changed and why, with prior versions preserved in git history.
 
 ## A note about Violation Reports
 
