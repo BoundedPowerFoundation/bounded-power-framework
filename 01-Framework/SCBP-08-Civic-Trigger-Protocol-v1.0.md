@@ -1,7 +1,3 @@
-*Part of a thought experiment. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md). Nothing described here is operating.*
-
----
-
 # SCBP-08 — Civic Trigger Protocol
 
 *Operational Layer*
@@ -89,19 +85,14 @@ Good-faith filing is protected under R33. No party — including the authority n
 
 ## Section III — How to File
 
-Civic triggers are filed through one of two channels:
+### Filing channel
 
-### Primary channel — GitHub Issues
-
-The registry repository on GitHub provides Issue templates for each trigger class. Filing a trigger means opening a new Issue using the appropriate template and completing the required fields. The Issue becomes public on submission. Public visibility *is* the act of filing — there is no separate publication step.
-
-### Alternate channel — email
-
-Filers without GitHub access may email the Bounded Power Foundation (`BoundedPowerFoundation@proton.me`) with subject line `STOP TRIGGER` (for Tripwire or Challenge) and the same fields the GitHub template would request. The Foundation transcribes the filing into a GitHub Issue within the operational window declared in the Registry Charter. The original email is not retained beyond what is needed for transcription.
+Triggers are filed as pull requests on the registry repository on GitHub, adding the completed record to [04-Registry/Violations/](../04-Registry/Violations/). The filing becomes public when the pull request is merged. Public visibility *is* the act of filing — there is no separate publication step.
 
 ### Required fields
 
-Both channels collect the same fields. The current required fields are defined in [02-forms/stop-trigger.md](../02-forms/stop-trigger.md). Future updates to that form are subject to the registry's amendment process.
+The required fields are defined in [02-Forms/02-Stop-Trigger.md](../02-Forms/02-Stop-Trigger.md). Future updates to that form are subject to the registry's amendment process.
+
 
 ---
 
@@ -109,20 +100,20 @@ Both channels collect the same fields. The current required fields are defined i
 
 ### Recording
 
-Every filing, in either channel, is recorded as a public GitHub Issue. The Issue:
+Every filing is recorded as a public Mechanism Record entry in [04-Registry/Violations/](../04-Registry/Violations/). The Issue:
 
 - Receives a timestamp at creation
 - Is labeled by trigger class (Tripwire / Challenge / Aggregate)
-- Is linked from the named authority's Mechanism Record Stop Event Log
+- Is linked from the named authority's Mechanism Record Stop Event Log, if a Mechanism Record exists
 - Cannot be deleted; updates are appended
 
 ### Notification
 
 The registry notifies the named authority by:
 
-- Publishing the Issue (visibility-of-record is the primary notification)
+- Publishing the filing in the public registry (visibility-of-record is the primary notification)
 - Sending a notification through the contact channel declared in the authority's Mechanism Record (if any)
-- Posting a comment on the Mechanism Record file referencing the filing
+- Linking the filing from the Mechanism Record, if one exists
 
 If the authority has declared no contact channel, only the publishing-of-Issue notification applies. Authorities are expected to monitor their own Mechanism Record's Stop Event Log; failure to do so is not a defense against the response clock.
 
@@ -229,9 +220,9 @@ When the count of distinct Tripwire and Challenge triggers against a single auth
 
 "Distinct" is interpreted by filer hash where filer hashes exist, and by reasonable judgment where they do not. Multiple filings from a single hash are counted once. Filings without identifiers are counted individually but flagged in the aggregate context.
 
-### Aggregate trigger as Issue
+### Aggregate trigger as filing
 
-The aggregate trigger is filed as a new GitHub Issue:
+The aggregate trigger is filed as a new entry in the registry:
 
 - References every contributing trigger
 - Publishes the aggregate-context signals (Section V)
@@ -292,7 +283,7 @@ This document operationalizes the civic trigger references in:
 - Registry Charter §10 (operator recusal during reviews of the Foundation itself)
 - SCBP-09 (the floors and ceilings on aggregate threshold and response window)
 
-The forms `02-forms/stop-trigger.md` and `02-forms/registration.md` operationalize this document's filing requirements.
+The forms `02-Forms/02-Stop-Trigger.md` and `02-Forms/01-Registration.md` operationalize this document's filing requirements.
 
 If conflict exists between this document and the Structural Constitution, the Constitution governs. If conflict exists between this document and the Registry Charter, the Charter governs registry operation; this document governs trigger mechanics.
 
@@ -303,4 +294,3 @@ If conflict exists between this document and the Structural Constitution, the Co
 
 ---
 
-> *This document is part of a thought experiment. The "Bounded Power Foundation" is a construct of the experiment, not an organization. Nothing described here is operating. See [HOW-TO-READ-THIS.md](../HOW-TO-READ-THIS.md) for the full framing.*
