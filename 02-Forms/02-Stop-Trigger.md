@@ -45,7 +45,7 @@ Copy the template below into your new file and fill it in. Fields left blank or 
 ```
 ---
 vr_id: SCBP-VR-{IDENTIFIER}-{YYYY-MM-DD}
-mechanism_id: SCBP-REG-#### | SCBP-REG-TEST-{IDENTIFIER} | NONE
+mechanism_id: SCBP-REG-#### | NONE
 authority_name: [The authority being reported]
 incident_date: YYYY-MM-DD
 filed_date: YYYY-MM-DD
@@ -58,7 +58,7 @@ filer_anonymous: true | false
 
 Authority name:
 Authority location / jurisdiction:
-Mechanism Record reference: [SCBP-REG-#### or SCBP-REG-TEST-{IDENTIFIER}, or NONE if no Mechanism Record exists]
+Mechanism Record reference: [SCBP-REG-####, or NONE if no Mechanism Record exists]
 
 ## Date of observation
 
@@ -112,7 +112,7 @@ Additional context, related incidents, or notes for future reviewers.
 
 **Within 30 days:** The authority is presumed to have notice via the public record. A documented response — acknowledgment, explanation, evidence of compliance, initiation of internal review, request for clarification — is the expected good-faith response. Non-response within 30 days is itself logged as a finding and added to the Violation Report and, if applicable, the Mechanism Record.
 
-**After review:** If the report raises credible evidence of a threshold breach or constitutional violation, it may be referenced in subsequent Mechanism Record updates, citizen diagnostics, or SCBP-08 civic trigger escalations.
+**After review:** If the report raises credible evidence of a threshold breach or constitutional violation, it may be referenced in subsequent Mechanism Record updates, third-party-produced Mechanism Records, or SCBP-08 civic trigger escalations.
 
 ---
 
@@ -128,7 +128,7 @@ If the authority you are concerned about does not have a Mechanism Record in the
 
 The Violation Report stands on its own. It cites SCBP-04 rules directly rather than declared bounds. The absence of a Mechanism Record is itself a structural finding the framework surfaces: the authority is operating without disclosed scope, thresholds, or stop paths.
 
-If a citizen diagnostic (`SCBP-REG-TEST-{IDENTIFIER}`) is later produced for that authority, the existing Violation Reports are cross-linked at that time. If the authority later registers itself, the same cross-linking occurs.
+If a third-party-produced Mechanism Record (`filed_by: third_party`) is later created for that authority, the existing Violation Reports are cross-linked at that time. If the authority later files corrections to that record (`filed_by: authority`), the cross-linking remains in place.
 
 ---
 

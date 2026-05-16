@@ -6,6 +6,7 @@
 > *v2: Embedded worked examples added to diagnostic prompts in Sections 1-9.*
 > *v3: §10.7 amended to reference non-consenting affected population per SCBP-09 §II amendment (Round 1 stress test finding).*
 > *v4: Final stress-test revisions across Sections 1, 2, 3, 4, 6, 7, 8 (Round 1-3 stress test findings).*
+> *v5: Single-class record model. The two-class "authority self-registration vs. citizen diagnostic" framing was collapsed into one record kind with two filer types. Sequential naming convention `SCBP-REG-####-{SUFFIX}` applies to all records. Third-party records carry the `PUBLIC SOURCES ONLY` banner; authority-filed records do not. Authority-after-citizen updates write in place to the existing file.*
 
 ---
 
@@ -23,15 +24,15 @@ Where a section references specific constitutional rules (e.g., "R12, R39"), tho
 
 ## Who fills it out
 
-This form supports two kinds of users.
+This form supports one kind of record with two kinds of filers.
 
-**Authorities registering themselves.** An authority that chooses to enter the Bounded Power Framework files this form as a public act of structural disclosure. The completed record enters the registry as an official Mechanism Record. The honesty assertions in §12 are binding commitments by the filing authority.
+**The authority being analyzed.** An authority that chooses to enter the Bounded Power Framework files this form as a public act of structural disclosure. The record is set to `filed_by: authority` and `status: ACTIVE`. The honesty assertions in §12 are binding commitments by the filing authority.
 
-**Citizens, journalists, researchers, and civic actors producing structural diagnostics.** Anyone can use this form to produce a structured analysis of an authority that affects them, using publicly available information. Diagnostic uses do not require the authority's cooperation. Completed diagnostics are labeled `TEST / NOT AN OFFICIAL REGISTRATION` and filed under the `SCBP-REG-TEST-{IDENTIFIER}` naming pattern. The honesty assertions in §12 are reframed as "this reflects what could be verified from public sources; gaps are marked `UNKNOWN`."
+**A third party — citizen, journalist, researcher, or civic actor — analyzing an authority from public sources.** Anyone affected by an authority can use this form to produce a structured analysis using publicly available information. Third-party use does not require the authority's cooperation. The record is set to `filed_by: third_party` and `status: PUBLIC_SOURCES`, and carries the `PUBLIC SOURCES ONLY` banner at the top and bottom of the body — signaling that the record has not been confirmed by the authority it describes. §12 honesty assertions for third-party records reflect what could be verified from public sources; gaps are marked `UNKNOWN`.
 
-The same form, the same rules, and the same SCBP-09 numerical bounds apply to both. The form's diagnostic power does not depend on the authority's cooperation.
+The same form, the same rules, and the same SCBP-09 numerical bounds apply to both. The form's diagnostic power does not depend on the authority's cooperation. If an authority later files corrections to a third-party-produced record about itself, the existing record is updated in place — the mechanism_id and filename stay, the YAML flips to `filed_by: authority` and `status: ACTIVE`, the banner is removed, and the Renewal Log inside the body records the transition.
 
-For a guided way to complete a citizen diagnostic, see [00-Reading/06-AI-Registration-Bundle.md](../00-Reading/06-AI-Registration-Bundle.md).
+For a guided way to complete a third-party analysis, see [00-Reading/06-AI-Registration-Bundle.md](../00-Reading/06-AI-Registration-Bundle.md).
 
 ---
 
@@ -47,12 +48,11 @@ For a guided way to complete a citizen diagnostic, see [00-Reading/06-AI-Registr
 
 ## How to submit
 
-Submissions are made by opening a pull request on this repository, adding the completed Mechanism Record to [04-Registry/](../04-Registry/).
+Submissions are accepted by GitHub pull request, by GitHub issue, or by email to BoundedPowerFoundation@proton.me. Completed Mechanism Records are placed in [04-Registry/](../04-Registry/).
 
-- Authority self-registrations follow the naming pattern `SCBP-REG-{NNNN}.md`
-- Citizen diagnostics follow the naming pattern `SCBP-REG-TEST-{IDENTIFIER}.md`
+All records use the same sequential naming pattern: `SCBP-REG-####-{DESCRIPTIVE-SUFFIX}.md`, where `####` is the next sequential number after the highest existing record and the descriptive suffix is a short human-readable identifier for the authority (e.g., `SCBP-REG-0002-CCCC-OH.md`).
 
-There is no submission fee, no review queue, and no editorial gatekeeping. The repository's maintainers verify that the submission uses the form, meets SCBP-09 numerical bounds, and is labeled correctly. They do not assess content accuracy.
+There is no submission fee, no review queue, and no editorial gatekeeping. The repository's maintainer verifies that the submission uses the form, meets SCBP-09 numerical bounds, and is labeled correctly. The maintainer does not assess content accuracy.
 
 ---
 
